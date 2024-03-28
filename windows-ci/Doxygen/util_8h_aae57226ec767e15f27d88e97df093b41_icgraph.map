@@ -1,0 +1,15 @@
+<map id="qpalm_tic" name="qpalm_tic">
+<area shape="rect" id="node1" title="Start timer." alt="" coords="475,148,561,175"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#gaaff827465b1299909f394de8771baef9" title="Initialize QPALM solver allocating memory." alt="" coords="286,12,393,39"/>
+<area shape="rect" id="node4" href="$group__solver-grp.html#ga385f399d0fb6afaaa0da5f3a114bf922" title="Update the lower and upper bounds." alt="" coords="255,68,424,95"/>
+<area shape="rect" id="node6" href="$group__solver-grp.html#gadc1a41812270a2a9539558e7eec403fe" title="Update the linear part of the cost." alt="" coords="274,123,405,149"/>
+<area shape="rect" id="node8" href="$group__solver-grp.html#ga327c43b0d2f129fc32e8ef2a47e289af" title="Update the matrix entries of Q and A." alt="" coords="265,173,413,200"/>
+<area shape="rect" id="node10" href="$group__solver-grp.html#ga581cf986cb484ec5721f76b025eda704" title="Update the settings to the new settings." alt="" coords="252,228,427,255"/>
+<area shape="rect" id="node12" href="$group__solver-grp.html#ga28824f01d01f181a6ad6b413f30a2609" title="Warm start workspace variables x, x_0, x_prev, Ax, Qx, y and sigma." alt="" coords="267,285,411,312"/>
+<area shape="rect" id="node3" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="41,5,169,32"/>
+<area shape="rect" id="node5" href="$classqpalm_1_1Solver.html#a6df33bfd68c5b8caaaa6f726f1a9f517" title=" " alt="" coords="22,57,187,98"/>
+<area shape="rect" id="node7" href="$classqpalm_1_1Solver.html#a43cbe4e495be0898c733d9589531e63c" title=" " alt="" coords="15,123,195,149"/>
+<area shape="rect" id="node9" href="$classqpalm_1_1Solver.html#a11e9742322ad77345b32d806b8b3b81c" title=" " alt="" coords="5,173,204,200"/>
+<area shape="rect" id="node11" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="22,225,187,266"/>
+<area shape="rect" id="node13" href="$classqpalm_1_1Solver.html#a693af99e39a9035bbbc4fb61fcb427d1" title=" " alt="" coords="26,290,183,331"/>
+</map>

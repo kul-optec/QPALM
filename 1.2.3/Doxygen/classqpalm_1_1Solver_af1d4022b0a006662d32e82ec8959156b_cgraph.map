@@ -1,0 +1,5 @@
+<map id="qpalm::Solver::cancel" name="qpalm::Solver::cancel">
+<area shape="rect" id="Node000001" title="Cancel the ongoing call to solve." alt="" coords="5,5,168,31"/>
+<area shape="rect" id="Node000002" href="$group__solver-grp.html#gaa176815be02a53efacea633202def36b" title="Cancel the ongoing call to qpalm_solve." alt="" coords="216,5,328,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,15,202,15,202,21,168,21"/>
+</map>

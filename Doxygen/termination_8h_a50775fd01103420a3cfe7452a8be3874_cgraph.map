@@ -1,0 +1,23 @@
+<map id="calculate_residual_norms_and_tolerances" name="calculate_residual_norms_and_tolerances">
+<area shape="rect" id="Node000001" title="Calls the routines that compute the norm of the residuals and the tolerances." alt="" coords="5,73,181,113"/>
+<area shape="rect" id="Node000002" href="$termination_8c.html#af1889ad003b14a004d4560bedde40ce9" title="Calculates the infinity norm of the dual residual and the residual of the subproblem and stores them ..." alt="" coords="237,5,420,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,70,229,39,256,32,258,37,230,45,145,75"/>
+<area shape="rect" id="Node000006" href="$termination_8c.html#ad746ec6ec47a1240e5e910abfb01fee3" title="Calculates the dual tolerance for the problem and current subproblem and stores them in work&#45;&gt;eps_dua..." alt="" coords="233,55,424,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="182,81,219,76,220,82,182,86"/>
+<area shape="rect" id="Node000007" href="$termination_8c.html#afc13c2c286796ec381cdb5c83d9f764f" title="Calculates the infinity norm of the primal residual and stores it in work&#45;&gt;info&#45;&gt;pri_res_norm." alt="" coords="234,104,423,129"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="182,99,221,103,220,108,182,104"/>
+<area shape="rect" id="Node000008" href="$termination_8c.html#ac638a8fe12bfee736c6832fa6140c92d" title="Calculates the primal tolerance and stores it in work&#45;&gt;eps_pri." alt="" coords="229,153,428,179"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="148,110,230,138,262,147,261,152,229,143,147,115"/>
+<area shape="rect" id="Node000003" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="476,5,601,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,15,463,15,463,21,420,21"/>
+<area shape="rect" id="Node000004" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="485,104,592,129"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="404,28,429,40,445,52,455,64,464,77,478,89,489,96,486,100,474,93,460,80,450,68,441,56,427,44,401,33"/>
+<area shape="rect" id="Node000005" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="483,55,594,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="384,28,471,49,470,54,383,33"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="384,77,473,99,471,104,383,83"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="425,65,470,65,470,70,425,70"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="423,114,472,114,472,119,423,119"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="383,101,470,81,471,86,384,107"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="383,151,471,130,473,135,384,156"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="398,151,427,138,441,127,450,115,459,102,474,89,484,84,486,88,478,93,463,106,455,118,445,131,429,143,400,156"/>
+</map>

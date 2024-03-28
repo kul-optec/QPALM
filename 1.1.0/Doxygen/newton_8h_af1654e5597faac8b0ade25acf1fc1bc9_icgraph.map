@@ -1,0 +1,4 @@
+<map id="newton_set_direction" name="newton_set_direction">
+<area shape="rect" id="node1" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="220,5,381,32"/>
+<area shape="rect" id="node2" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="5,5,172,32"/>
+</map>

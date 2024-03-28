@@ -1,0 +1,11 @@
+<map id="qpalm.h" name="qpalm.h">
+<area shape="rect" id="Node000001" title="QPALM main solver API." alt="" coords="284,5,359,31"/>
+<area shape="rect" id="Node000002" href="$qpalm_8cpp.html" title=" " alt="" coords="5,79,200,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,38,170,81,168,76,278,33"/>
+<area shape="rect" id="Node000003" href="$qpalm__fortran_8h.html" title=" " alt="" coords="224,79,419,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,44,324,79,319,79,319,44"/>
+<area shape="rect" id="Node000005" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="443,86,642,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="365,33,495,83,493,88,363,38"/>
+<area shape="rect" id="Node000004" href="$qpalm__fortran_8c.html" title=" " alt="" coords="224,181,419,236"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="324,147,324,181,319,181,319,147"/>
+</map>

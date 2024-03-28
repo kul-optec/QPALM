@@ -1,0 +1,73 @@
+<map id="update_primal_iterate" name="update_primal_iterate">
+<area shape="rect" id="Node000001" title="Update the primal iterate." alt="" coords="5,553,172,578"/>
+<area shape="rect" id="Node000002" href="$linesearch_8c.html#a647cabae1574f21e412110765ea1e70d" title="Execute exact linesearch (using qsort)" alt="" coords="235,329,367,354"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,551,276,363,280,367,104,555"/>
+<area shape="rect" id="Node000005" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="665,604,784,629"/>
+<area shape="poly" id="edge39_Node000001_Node000005" title=" " alt="" coords="92,552,153,404,206,298,270,189,306,139,344,94,383,56,425,27,467,8,511,3,555,13,599,40,615,57,630,80,655,142,676,218,693,303,714,470,724,590,719,590,709,471,687,304,671,219,650,143,625,82,611,60,596,44,553,18,510,9,468,14,427,31,387,60,348,97,310,142,275,192,211,300,158,406,97,554"/>
+<area shape="rect" id="Node000007" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="451,553,576,578"/>
+<area shape="poly" id="edge40_Node000001_Node000007" title=" " alt="" coords="172,563,437,563,437,568,172,568"/>
+<area shape="rect" id="Node000013" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="645,1220,804,1245"/>
+<area shape="poly" id="edge41_Node000001_Node000013" title=" " alt="" coords="93,578,94,634,100,725,114,842,140,974,158,1043,181,1112,208,1179,241,1245,279,1307,323,1364,373,1415,431,1459,474,1482,513,1489,552,1481,596,1460,617,1431,649,1375,709,1256,714,1258,654,1378,622,1434,599,1464,554,1486,513,1494,472,1487,428,1464,370,1419,319,1368,274,1310,236,1248,203,1182,176,1113,153,1044,134,975,108,843,94,726,88,634,87,579"/>
+<area shape="rect" id="Node000014" href="$newton_8c.html#af1654e5597faac8b0ade25acf1fc1bc9" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="220,942,381,968"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="99,577,288,929,284,931,95,580"/>
+<area shape="rect" id="Node000003" href="$linesearch_8c.html#ac70138609ef6aa6fabca57aca8681e83" title="Helper function for qsort." alt="" coords="474,205,553,230"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,327,361,284,393,260,428,239,460,227,462,232,431,244,396,265,365,288,317,331"/>
+<area shape="rect" id="Node000004" href="$solver__interface_8c.html#a4824fb035d8cdb8ba46e4ac5c4049d5d" title="Matrix&#45;vector multiplication." alt="" coords="474,504,553,529"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="312,353,358,414,392,450,431,482,462,499,460,503,428,487,389,454,354,417,308,356"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="306,328,322,297,349,258,384,220,405,203,428,190,475,170,516,161,536,162,556,167,599,190,623,219,645,262,664,317,681,377,707,498,722,590,717,590,702,499,676,378,659,318,640,264,619,222,596,194,554,172,535,167,517,167,477,175,431,195,408,207,388,224,353,262,327,300,310,330"/>
+<area shape="rect" id="Node000006" href="$linesearch_8c.html#a33a2554aa831be51296f2dafedd076d4" title="Select subsequence based on a set of indices, ." alt="" coords="437,304,590,329"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="366,331,423,324,423,330,367,337"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="309,354,324,390,350,440,385,493,407,517,431,538,441,545,438,549,428,542,403,521,381,496,345,443,319,392,304,356"/>
+<area shape="rect" id="Node000008" href="$linesearch_8c.html#a21cd94f0684dd9e1bfe7236260e9e8d5" title="Helper function to copy vector a in array b (with indices)" alt="" coords="451,353,575,378"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="367,346,438,355,437,360,366,352"/>
+<area shape="rect" id="Node000009" href="$lin__alg_8c.html#a7b3d3b23f9254b8dc1bf53823ef42b42" title="Elementwise division, ." alt="" coords="464,402,563,428"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="335,352,430,387,457,396,455,401,428,392,333,357"/>
+<area shape="rect" id="Node000010" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="460,54,567,80"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="302,328,314,282,338,218,375,149,399,117,428,89,446,78,449,82,431,93,403,120,380,152,343,220,320,284,307,329"/>
+<area shape="rect" id="Node000011" href="$lin__alg_8c.html#ab83e787c2e0edb5803a860b1c894f53d" title="Inner product between two vectors, ." alt="" coords="473,104,554,129"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="305,328,321,292,347,244,383,192,428,146,459,129,461,133,431,150,387,195,352,247,325,295,310,330"/>
+<area shape="rect" id="Node000012" href="$linesearch_8c.html#ac4bdfc80a644d8c75a672963c7682af9" title="Inner product over index set, ." alt="" coords="459,254,567,280"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="331,327,428,289,452,281,453,286,430,294,333,331"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="317,353,365,394,397,417,431,437,455,446,478,451,521,453,542,454,561,460,581,471,599,489,616,517,626,552,633,592,635,638,633,740,624,849,616,958,613,1060,616,1105,622,1145,632,1179,647,1205,651,1210,647,1213,643,1209,627,1181,617,1146,610,1105,608,1060,610,958,619,849,627,739,630,638,627,593,621,553,611,519,595,493,577,475,559,465,541,460,521,458,478,456,454,452,428,441,394,421,362,398,314,357"/>
+<area shape="poly" id="edge28_Node000014_Node000004" title=" " alt="" coords="299,942,302,872,308,821,318,764,334,703,357,644,387,588,428,538,443,527,460,520,462,525,445,532,431,542,392,591,361,646,339,705,323,765,313,821,308,872,305,942"/>
+<area shape="poly" id="edge30_Node000014_Node000005" title=" " alt="" coords="300,942,307,885,326,801,342,756,364,713,392,673,428,640,453,624,481,612,540,599,599,596,652,600,652,606,599,602,541,604,483,617,456,629,431,644,396,676,369,715,347,758,331,803,312,886,305,942"/>
+<area shape="poly" id="edge35_Node000014_Node000007" title=" " alt="" coords="300,942,307,881,327,789,343,738,365,687,393,639,427,596,445,582,449,586,431,600,397,642,370,689,348,740,332,791,313,882,305,943"/>
+<area shape="poly" id="edge38_Node000014_Node000013" title=" " alt="" coords="306,968,314,1019,335,1093,351,1131,372,1169,398,1202,431,1229,459,1243,489,1253,553,1260,615,1256,668,1246,669,1251,615,1261,552,1265,488,1258,457,1248,428,1233,395,1206,368,1172,346,1134,330,1094,309,1020,301,968"/>
+<area shape="rect" id="Node000015" href="$solver__interface_8c.html#aca80eaf7b897030273f1a6820b7e6d38" title="Solve the KKT system &#160;." alt="" coords="471,1194,556,1220"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="308,967,322,1008,346,1066,382,1127,405,1155,431,1180,459,1194,456,1199,428,1184,401,1159,378,1130,341,1068,317,1010,303,969"/>
+<area shape="rect" id="Node000017" href="$solver__interface_8c.html#a7ab6022f2624a8f13bf8f54067c9f2cd" title="Perform a factorization update for the entering constraints." alt="" coords="435,1016,591,1056"/>
+<area shape="poly" id="edge18_Node000014_Node000017" title=" " alt="" coords="336,965,448,1009,446,1014,334,970"/>
+<area shape="rect" id="Node000018" href="$solver__interface_8c.html#a172614d18d4dd82e001245d7ceea389f" title="Perform a factorization update for the leaving constraints." alt="" coords="438,1080,589,1120"/>
+<area shape="poly" id="edge19_Node000014_Node000018" title=" " alt="" coords="315,966,363,1014,396,1041,431,1066,442,1072,439,1077,428,1071,392,1046,359,1018,312,970"/>
+<area shape="rect" id="Node000019" href="$solver__interface_8c.html#ab4921dab7206bd333c9e7dc679dce0b1" title="Calculate &#160;factorization of a matrix ." alt="" coords="692,1410,757,1436"/>
+<area shape="poly" id="edge20_Node000014_Node000019" title=" " alt="" coords="306,967,316,1021,337,1101,354,1145,374,1189,400,1230,431,1266,452,1284,471,1294,509,1305,550,1313,599,1331,653,1366,699,1399,696,1404,650,1370,596,1336,549,1318,508,1310,469,1299,449,1288,427,1270,396,1233,370,1191,349,1147,332,1103,310,1022,301,968"/>
+<area shape="rect" id="Node000020" href="$solver__interface_8c.html#a972c4868a7391f4b18d836f1ca0810d9" title="Calculate &#160;factorization of , with &#160;and &#160;the set of active constraints." alt="" coords="444,1525,583,1550"/>
+<area shape="poly" id="edge21_Node000014_Node000020" title=" " alt="" coords="305,968,312,1045,331,1171,347,1244,368,1318,396,1391,432,1460,456,1491,483,1515,480,1519,452,1494,427,1463,392,1394,363,1320,342,1245,325,1172,306,1046,300,968"/>
+<area shape="rect" id="Node000021" href="$solver__interface_8c.html#a6892fee611934ae5337f1be0235bfc80" title="Downdate the &#160;factorization given a set of leaving constraints." alt="" coords="435,1346,592,1386"/>
+<area shape="poly" id="edge23_Node000014_Node000021" title=" " alt="" coords="306,968,313,1030,333,1124,349,1177,370,1230,397,1280,431,1325,444,1336,440,1340,427,1329,393,1283,365,1232,344,1179,327,1126,308,1031,300,968"/>
+<area shape="rect" id="Node000022" href="$solver__interface_8c.html#a03ad73d0e41054e90232d141e73474ab" title="Solve the linear system ." alt="" coords="435,1145,591,1170"/>
+<area shape="poly" id="edge24_Node000014_Node000022" title=" " alt="" coords="310,967,326,1000,353,1044,388,1090,431,1130,442,1137,439,1142,428,1134,384,1094,348,1047,322,1002,305,969"/>
+<area shape="rect" id="Node000023" href="$solver__interface_8c.html#adee67b7c00941da3be82394e4f58c47e" title="Update the &#160;factorization given a set of entering constraints." alt="" coords="441,1410,585,1450"/>
+<area shape="poly" id="edge27_Node000014_Node000023" title=" " alt="" coords="304,968,307,1041,313,1094,323,1154,338,1218,361,1282,391,1342,431,1396,435,1399,431,1403,427,1399,387,1345,356,1284,333,1220,318,1155,308,1095,302,1041,299,968"/>
+<area shape="rect" id="Node000024" href="$lin__alg_8c.html#ade8612cfab1bef397f1ff7a36f202e73" title="Copy integer vector a into preallocated vector b." alt="" coords="442,654,585,680"/>
+<area shape="poly" id="edge29_Node000014_Node000024" title=" " alt="" coords="302,942,313,894,336,826,353,789,374,753,398,719,428,689,434,684,437,688,431,693,402,722,378,756,358,792,341,828,318,896,307,943"/>
+<area shape="rect" id="Node000025" href="$solver__interface_8c.html#a1d321f8b340db936d2f62a9abb350600" title="Form the KKT system &#160;." alt="" coords="449,704,578,729"/>
+<area shape="poly" id="edge31_Node000014_Node000025" title=" " alt="" coords="303,941,318,902,343,847,379,789,402,762,428,738,435,733,438,737,431,742,406,765,384,792,347,849,323,904,308,943"/>
+<area shape="rect" id="Node000026" href="$solver__interface_8c.html#ad0f4712f4b0ab25ecca938a1f4b1e0a1" title="Reform the KKT system (i.e." alt="" coords="442,753,585,778"/>
+<area shape="poly" id="edge32_Node000014_Node000026" title=" " alt="" coords="306,941,323,910,350,868,385,825,428,788,438,782,440,786,431,792,389,828,354,871,328,912,311,943"/>
+<area shape="rect" id="Node000027" href="$newton_8c.html#ae27a99e2b3249e8455b72c2e2a977dd8" title="Computes the set of active constraints and stores it in work&#45;&gt;solver&#45;&gt;active_constraints." alt="" coords="429,802,597,828"/>
+<area shape="poly" id="edge33_Node000014_Node000027" title=" " alt="" coords="311,940,358,891,392,863,428,838,444,830,447,835,431,843,395,867,362,895,315,944"/>
+<area shape="rect" id="Node000028" href="$newton_8c.html#a43d518127e8561034e35ba18d0e15b31" title="Determines the entering and leaving constraints and stores them in work&#45;&gt;solver&#45;&gt;enter and work&#45;&gt;solv..." alt="" coords="434,852,593,892"/>
+<area shape="poly" id="edge34_Node000014_Node000028" title=" " alt="" coords="333,940,428,902,446,895,448,900,430,907,335,945"/>
+<area shape="rect" id="Node000029" href="$lin__alg_8c.html#a863f6634d67489350855e97c36c8c59c" title="Scaled addition of one vector to another vector, both being scaled, ." alt="" coords="432,917,595,942"/>
+<area shape="poly" id="edge36_Node000014_Node000029" title=" " alt="" coords="381,943,418,938,419,944,382,948"/>
+<area shape="rect" id="Node000030" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="458,966,569,992"/>
+<area shape="poly" id="edge37_Node000014_Node000030" title=" " alt="" coords="382,961,445,969,444,974,381,967"/>
+<area shape="poly" id="edge15_Node000015_Node000005" title=" " alt="" coords="555,1200,577,1193,595,1180,621,1138,644,1077,664,1002,681,919,705,758,718,643,724,643,711,759,686,920,669,1003,649,1078,626,1141,599,1184,580,1198,557,1205"/>
+<area shape="poly" id="edge16_Node000015_Node000013" title=" " alt="" coords="557,1209,632,1219,631,1224,556,1215"/>
+<area shape="rect" id="Node000016" href="$lin__alg_8c.html#a67ead739705f515285526db604c5bb7d" title="Fill float vector with a scalar value." alt="" coords="665,1170,784,1196"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="556,1200,651,1189,652,1194,557,1205"/>
+<area shape="poly" id="edge22_Node000020_Node000019" title=" " alt="" coords="551,1523,596,1503,649,1472,694,1442,697,1446,652,1477,599,1508,553,1527"/>
+<area shape="poly" id="edge25_Node000022_Node000005" title=" " alt="" coords="579,1143,595,1131,620,1093,641,1038,661,970,678,896,703,749,718,643,723,643,709,750,683,897,666,971,646,1039,624,1096,599,1134,582,1147"/>
+<area shape="poly" id="edge26_Node000022_Node000013" title=" " alt="" coords="565,1168,598,1179,646,1205,668,1213,666,1218,644,1209,596,1184,564,1173"/>
+</map>

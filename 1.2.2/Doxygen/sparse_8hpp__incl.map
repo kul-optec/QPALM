@@ -1,0 +1,23 @@
+<map id="QPALM/interfaces/cxx/include/qpalm/sparse.hpp" name="QPALM/interfaces/cxx/include/qpalm/sparse.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="562,5,755,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,112,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="562,40,365,63,126,96,125,91,365,58,562,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="137,93,295,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="562,46,295,94,294,88,561,41"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="320,93,493,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="599,48,457,92,456,87,598,43"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="517,93,653,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="643,47,608,85,604,81,639,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="677,93,787,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="678,44,714,81,710,85,674,47"/>
+<area shape="rect" id="Node000007" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="811,93,965,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="714,43,842,86,841,91,713,48"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="989,93,1067,119"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="750,43,976,90,975,96,749,48"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1091,93,1304,119"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="756,38,1106,89,1105,94,755,43"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="808,167,875,192"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="883,120,859,157,854,154,878,118"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="899,167,967,192"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="898,118,921,154,916,157,893,120"/>
+</map>

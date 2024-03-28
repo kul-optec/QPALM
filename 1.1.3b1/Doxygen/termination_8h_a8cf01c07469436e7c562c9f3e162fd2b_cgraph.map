@@ -1,0 +1,7 @@
+<map id="is_dual_infeasible" name="is_dual_infeasible">
+<area shape="rect" id="node1" title="Check whether the problem is dual infeasible." alt="" coords="5,80,144,105"/>
+<area shape="rect" id="node2" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="192,5,317,31"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="201,55,308,80"/>
+<area shape="rect" id="node4" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="199,104,310,129"/>
+<area shape="rect" id="node5" href="$lin__alg_8c.html#ab83e787c2e0edb5803a860b1c894f53d" title="Inner product between two vectors, ." alt="" coords="214,153,295,179"/>
+</map>

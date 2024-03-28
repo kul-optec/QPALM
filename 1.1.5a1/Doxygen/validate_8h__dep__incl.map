@@ -1,0 +1,16 @@
+<map id="validate.h" name="validate.h">
+<area shape="rect" id="Node000001" title="Validation of the user provided settings and data." alt="" coords="160,5,247,31"/>
+<area shape="rect" id="Node000002" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="5,174,204,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,36,114,53,100,65,88,80,81,103,82,128,88,152,97,173,92,175,83,154,76,129,75,102,84,77,96,62,111,49,146,31"/>
+<area shape="rect" id="Node000003" href="$validate_8c.html" title="Validation of the user provided settings and data." alt="" coords="98,79,309,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,44,206,79,201,79,201,44"/>
+<area shape="rect" id="Node000004" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="333,86,407,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,34,347,84,345,88,239,39"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="328,119,322,121,162,177,160,171,320,116,326,114"/>
+<area shape="rect" id="Node000005" href="$qpalm_8cpp.html" title=" " alt="" coords="250,167,445,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="367,125,356,167,351,166,361,124"/>
+<area shape="rect" id="Node000006" href="$qpalm__fortran_8h.html" title=" " alt="" coords="469,167,663,221"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="407,115,512,164,510,169,405,120"/>
+<area shape="rect" id="Node000007" href="$qpalm__fortran_8c.html" title=" " alt="" coords="469,269,663,324"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="569,235,569,269,563,269,563,235"/>
+</map>

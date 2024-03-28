@@ -1,0 +1,15 @@
+<map id="qpalm_setup" name="qpalm_setup">
+<area shape="rect" id="node1" title="Initialize QPALM solver allocating memory." alt="" coords="5,262,112,289"/>
+<area shape="rect" id="node2" href="$util_8c.html#a14436938f89e6b14f819c58af7d9f0fe" title="Copy settings creating a new settings structure." alt="" coords="193,313,305,339"/>
+<area shape="rect" id="node3" href="$global__opts_8c.html#a9a15c13f16dd6467bcee00e8bf62666a" title=" " alt="" coords="387,43,501,70"/>
+<area shape="rect" id="node4" href="$global__opts_8c.html#aa314b2eeaa0227e26c26bae34424f36f" title=" " alt="" coords="195,94,303,121"/>
+<area shape="rect" id="node5" href="$solver__interface_8c.html#a5b96b0c905b3ac7ef76d6b780d462ec7" title="Choose the linear systems solver method based on the problem data sizes." alt="" coords="160,145,339,187"/>
+<area shape="rect" id="node6" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="206,211,293,238"/>
+<area shape="rect" id="node7" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="204,262,295,289"/>
+<area shape="rect" id="node8" href="$util_8c.html#a14fe651105f1f38b2a3a49614f4b8ae2" title="Update solver status (value and string)." alt="" coords="192,465,307,491"/>
+<area shape="rect" id="node10" href="$validate_8c.html#a095cca2f68e07f3b0ebd35a2f4a12d9b" title="Validate problem data." alt="" coords="194,363,305,390"/>
+<area shape="rect" id="node11" href="$validate_8c.html#aa3fa0338cebc63078430fed1211df147" title="Validate problem settings." alt="" coords="182,414,317,441"/>
+<area shape="rect" id="node12" href="$lin__alg_8c.html#a256ef6c2562ed296f3c1bd23bc712f25" title="Copy vector a into output." alt="" coords="208,43,291,70"/>
+<area shape="rect" id="node13" href="$lin__alg_8c.html#a7e2e62d3c501d9f6df8410658c73a1ad" title="Fill int vector with a scalar value." alt="" coords="178,515,321,542"/>
+<area shape="rect" id="node9" href="$util_8c.html#a7645b56a91479fac2285909a25875b91" title="Custom string copy to avoid string.h library." alt="" coords="406,465,482,491"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="validate_settings" name="validate_settings">
+<area shape="rect" id="node1" title="Validate problem settings." alt="" coords="441,35,576,61"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#gaaff827465b1299909f394de8771baef9" title="Initialize QPALM solver allocating memory." alt="" coords="253,8,359,35"/>
+<area shape="rect" id="node4" href="$group__solver-grp.html#ga581cf986cb484ec5721f76b025eda704" title="Update the settings to the new settings." alt="" coords="219,60,393,87"/>
+<area shape="rect" id="node3" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="24,5,152,32"/>
+<area shape="rect" id="node5" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="5,57,171,98"/>
+</map>

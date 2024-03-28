@@ -1,0 +1,4 @@
+<map id="validate_data" name="validate_data">
+<area shape="rect" id="node1" title="Validate problem data." alt="" coords="160,5,271,32"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#gaaff827465b1299909f394de8771baef9" title="Initialize QPALM solver allocating memory." alt="" coords="5,5,112,32"/>
+</map>
