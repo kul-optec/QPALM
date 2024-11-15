@@ -1,0 +1,17 @@
+<map id="QPALM/include/qpalm/linesearch.h" name="QPALM/include/qpalm/linesearch.h">
+<area shape="rect" id="Node000001" title="Routines to perform exact linesearch." alt="" coords="71,5,234,45"/>
+<area shape="rect" id="Node000002" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="173,93,287,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,44,211,82,207,85,169,47"/>
+<area shape="rect" id="Node000007" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="5,93,148,119"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="136,47,100,85,96,81,132,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="177,167,275,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="232,119,230,153,225,153,227,119"/>
+<area shape="rect" id="Node000004" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="299,167,454,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="255,116,342,158,339,163,252,121"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="106,240,173,265"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="214,121,190,141,167,168,153,198,146,227,141,226,148,196,162,165,186,138,211,117"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="339,195,187,240,185,235,338,189"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="343,240,411,265"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="379,192,379,226,374,226,374,192"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="84,118,131,226,126,228,79,120"/>
+</map>

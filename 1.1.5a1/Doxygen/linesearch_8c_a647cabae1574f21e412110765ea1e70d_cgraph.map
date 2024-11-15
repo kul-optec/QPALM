@@ -1,0 +1,25 @@
+<map id="exact_linesearch" name="exact_linesearch">
+<area shape="rect" id="Node000001" title="Execute exact linesearch (using qsort)" alt="" coords="5,252,137,277"/>
+<area shape="rect" id="Node000002" href="$linesearch_8c.html#ac70138609ef6aa6fabca57aca8681e83" title="Helper function for qsort." alt="" coords="225,5,304,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,251,84,211,105,154,138,93,159,65,184,40,211,25,213,30,187,44,163,68,142,96,110,156,89,212,78,253"/>
+<area shape="rect" id="Node000003" href="$solver__interface_8c.html#a4824fb035d8cdb8ba46e4ac5c4049d5d" title="Matrix&#45;vector multiplication." alt="" coords="225,55,304,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="75,251,89,218,112,175,144,129,184,89,211,75,213,80,187,93,148,132,116,177,94,220,80,253"/>
+<area shape="rect" id="Node000004" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="205,104,324,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="79,250,119,196,149,165,184,138,194,133,197,137,187,143,153,169,124,200,83,253"/>
+<area shape="rect" id="Node000005" href="$linesearch_8c.html#a33a2554aa831be51296f2dafedd076d4" title="Select subsequence based on a set of indices, ." alt="" coords="188,153,341,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="87,250,130,219,184,188,200,181,202,186,187,192,132,224,90,254"/>
+<area shape="rect" id="Node000006" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="202,203,327,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="121,249,200,229,201,234,122,255"/>
+<area shape="rect" id="Node000007" href="$linesearch_8c.html#a21cd94f0684dd9e1bfe7236260e9e8d5" title="Helper function to copy vector a in array b (with indices)" alt="" coords="203,252,327,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="138,262,189,262,189,267,138,267"/>
+<area shape="rect" id="Node000008" href="$lin__alg_8c.html#a7b3d3b23f9254b8dc1bf53823ef42b42" title="Elementwise division, ." alt="" coords="215,301,314,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="122,275,203,296,201,301,121,280"/>
+<area shape="rect" id="Node000009" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="211,351,318,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="91,275,133,305,187,336,206,344,204,349,184,340,130,310,88,280"/>
+<area shape="rect" id="Node000010" href="$lin__alg_8c.html#ab83e787c2e0edb5803a860b1c894f53d" title="Inner product between two vectors, ." alt="" coords="224,400,305,425"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="83,276,124,329,153,359,187,385,212,397,210,402,184,390,150,363,120,332,79,279"/>
+<area shape="rect" id="Node000011" href="$linesearch_8c.html#ac4bdfc80a644d8c75a672963c7682af9" title="Inner product over index set, ." alt="" coords="211,449,319,475"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="80,277,94,309,117,351,148,396,187,435,200,442,197,447,184,439,144,399,112,354,89,311,75,279"/>
+<area shape="rect" id="Node000012" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="185,499,344,524"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="78,277,89,317,111,373,143,433,163,460,187,484,195,490,192,494,184,488,159,463,138,435,106,375,84,319,73,279"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="calculate_primal_residual" name="calculate_primal_residual">
+<area shape="rect" id="node1" title="Calculates the infinity norm of the primal residual and stores it in work&#45;&gt;info&#45;&gt;pri_res_norm." alt="" coords="5,31,195,56"/>
+<area shape="rect" id="node2" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="245,5,351,31"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="243,55,353,80"/>
+</map>

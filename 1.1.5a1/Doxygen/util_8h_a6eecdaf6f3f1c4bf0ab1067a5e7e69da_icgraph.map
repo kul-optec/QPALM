@@ -1,0 +1,32 @@
+<map id="qpalm_toc" name="qpalm_toc">
+<area shape="rect" id="Node000001" title="Report time in seconds since last call to qpalm_tic." alt="" coords="475,169,565,195"/>
+<area shape="rect" id="Node000002" href="$group__solver-grp.html#ga2496e6b7b64f611e920c3c4a740d9ecd" title="Initialize QPALM solver allocating memory." alt="" coords="286,5,393,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="506,158,475,100,453,70,425,44,392,29,394,24,428,40,457,66,480,97,511,155"/>
+<area shape="rect" id="Node000004" href="$group__solver-grp.html#ga17fcba910c32b8518df93617591b1cf1" title="Solve the quadratic program." alt="" coords="287,55,392,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="494,161,463,133,425,106,377,83,379,78,428,101,466,129,498,157"/>
+<area shape="rect" id="Node000006" href="$group__solver-grp.html#ga586e7a22d9ed41fb2d477490fdabc875" title="Update the lower and upper bounds." alt="" coords="255,116,424,141"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="462,168,382,144,384,139,464,163"/>
+<area shape="rect" id="Node000008" href="$group__solver-grp.html#gac6fc63096cd84c85c7e4a31ab950a00b" title="Update the linear part of the cost." alt="" coords="274,169,405,195"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="461,185,405,185,405,179,461,179"/>
+<area shape="rect" id="Node000010" href="$group__solver-grp.html#ga5c65cd8a7357df09df6d20f7173feb6f" title="Update the matrix entries of Q and A." alt="" coords="265,219,413,244"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="462,200,387,221,386,216,461,195"/>
+<area shape="rect" id="Node000012" href="$group__solver-grp.html#ga349f4343b96fb674a823ae6e03634ff7" title="Update the settings to the new settings." alt="" coords="252,272,427,297"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="497,206,466,233,428,258,388,274,386,270,425,253,462,228,494,202"/>
+<area shape="rect" id="Node000014" href="$group__solver-grp.html#ga647edc4e31481ccafe1813205a87ecbd" title="Warm start workspace variables x, x_0, x_prev, Ax, Qx, y and sigma." alt="" coords="267,332,411,357"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="509,208,477,260,454,288,428,312,387,334,384,330,425,308,450,284,472,257,504,205"/>
+<area shape="rect" id="Node000003" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="41,5,169,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="272,21,169,21,169,15,272,15"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="273,56,165,33,167,28,274,51"/>
+<area shape="rect" id="Node000005" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="27,55,182,80"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="273,70,182,70,182,65,273,65"/>
+<area shape="rect" id="Node000007" href="$classqpalm_1_1Solver.html#a6df33bfd68c5b8caaaa6f726f1a9f517" title=" " alt="" coords="22,105,187,145"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="241,130,188,129,188,123,241,124"/>
+<area shape="rect" id="Node000009" href="$classqpalm_1_1Solver.html#a43cbe4e495be0898c733d9589531e63c" title=" " alt="" coords="15,169,195,195"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="260,185,195,185,195,179,260,179"/>
+<area shape="rect" id="Node000011" href="$classqpalm_1_1Solver.html#a11e9742322ad77345b32d806b8b3b81c" title=" " alt="" coords="5,219,204,244"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="252,234,204,234,204,229,252,229"/>
+<area shape="rect" id="Node000013" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="22,269,187,309"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="238,289,188,290,187,285,238,284"/>
+<area shape="rect" id="Node000015" href="$classqpalm_1_1Solver.html#a693af99e39a9035bbbc4fb61fcb427d1" title=" " alt="" coords="26,333,183,373"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="253,350,184,353,184,347,253,345"/>
+</map>

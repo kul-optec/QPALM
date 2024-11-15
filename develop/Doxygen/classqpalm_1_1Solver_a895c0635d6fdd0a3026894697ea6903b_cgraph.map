@@ -1,0 +1,21 @@
+<map id="qpalm::Solver::update_settings" name="qpalm::Solver::update_settings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,122,171,162"/>
+<area shape="rect" id="Node000002" href="$group__solver-grp.html#ga349f4343b96fb674a823ae6e03634ff7" title="Update the settings to the new settings." alt="" coords="219,129,393,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,139,205,139,205,145,171,145"/>
+<area shape="rect" id="Node000003" href="$util_8c.html#a14436938f89e6b14f819c58af7d9f0fe" title="Copy settings creating a new settings structure." alt="" coords="453,5,565,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,127,371,85,440,40,453,33,455,38,443,44,374,89,323,131"/>
+<area shape="rect" id="Node000005" href="$global__opts_8c.html#a057129daf1349d96b074b9dca1994d09" title=" " alt="" coords="461,55,557,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="340,127,440,89,458,82,460,87,442,94,342,132"/>
+<area shape="rect" id="Node000006" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="465,104,552,129"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="394,128,451,121,452,126,394,134"/>
+<area shape="rect" id="Node000007" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="463,153,554,179"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="394,150,450,156,449,162,394,155"/>
+<area shape="rect" id="Node000008" href="$util_8c.html#a14fe651105f1f38b2a3a49614f4b8ae2" title="Update solver status (value and string)." alt="" coords="451,203,566,228"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="343,152,461,195,459,200,341,157"/>
+<area shape="rect" id="Node000010" href="$validate_8c.html#aa3fa0338cebc63078430fed1211df147" title="Validate problem settings." alt="" coords="441,252,576,277"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="324,153,375,193,443,237,458,244,456,249,440,242,372,197,320,157"/>
+<area shape="rect" id="Node000004" href="$global__opts_8c.html#a9a15c13f16dd6467bcee00e8bf62666a" title=" " alt="" coords="624,5,739,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="565,15,610,15,610,21,565,21"/>
+<area shape="rect" id="Node000009" href="$util_8c.html#a7645b56a91479fac2285909a25875b91" title="Custom string copy to avoid string.h library." alt="" coords="643,203,719,228"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="566,213,629,213,629,218,566,218"/>
+</map>

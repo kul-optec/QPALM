@@ -1,0 +1,5 @@
+<map id="qpalm_cancel" name="qpalm_cancel">
+<area shape="rect" id="Node000001" title="Cancel the ongoing call to qpalm_solve." alt="" coords="216,5,328,31"/>
+<area shape="rect" id="Node000002" href="$classqpalm_1_1Solver.html#af1d4022b0a006662d32e82ec8959156b" title="Cancel the ongoing call to solve." alt="" coords="5,5,168,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,21,168,21,168,15,202,15"/>
+</map>

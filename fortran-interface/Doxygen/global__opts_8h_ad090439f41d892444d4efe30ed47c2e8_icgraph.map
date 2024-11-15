@@ -1,0 +1,9 @@
+<map id="qpalm_malloc" name="qpalm_malloc">
+<area shape="rect" id="node1" title=" " alt="" coords="601,56,716,83"/>
+<area shape="rect" id="node2" href="$util_8c.html#a14436938f89e6b14f819c58af7d9f0fe" title="Copy settings creating a new settings structure." alt="" coords="441,132,553,159"/>
+<area shape="rect" id="node3" href="$group__solver-grp.html#gaaff827465b1299909f394de8771baef9" title="Initialize QPALM solver allocating memory." alt="" coords="253,55,359,81"/>
+<area shape="rect" id="node4" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="24,51,152,77"/>
+<area shape="rect" id="node7" href="$lin__alg_8c.html#a256ef6c2562ed296f3c1bd23bc712f25" title="Copy vector a into output." alt="" coords="456,31,539,57"/>
+<area shape="rect" id="node5" href="$group__solver-grp.html#ga581cf986cb484ec5721f76b025eda704" title="Update the settings to the new settings." alt="" coords="219,132,393,159"/>
+<area shape="rect" id="node6" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="5,125,171,166"/>
+</map>

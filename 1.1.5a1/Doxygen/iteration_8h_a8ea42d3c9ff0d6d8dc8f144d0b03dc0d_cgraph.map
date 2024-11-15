@@ -1,0 +1,7 @@
+<map id="update_sigma" name="update_sigma">
+<area shape="rect" id="Node000001" title="Update the penalty factors." alt="" coords="5,31,120,56"/>
+<area shape="rect" id="Node000002" href="$solver__interface_8c.html#a759f2a0d608b6cd90863e5871d6f8474" title="Update the &#160;factorization given a set of indexes where &#160;has been updated." alt="" coords="168,5,360,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,33,154,29,155,34,121,39"/>
+<area shape="rect" id="Node000003" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="209,55,319,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,47,195,57,195,62,120,53"/>
+</map>

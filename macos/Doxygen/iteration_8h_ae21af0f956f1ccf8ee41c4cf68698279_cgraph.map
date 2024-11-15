@@ -1,0 +1,7 @@
+<map id="compute_residuals" name="compute_residuals">
+<area shape="rect" id="node1" title="Compute the residuals (in vector form)" alt="" coords="5,81,151,108"/>
+<area shape="rect" id="node2" href="$solver__interface_8c.html#aa0574481a6dc6221dd3b9562f8c54cd5" title="Matrix&#45;transpose&#45;vector multiplication." alt="" coords="205,5,326,32"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="203,56,328,83"/>
+<area shape="rect" id="node4" href="$lin__alg_8c.html#a93df027e9826a479bf77a0770817c71a" title="Elementwise mid between vectors, ." alt="" coords="199,107,332,133"/>
+<area shape="rect" id="node5" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="212,157,319,184"/>
+</map>

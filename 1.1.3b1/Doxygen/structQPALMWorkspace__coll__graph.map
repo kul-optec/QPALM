@@ -1,0 +1,10 @@
+<map id="QPALMWorkspace" name="QPALMWorkspace">
+<area shape="rect" id="node1" title="QPALM Workspace." alt="" coords="456,307,619,1689"/>
+<area shape="rect" id="node2" href="$structQPALMData.html" title="Data structure." alt="" coords="5,35,104,215"/>
+<area shape="rect" id="node3" href="$structarray__element.html" title="Array to sort in linesearch." alt="" coords="128,79,245,171"/>
+<area shape="rect" id="node4" href="$structQPALMSolver.html" title="Variables for linear system solving." alt="" coords="269,13,445,237"/>
+<area shape="rect" id="node5" href="$structQPALMSettings.html" title="Settings struct." alt="" coords="470,13,605,237"/>
+<area shape="rect" id="node6" href="$structQPALMScaling.html" title="Problem scaling matrices stored as vectors." alt="" coords="629,49,744,200"/>
+<area shape="rect" id="node7" href="$structQPALMSolution.html" title="Solution structure." alt="" coords="768,79,888,171"/>
+<area shape="rect" id="node8" href="$structQPALMInfo.html" title="Solver return information." alt="" coords="913,5,1050,244"/>
+</map>

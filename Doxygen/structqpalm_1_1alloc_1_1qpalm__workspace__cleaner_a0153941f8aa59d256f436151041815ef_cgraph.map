@@ -1,0 +1,7 @@
+<map id="qpalm::alloc::qpalm_workspace_cleaner::operator()" name="qpalm::alloc::qpalm_workspace_cleaner::operator()">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,168,60"/>
+<area shape="rect" id="Node000002" href="$group__solver-grp.html#ga856ef78171b77f0f526a8d4255e15223" title="Cleanup the workspace by deallocating memory." alt="" coords="216,20,337,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,30,202,30,202,35,169,35"/>
+<area shape="rect" id="Node000003" href="$global__opts_8c.html#a057129daf1349d96b074b9dca1994d09" title=" " alt="" coords="385,20,481,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,30,372,30,372,35,338,35"/>
+</map>

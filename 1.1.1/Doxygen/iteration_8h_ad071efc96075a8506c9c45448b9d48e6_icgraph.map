@@ -1,0 +1,4 @@
+<map id="compute_objective" name="compute_objective">
+<area shape="rect" id="node1" title="Compute the (unscaled) primal objective value at the current iterate." alt="" coords="168,5,315,32"/>
+<area shape="rect" id="node2" href="$termination_8c.html#a59f3d4d2ea459665833cc3d5e9265d5e" title="Helper function to store the (unscaled) solution in the solution struct." alt="" coords="5,5,120,32"/>
+</map>

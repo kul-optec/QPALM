@@ -1,0 +1,9 @@
+<map id="vec_prod" name="vec_prod">
+<area shape="rect" id="node1" title="Inner product between two vectors, ." alt="" coords="449,107,531,133"/>
+<area shape="rect" id="node2" href="$iteration_8c.html#a1a0ad2638fa3206a6f671619f689364f" title="Compute the (unscaled) dual objective value at the current iterate." alt="" coords="220,5,401,32"/>
+<area shape="rect" id="node3" href="$linesearch_8c.html#a647cabae1574f21e412110765ea1e70d" title="Execute exact linesearch (using qsort)" alt="" coords="245,56,377,83"/>
+<area shape="rect" id="node5" href="$iteration_8c.html#a155f5c99c7a442c554cca914de34eba7" title="Initialize penalty factors from initial x." alt="" coords="248,107,373,133"/>
+<area shape="rect" id="node6" href="$termination_8c.html#a8cf01c07469436e7c562c9f3e162fd2b" title="Check whether the problem is dual infeasible." alt="" coords="241,157,380,184"/>
+<area shape="rect" id="node7" href="$lin__alg_8c.html#ac9c437da6c40c86a70915aa0efd8af7d" title="2&#45;norm of a vector, ." alt="" coords="252,208,369,235"/>
+<area shape="rect" id="node4" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="5,56,172,83"/>
+</map>

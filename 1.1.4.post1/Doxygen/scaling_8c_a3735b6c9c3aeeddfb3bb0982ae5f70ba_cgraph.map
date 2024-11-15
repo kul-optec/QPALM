@@ -1,0 +1,11 @@
+<map id="scale_data" name="scale_data">
+<area shape="rect" id="node1" title="Scale problem matrices." alt="" coords="5,179,97,204"/>
+<area shape="rect" id="node2" href="$scaling_8c.html#a6d8255033fe7895a885af496fc510407" title=" " alt="" coords="172,5,277,31"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="165,55,284,80"/>
+<area shape="rect" id="node4" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="171,104,278,129"/>
+<area shape="rect" id="node5" href="$lin__alg_8c.html#aebb20e932bc52e918667db2a70cb0781" title="Elementwise reciprocal ." alt="" coords="167,153,282,179"/>
+<area shape="rect" id="node6" href="$lin__alg_8c.html#aff49f7b83b7dc6ec1b18557c9f4ea995" title="Elementwise square root, ." alt="" coords="173,203,276,228"/>
+<area shape="rect" id="node7" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="169,252,280,277"/>
+<area shape="rect" id="node8" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="145,301,304,327"/>
+<area shape="rect" id="node9" href="$lin__alg_8c.html#a67ead739705f515285526db604c5bb7d" title="Fill float vector with a scalar value." alt="" coords="165,351,284,376"/>
+</map>

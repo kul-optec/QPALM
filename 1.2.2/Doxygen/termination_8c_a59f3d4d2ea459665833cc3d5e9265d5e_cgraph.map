@@ -1,0 +1,11 @@
+<map id="store_solution" name="store_solution">
+<area shape="rect" id="Node000001" title="Helper function to store the (unscaled) solution in the solution struct." alt="" coords="5,80,120,105"/>
+<area shape="rect" id="Node000002" href="$iteration_8c.html#ad071efc96075a8506c9c45448b9d48e6" title="Compute the (unscaled) primal objective value at the current iterate." alt="" coords="174,5,321,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,78,167,40,187,32,188,37,169,44,89,82"/>
+<area shape="rect" id="Node000003" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="188,55,307,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,82,174,75,175,80,120,88"/>
+<area shape="rect" id="Node000004" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="194,104,301,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="120,97,181,105,180,111,120,103"/>
+<area shape="rect" id="Node000005" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="168,153,327,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="90,103,169,138,192,146,190,151,167,143,88,108"/>
+</map>

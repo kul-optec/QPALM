@@ -1,0 +1,5 @@
+<map id="qpalm::eigen_to_ladel_copy" name="qpalm::eigen_to_ladel_copy">
+<area shape="rect" id="Node000001" title="Similar to eigen_to_ladel, but creates a copy of all data, in such a way that the returned matrix is ..." alt="" coords="5,13,209,38"/>
+<area shape="rect" id="Node000002" href="$namespaceqpalm.html#a5d4ed9c8dd9c33bf8211023175fa640a" title="Create an LADEL sparse matrix of the given dimensions." alt="" coords="257,5,411,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,23,244,23,244,28,210,28"/>
+</map>

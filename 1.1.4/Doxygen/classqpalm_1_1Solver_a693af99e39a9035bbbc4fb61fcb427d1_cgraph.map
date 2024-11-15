@@ -1,0 +1,8 @@
+<map id="qpalm::Solver::warm_start" name="qpalm::Solver::warm_start">
+<area shape="rect" id="node1" title=" " alt="" coords="5,73,163,113"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#ga28824f01d01f181a6ad6b413f30a2609" title="Warm start workspace variables x, x_0, x_prev, Ax, Qx, y and sigma." alt="" coords="211,80,355,105"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="403,5,521,31"/>
+<area shape="rect" id="node4" href="$global__opts_8c.html#a057129daf1349d96b074b9dca1994d09" title=" " alt="" coords="414,55,510,80"/>
+<area shape="rect" id="node5" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="419,104,505,129"/>
+<area shape="rect" id="node6" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="417,153,507,179"/>
+</map>

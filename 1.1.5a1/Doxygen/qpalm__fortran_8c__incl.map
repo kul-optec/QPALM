@@ -1,0 +1,59 @@
+<map id="/home/runner/work/QPALM/QPALM/QPALM/interfaces/fortran/qpalm_fortran.c" name="/home/runner/work/QPALM/QPALM/QPALM/interfaces/fortran/qpalm_fortran.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="395,5,590,60"/>
+<area shape="rect" id="Node000002" href="$qpalm__fortran_8h.html" title=" " alt="" coords="429,108,556,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="495,60,495,94,490,94,490,60"/>
+<area shape="rect" id="Node000003" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="455,181,530,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="495,134,495,168,490,168,490,134"/>
+<area shape="rect" id="Node000004" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="109,475,207,500"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="455,197,395,200,318,208,235,226,195,240,156,257,104,286,66,314,37,350,11,402,8,416,11,428,18,439,29,448,60,463,96,474,95,479,58,468,26,453,14,442,6,430,3,416,6,400,33,347,63,310,101,281,154,252,193,235,234,221,317,203,394,194,455,192"/>
+<area shape="rect" id="Node000006" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="474,548,583,573"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="531,195,652,208,806,233,879,252,939,275,963,289,981,304,992,321,997,339,997,416,993,431,984,446,951,472,903,493,845,512,714,539,597,555,597,550,713,534,843,507,901,488,949,467,980,442,988,429,991,415,991,340,988,323,977,308,960,293,937,280,877,257,805,239,652,213,530,201"/>
+<area shape="rect" id="Node000008" href="$iteration_8h.html" title="QPALM main solver routines." alt="" coords="795,401,884,427"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="531,198,625,215,744,243,801,260,852,280,893,302,919,327,924,347,915,366,898,383,877,397,874,392,894,379,910,363,918,346,914,329,890,306,850,285,800,265,742,248,624,221,530,204"/>
+<area shape="rect" id="Node000009" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="493,475,564,500"/>
+<area shape="poly" id="edge34_Node000003_Node000009" title=" " alt="" coords="531,198,557,204,585,215,610,231,631,253,650,272,657,280,661,292,658,309,648,335,597,428,580,450,560,468,556,464,576,447,593,425,643,333,653,308,656,292,653,283,646,276,627,257,607,235,582,220,556,210,530,203"/>
+<area shape="rect" id="Node000010" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="439,328,517,353"/>
+<area shape="poly" id="edge13_Node000003_Node000010" title=" " alt="" coords="494,207,483,315,478,314,489,207"/>
+<area shape="rect" id="Node000011" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="277,401,415,427"/>
+<area shape="poly" id="edge31_Node000003_Node000011" title=" " alt="" coords="455,201,396,207,327,218,266,234,244,245,229,256,220,274,220,292,227,311,240,330,276,364,315,392,312,396,273,368,236,333,222,314,215,293,215,273,225,253,241,240,264,229,326,213,395,202,455,195"/>
+<area shape="rect" id="Node000012" href="$linesearch_8h.html" title="Routines to perform exact linesearch." alt="" coords="151,401,253,427"/>
+<area shape="poly" id="edge20_Node000003_Node000012" title=" " alt="" coords="456,200,393,207,320,217,255,234,231,244,215,256,198,287,192,322,193,357,198,387,193,388,188,358,186,322,193,285,211,253,228,240,253,229,319,212,392,201,455,195"/>
+<area shape="rect" id="Node000013" href="$newton_8h.html" title="Functions to calculate the semismooth Newton direction." alt="" coords="693,328,775,353"/>
+<area shape="poly" id="edge23_Node000003_Node000013" title=" " alt="" coords="531,198,601,216,640,231,676,253,704,282,725,314,720,317,700,285,672,257,637,236,600,221,530,203"/>
+<area shape="rect" id="Node000014" href="$nonconvex_8h.html" title="Routines to deal with nonconvex QPs." alt="" coords="800,328,905,353"/>
+<area shape="poly" id="edge25_Node000003_Node000014" title=" " alt="" coords="531,200,613,220,707,252,772,285,826,318,824,323,770,290,705,257,611,225,530,205"/>
+<area shape="rect" id="Node000015" href="$scaling_8h.html" title="Problem data scaling during setup." alt="" coords="375,255,455,280"/>
+<area shape="poly" id="edge27_Node000003_Node000015" title=" " alt="" coords="482,209,440,247,436,243,478,205"/>
+<area shape="rect" id="Node000016" href="$termination_8h.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="240,255,351,280"/>
+<area shape="poly" id="edge32_Node000003_Node000016" title=" " alt="" coords="462,209,341,252,340,247,460,204"/>
+<area shape="rect" id="Node000017" href="$util_8h.html" title="Utility functions." alt="" coords="21,401,76,427"/>
+<area shape="poly" id="edge35_Node000003_Node000017" title=" " alt="" coords="455,198,402,201,335,210,263,228,195,257,153,287,116,323,65,391,61,388,112,320,150,283,193,252,261,223,334,205,401,196,455,193"/>
+<area shape="rect" id="Node000018" href="$validate_8h.html" title="Validation of the user provided settings and data." alt="" coords="531,255,617,280"/>
+<area shape="poly" id="edge38_Node000003_Node000018" title=" " alt="" coords="507,205,552,244,549,248,504,209"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="371,621,438,647"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="179,498,374,612,372,617,176,503"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="510,576,438,617,435,612,507,571"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="495,621,563,647"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="531,574,531,608,526,608,526,574"/>
+<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="815,429,567,545,564,540,813,424"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="795,428,578,478,577,472,793,423"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="515,502,464,550,420,611,416,608,460,546,512,498"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="531,500,531,534,526,534,526,500"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="485,353,523,461,518,463,480,355"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="458,356,381,397,378,392,455,351"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="317,429,202,472,200,467,315,424"/>
+<area shape="poly" id="edge19_Node000011_Node000005" title=" " alt="" coords="352,426,400,607,395,608,347,428"/>
+<area shape="poly" id="edge16_Node000011_Node000006" title=" " alt="" coords="363,425,505,537,501,541,359,429"/>
+<area shape="poly" id="edge18_Node000011_Node000009" title=" " alt="" coords="376,424,487,467,485,472,374,429"/>
+<area shape="poly" id="edge22_Node000012_Node000004" title=" " alt="" coords="197,428,174,464,170,462,192,426"/>
+<area shape="poly" id="edge21_Node000012_Node000009" title=" " alt="" coords="253,424,480,473,479,478,252,429"/>
+<area shape="poly" id="edge24_Node000013_Node000009" title=" " alt="" coords="731,355,710,391,694,411,676,429,628,457,579,476,577,471,625,453,672,425,690,407,705,388,726,352"/>
+<area shape="poly" id="edge26_Node000014_Node000009" title=" " alt="" coords="836,356,779,391,706,429,640,455,578,475,576,470,638,450,703,424,777,386,834,351"/>
+<area shape="poly" id="edge30_Node000015_Node000004" title=" " alt="" coords="382,283,319,305,246,335,181,369,157,386,142,403,137,416,137,431,146,461,141,463,131,432,131,416,137,400,153,382,178,365,244,330,318,300,380,278"/>
+<area shape="poly" id="edge28_Node000015_Node000009" title=" " alt="" coords="457,276,497,294,516,309,531,327,544,361,547,398,544,433,539,462,533,461,539,432,542,398,539,362,526,329,512,312,495,299,455,281"/>
+<area shape="poly" id="edge29_Node000015_Node000010" title=" " alt="" coords="428,279,461,316,457,319,424,282"/>
+<area shape="poly" id="edge33_Node000016_Node000009" title=" " alt="" coords="310,278,508,463,504,467,306,282"/>
+<area shape="poly" id="edge37_Node000017_Node000004" title=" " alt="" coords="68,424,130,465,127,469,65,429"/>
+<area shape="poly" id="edge36_Node000017_Node000009" title=" " alt="" coords="77,417,480,476,479,481,76,422"/>
+<area shape="poly" id="edge39_Node000018_Node000009" title=" " alt="" coords="579,280,585,344,584,386,575,428,565,448,552,466,548,463,560,445,570,426,579,385,580,344,574,280"/>
+</map>

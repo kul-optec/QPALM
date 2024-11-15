@@ -1,0 +1,7 @@
+<map id="qpalm_solve" name="qpalm_solve">
+<area shape="rect" id="Node000001" title="Solve the quadratic program." alt="" coords="208,31,313,56"/>
+<area shape="rect" id="Node000002" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,5,147,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,37,147,30,147,24,195,31"/>
+<area shape="rect" id="Node000003" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,55,160,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,55,161,59,160,54,194,50"/>
+</map>

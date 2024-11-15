@@ -1,0 +1,4 @@
+<map id="qpalm::Settings" name="qpalm::Settings">
+<area shape="rect" id="node1" title="Settings and parameters for the QPALM solver." alt="" coords="11,277,135,355"/>
+<area shape="rect" id="node2" href="$structQPALMSettings.html" title="Settings struct." alt="" coords="5,5,140,229"/>
+</map>
