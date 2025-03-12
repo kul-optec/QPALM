@@ -14,6 +14,7 @@
 #define MODE_WARM_START "warm_start"
 #define MODE_UPDATE_BOUNDS "update_bounds"
 #define MODE_UPDATE_LINEAR "update_q"
+#define MODE_UPDATE_MATRICES "update_Q_A"
 #define MODE_SOLVE "solve"
 #define MODE_DELETE "delete"
 
@@ -349,6 +350,29 @@ void mexFunction(int nlhs, mxArray * plhs [], int nrhs, const mxArray * prhs [])
             qpalm_update_q(qpalm_work, q);
         } else {
             mexWarnMsgTxt("Update q: Empty q has no effect.");
+        }
+
+    } else if (strcmp(cmd, MODE_UPDATE_MATRICES) == 0) {
+        
+        if (nlhs != 0 || nrhs != 3){
+            mexErrMsgTxt("Update Q and A : wrong number of inputs / outputs");
+        }
+        if(!qpalm_work){
+            mexErrMsgTxt("Work is not setup.");
+        }
+        
+        if (!mxIsEmpty(prhs[1])) {
+            const mxArray* Q = prhs[1];
+            const mxArray* A = prhs[2];
+
+            solver_sparse Amatrix, Qmatrix;
+            ladel_get_sparse_from_matlab(A, &Amatrix, UNSYMMETRIC);
+            ladel_get_sparse_from_matlab(Q, &Qmatrix, UPPER);
+            ladel_to_upper_diag(&Qmatrix);
+
+            qpalm_update_Q_A(qpalm_work, Qmatrix.x, Amatrix.x);
+        } else {
+            mexWarnMsgTxt("Update Q and A: Empty Q has no effect.");
         }
 
     } else if (strcmp(cmd, MODE_SOLVE) == 0) { // SOLVE

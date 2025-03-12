@@ -211,6 +211,24 @@ classdef qpalm < handle
             end
             qpalm.qpalm_mex('update_q', q);
         end
+		
+        function update_Q_A(this, Q, A)
+            % UPDATE_Q_A update the matrices Q and A
+            %
+            %   update_Q_A(Q, A)
+            
+            if (isempty(A))
+                A = sparse(this.m, this.n);
+            else
+                A = sparse(A);
+            end
+            if (isempty(Q))
+                Q = sparse(this.n, this.n);
+            else
+                Q = sparse(Q);
+            end
+            qpalm.qpalm_mex('update_Q_A', Q, A);
+        end
         
         function update_bounds(this, bmin, bmax)
             % UPDATE_BOUNDS update the lower and upper bounds of the linear
