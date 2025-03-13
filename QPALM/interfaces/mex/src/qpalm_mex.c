@@ -187,7 +187,7 @@ void mexFunction(int nlhs, mxArray * plhs [], int nrhs, const mxArray * prhs [])
     char cmd[64];
 
     if (nrhs < 1 || mxGetString(prhs[0], cmd, sizeof(cmd)))
-		mexErrMsgTxt("First input should be a command string less than 64 characters long.");
+        mexErrMsgTxt("First input should be a command string less than 64 characters long.");
     
     // report the default settings
     if (strcmp(cmd, MODE_DEFAULT_SETTINGS) == 0) {

@@ -231,7 +231,7 @@ classdef qpalm < handle
             else
                 Q = full(Q);
             end
-			Qxi = this.Q_sparsity & triu(true(this.n));
+            Qxi = this.Q_sparsity & triu(true(this.n));
             qpalm.qpalm_mex('update_Q_A', Q(Qxi), A(this.A_sparsity));
         end
         
