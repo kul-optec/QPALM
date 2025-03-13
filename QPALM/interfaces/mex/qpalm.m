@@ -15,6 +15,8 @@ classdef qpalm < handle
     properties (SetAccess = private, Hidden = true)
         n;
         m;
+        A_sparsity;
+        Q_sparsity;
 %         objectHandle % Handle to underlying C instance
     end
    methods(Static) 
@@ -102,6 +104,7 @@ classdef qpalm < handle
                 Q   = sparse(Q);
 %                 Q = full(Q(:,:));
             end
+            this.Q_sparsity = logical(Q);
             if (isempty(q))
                 q = zeros(n, 1);
             else
@@ -113,6 +116,7 @@ classdef qpalm < handle
                 (~isempty(A) && (isempty(bmin) && isempty(bmax)))
                 error('A must be supplied together with at least one bound l or u');
             end
+            this.A_sparsity = logical(A);
 
             if (~isempty(A) && isempty(bmin))
                 bmin = -Inf(m, 1);
@@ -211,23 +215,24 @@ classdef qpalm < handle
             end
             qpalm.qpalm_mex('update_q', q);
         end
-		
+        
         function update_Q_A(this, Q, A)
             % UPDATE_Q_A update the matrices Q and A
             %
             %   update_Q_A(Q, A)
             
             if (isempty(A))
-                A = sparse(this.m, this.n);
+                A = zeros(this.m, this.n);
             else
-                A = sparse(A);
+                A = full(A);
             end
             if (isempty(Q))
-                Q = sparse(this.n, this.n);
+                Q = zeros(this.n);
             else
-                Q = sparse(Q);
+                Q = full(Q);
             end
-            qpalm.qpalm_mex('update_Q_A', Q, A);
+			Qxi = this.Q_sparsity & triu(true(this.n));
+            qpalm.qpalm_mex('update_Q_A', Q(Qxi), A(this.A_sparsity));
         end
         
         function update_bounds(this, bmin, bmax)

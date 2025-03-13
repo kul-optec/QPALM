@@ -362,15 +362,7 @@ void mexFunction(int nlhs, mxArray * plhs [], int nrhs, const mxArray * prhs [])
         }
         
         if (!mxIsEmpty(prhs[1])) {
-            const mxArray* Q = prhs[1];
-            const mxArray* A = prhs[2];
-
-            solver_sparse Amatrix, Qmatrix;
-            ladel_get_sparse_from_matlab(A, &Amatrix, UNSYMMETRIC);
-            ladel_get_sparse_from_matlab(Q, &Qmatrix, UPPER);
-            ladel_to_upper_diag(&Qmatrix);
-
-            qpalm_update_Q_A(qpalm_work, Qmatrix.x, Amatrix.x);
+            qpalm_update_Q_A(qpalm_work, mxGetPr(prhs[1]), mxGetPr(prhs[2]));
         } else {
             mexWarnMsgTxt("Update Q and A: Empty Q has no effect.");
         }
