@@ -31,7 +31,7 @@ jobs:
           cache-key: build-sdist
 
       - name: Build Wheel package
-        run: ./scripts/ci/build-linux-native.sh . dist python
+        run: ./scripts/ci/build-linux-native.sh . dist QPALM/interfaces/python
       - name: Upload Wheel
         uses: actions/upload-artifact@v4
         with:
