@@ -1,5 +1,5 @@
 [requires]
-qpalm/1.2.6-dev0
+qpalm/1.2.6
 [generators]
 CMakeDeps
 CMakeToolchain

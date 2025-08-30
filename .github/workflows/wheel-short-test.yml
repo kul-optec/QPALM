@@ -8,7 +8,7 @@ on:
       - '**'
 
 env:
-  PACKAGE_VERSION: "1.2.6.dev0"
+  PACKAGE_VERSION: "1.2.6"
   PACKAGE_NAME: qpalm
 
 jobs:
