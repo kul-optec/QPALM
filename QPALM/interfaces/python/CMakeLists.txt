@@ -17,9 +17,16 @@ if (NOT QPALM_WITH_CXX)
                         "Enable it using -DQPALM_WITH_CXX=On.")
 endif()
 
-# Find the Pybind11 headers
-include(cmake/QueryPythonForPybind11.cmake)
-find_pybind11_python_first()
+# Find the Python development files
+if (CMAKE_CROSSCOMPILING AND NOT DEFINED CMAKE_CROSSCOMPILING_EMULATOR)
+    find_package(Python3 REQUIRED COMPONENTS Development.Module)
+else()
+    find_package(Python3 REQUIRED COMPONENTS Interpreter Development.Module)
+endif()
+
+# Find the pybind11 library
+set(PYBIND11_USE_CROSSCOMPILING On) # https://github.com/pybind/pybind11/pull/5083
+find_package(pybind11 REQUIRED)
 
 # Compile the example Python module
 pybind11_add_module(_qpalm MODULE "qpalm.py.cpp" "demangled-typename.cpp")
@@ -45,15 +52,22 @@ if (QPALM_PYTHON_DEBUG_CONFIG)
         PDB_NAME_${QPALM_PYTHON_DEBUG_CONFIG_UP} "_qpalm_d")
 endif()
 
+if (DEFINED PY_BUILD_CMAKE_VERSION)
+    set(QPALM_MODULE_INSTALL_DIR "")
+else()
+    set(QPALM_MODULE_INSTALL_DIR "${CMAKE_INSTALL_LIBDIR}/python${Python3_VERSION_MAJOR}.${Python3_VERSION_MINOR}/site-packages")
+endif()
+
+# Install the Python source code
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/interfaces/python/${PY_BUILD_CMAKE_MODULE_NAME}
+        COMPONENT python_source
+        DESTINATION "${QPALM_MODULE_INSTALL_DIR}"
+        PATTERN "__pycache__" EXCLUDE)
+
 # Install the Python module
 install(TARGETS _qpalm
-        EXCLUDE_FROM_ALL
         COMPONENT python_modules
-        DESTINATION ${PY_BUILD_CMAKE_MODULE_NAME})
-# Standard installation
-install(TARGETS _qpalm
-        COMPONENT python
-        DESTINATION ${CMAKE_INSTALL_LIBDIR}/python${Python3_VERSION_MAJOR}.${Python3_VERSION_MINOR}/site-packages/${PY_BUILD_CMAKE_MODULE_NAME})
+        DESTINATION ./${QPALM_MODULE_INSTALL_DIR}/${PY_BUILD_CMAKE_MODULE_NAME})
 
 # Strip and install debug information
 set(DEBUG_FILE "$<TARGET_FILE_NAME:_qpalm>.debug")
@@ -67,14 +81,12 @@ if (CMAKE_STRIP AND CMAKE_OBJCOPY)
         EXCLUDE_FROM_ALL
         CONFIGURATIONS Debug RelWithDebInfo
         COMPONENT python_modules_debug
-        DESTINATION ${PY_BUILD_CMAKE_MODULE_NAME})
+        DESTINATION ./${QPALM_MODULE_INSTALL_DIR}/${PY_BUILD_CMAKE_MODULE_NAME})
 endif()
 
 # Generate stubs for the Python module
 set(QPALM_WITH_PY_STUBS_DEFAULT On)
-if (CMAKE_CROSSCOMPILING
- OR NOT Python3_INTERPRETER_ID STREQUAL "Python"
- OR CMAKE_SYSTEM_PROCESSOR STREQUAL "x86")
+if (CMAKE_CROSSCOMPILING)
     set(QPALM_WITH_PY_STUBS_DEFAULT Off)
 endif()
 option(QPALM_WITH_PY_STUBS
@@ -82,6 +94,8 @@ option(QPALM_WITH_PY_STUBS
     ${QPALM_WITH_PY_STUBS_DEFAULT})
 if (QPALM_WITH_PY_STUBS)
     include(cmake/Pybind11Stubgen.cmake)
-    pybind11_stubgen(_qpalm)
-    pybind11_stubgen_install(_qpalm)
+    pybind11_stubgen(_qpalm
+        COMPONENT python_stubs
+        PACKAGE ${PY_BUILD_CMAKE_MODULE_NAME}
+        PACKAGE_ROOT "${QPALM_MODULE_INSTALL_DIR}")
 endif()

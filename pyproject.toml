@@ -1,21 +1,20 @@
 [build-system]
 requires = [
-    "py-build-cmake~=0.3.0a2",
-    "pybind11==2.13.6",
-    "pybind11-stubgen==2.5.1",
-    "numpy>=1.19,<3; implementation_name=='cpython'",
+    "py-build-cmake~=0.6.0a1",
+    "conan~=2.19.1",
+    "pybind11-stubgen==2.5.5",
+    "numpy>=1.19,<3",
     "scipy>=1.6,<2; implementation_name=='cpython'",
-    # Temporarily pinned until mypy support for NumPy 2.0 is fixed:
-    # https://github.com/python/mypy/issues/17396
-    "mypy~=1.4.1",
+    "mypy>=1.15.0,<1.18",
 ]
 build-backend = "py_build_cmake.build"
 
 [project]
 name = "qpalm"
 readme = "QPALM/interfaces/python/README.rst"
-requires-python = ">=3.8"
-license = { "file" = "LICENSE" }
+requires-python = ">=3.9"
+license = "LGPL-3.0-or-later"
+license-files = ["LICENSE"]
 authors = [{ "name" = "Ben Hermans" }]
 maintainers = [{ "name" = "Pieter Pas", "email" = "pieter.p.dev@outlook.com" }]
 keywords = [
@@ -29,17 +28,15 @@ keywords = [
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
-    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
     "Topic :: Scientific/Engineering",
     "Topic :: Scientific/Engineering :: Mathematics",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Programming Language :: C",
     "Programming Language :: C++",
     "Operating System :: POSIX :: Linux",
@@ -51,7 +48,7 @@ dependencies = ["numpy>=1.19,<3", "scipy>=1.6,<2"]
 dynamic = ["version", "description"]
 
 [project.optional-dependencies]
-debug = ["qpalm-debug==1.2.5"]
+debug = ["qpalm-debug==1.2.6.dev0"]
 test = ["pytest>=7.2.0,<9"]
 
 [project.urls]
@@ -63,51 +60,65 @@ Tracker = "https://github.com/kul-optec/QPALM/issues"
 directory = "QPALM/interfaces/python"
 
 [tool.py-build-cmake.sdist]
-include = ["CMakeLists.txt", "LADEL", "QPALM", "README.md"]
+include = ["CMakeLists.txt", "LADEL", "QPALM", "README.md", "conanfile.py"]
 
-[tool.py-build-cmake.cmake]
-minimum_version = "3.20"
-source_path = "QPALM"
+[tool.py-build-cmake.conan.cmake]
+minimum_version = "4.1"
+source_path = "."
 args = ["-Wdev"]
-build_args = ["-j"]
-install_args = []
+build_type = "Release"
 install_components = ["python_modules", "python_stubs"]
-
-[tool.py-build-cmake.cmake.options]
-"QPALM_WITH_CXX:BOOL" = "On"
-"QPALM_WITH_PYTHON:BOOL" = "On"
-"CMAKE_POSITION_INDEPENDENT_CODE:BOOL" = "On"
-
-[tool.py-build-cmake.linux.cmake]
-config = ["Debug", "Release"]
+[tool.py-build-cmake.conan]
+args = [
+    "--build=missing",
+    "-o&:with_python=True",
+    "-c*:tools.build:skip_test=True",
+    "-s",
+    "compiler.cppstd=23",
+]
+[tool.py-build-cmake.linux.conan.cmake]
 generator = "Ninja Multi-Config"
-[tool.py-build-cmake.mac.cmake]
-config = ["Debug", "Release"]
+[tool.py-build-cmake.mac.conan.cmake]
 generator = "Ninja Multi-Config"
-[tool.py-build-cmake.windows.cmake]
-config = ["RelWithDebInfo", "Release"]
-[tool.py-build-cmake.windows.cmake.options]
-CMAKE_CXX_FLAGS_RELWITHDEBINFO = "/Zi /Ob0 /Od /RTC1"
-CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO = "/INCREMENTAL:NO /DEBUG:FULL /OPT:REF"
-ALPAQA_PYTHON_DEBUG_CONFIG = "RelWithDebInfo"
+[tool.py-build-cmake.windows.conan]
+args = ['-c*:tools.build:compiler_executables*={"fortran": "FC-NOTFOUND"}']
+
+[tool.py-build-cmake.linux.conan.10.cmake]
+build_type = "Release"
+[tool.py-build-cmake.linux.conan.20.cmake]
+build_type = "Debug"
+env = { QPALM_PYTHON_DEBUG = "1" }
+
+[tool.py-build-cmake.mac.conan.10.cmake]
+build_type = "Release"
+[tool.py-build-cmake.mac.conan.20.cmake]
+build_type = "Debug"
+env = { QPALM_PYTHON_DEBUG = "1" }
 
 [tool.py-build-cmake.stubgen]
-packages = []
-files = ["qpalm/__init__.py"]
 args = ["-v", "--no-import"]
+files = ["qpalm/__init__.py"]
+packages = []
 
+[tool.py-build-cmake.editable]
+mode = "symlink"
+
+# cibuildwheel
 [tool.cibuildwheel]
-build-verbosity = 1
-environment = { PY_BUILD_CMAKE_VERBOSE="1" }
-skip = "pp37-*"
+archs = ["auto64"]
+skip = "pp311-*"                                               # https://github.com/pypy/pypy/issues/5328
+build-frontend = "build"
+environment = { PY_BUILD_CMAKE_VERBOSE = "1" }
 test-command = "pytest {package}/QPALM/interfaces/python/test"
 test-extras = ["test"]
+[tool.cibuildwheel.config-settings]
+--local = "scripts/ci/py-build-cmake.toml"
 
 [tool.cibuildwheel.macos]
-archs = ["universal2"]
+environment = { PY_BUILD_CMAKE_VERBOSE = "1", MACOSX_DEPLOYMENT_TARGET = "10.15" }
 
-[tool.cibuildwheel.windows]
-archs = ["AMD64", "x86", "ARM64"]
+[tool.cibuildwheel.pyodide]
+archs = ["wasm32"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"

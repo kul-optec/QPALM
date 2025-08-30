@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.22...4.1)
 project(QPALM-mex)
 
 # Find the Matlab MEX compiler:
@@ -10,11 +10,6 @@ matlab_add_mex(
     SRC src/qpalm_mex.c                  # Source files to compile
     LINK_TO QPALM::qpalm LADEL::mex_util # Dependencies
 )
-target_include_directories(qpalm_mex PRIVATE include)
-if (NOT WIN32 AND NOT APPLE)
-    # Matlab's C++ standard library is too old, so link it statically:
-    target_link_options(qpalm_mex PUBLIC -static-libstdc++ -static-libgcc)
-endif()
 
 # Install the final MEX file
 install(FILES $<TARGET_FILE:qpalm_mex>

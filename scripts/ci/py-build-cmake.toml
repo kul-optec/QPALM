@@ -1,0 +1,7 @@
+[conan.cmake]
+generator = "Ninja Multi-Config"
+[conan.cmake.options]
+CMAKE_C_COMPILER_LAUNCHER = "sccache"
+CMAKE_CXX_COMPILER_LAUNCHER = "sccache"
+CMAKE_MSVC_DEBUG_INFORMATION_FORMAT = "$<$<CONFIG:Debug,RelWithDebInfo>:Embedded>"
+QPALM_WITH_PY_STUBS = false

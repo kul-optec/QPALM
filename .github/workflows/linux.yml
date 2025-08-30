@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     env:
       HOST: 'x86_64-centos7-linux-gnu'
       TOOLS_VERSION: '0.1.0-beta3'
@@ -66,7 +66,7 @@ jobs:
 
   test:
     needs: [build]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - uses: actions/checkout@v4
@@ -106,7 +106,7 @@ jobs:
   release:
     if: ${{ github.event.action == 'released' || github.event.action == 'prereleased' }}
     needs: [test]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Download

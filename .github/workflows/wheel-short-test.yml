@@ -1,4 +1,4 @@
-name: Python Wheels tests
+name: 'CI Tests: Python'
 
 on:
   push:
@@ -8,105 +8,119 @@ on:
       - '**'
 
 env:
-  PACKAGE_VERSION: "1.2.5"
+  PACKAGE_VERSION: "1.2.6.dev0"
   PACKAGE_NAME: qpalm
-  PYTHON_VERSION: '3.11'
 
 jobs:
   build-linux:
     runs-on: ubuntu-latest
-    container: ubuntu:jammy
     strategy:
       matrix:
-        config: [RelWithDebInfo, Debug]
-    env:
-      HOST: 'x86_64-centos7-linux-gnu'
-      CMAKE_C_COMPILER_LAUNCHER: ccache
-      CMAKE_CXX_COMPILER_LAUNCHER: ccache
-      CCACHE_DIR: /root/.ccache
+        config: [relwithdebinfo, debug]
     steps:
-      # Git clone
-      - name: Install git
-        run: apt -y update && apt -y install --no-install-recommends git ca-certificates
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Conan
+        uses: ./.github/workflows/setup-conan
         with:
-          submodules: recursive
-      # Tools
-      - name: Install tools
-        uses: ./.github/workflows/toolchain
-        with:
-          host: ${{ env.HOST }}
-          python-version: ${{ env.PYTHON_VERSION }}
-          pypy: ''
-      # Ccache
-      - name: Prepare ccache directory
-        run: mkdir -p "${{ env.CCACHE_DIR }}"
-      - name: Cache ccache
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.CCACHE_DIR }}
-          key: ${{ runner.os }}-${{ env.PYTHON_VERSION }}-${{ env.HOST }}-${{ matrix.config }}-ccache-${{ github.run_id }}
-          restore-keys: ${{ runner.os }}-${{ env.PYTHON_VERSION }}-${{ env.HOST }}-${{ matrix.config }}-ccache
-      # Pip install dependencies
-      - name: Install Python dependencies
-        run: python${{ env.PYTHON_VERSION }} -m pip install -U pip build
-      # Build
-      - name: Build wheel
-        run: |
-          host="${{ env.HOST }}"
-          staging="/opt/$host"
-          cat > ninja-${{ matrix.config }}.cross.toml <<- EOF
-          [cmake]
-          config = ["${{ matrix.config }}"]
-          generator = "Ninja Multi-Config"
-          [cmake.options]
-          CMAKE_FIND_ROOT_PATH = "$staging/pybind11-2.13.6;$staging/eigen-master"
-          USE_GLOBAL_PYBIND11 = "On"
-          EOF
-          python${{ env.PYTHON_VERSION }} -m build -w . \
-              -C--cross="$PWD/ninja-${{ matrix.config }}.cross.toml" \
-              -C--cross="$staging/$host.py-build-cmake.cross.toml"
-        env:
-          CFLAGS: "-fstack-protector-all -mshstk -fcf-protection=full -D_FORTIFY_SOURCE=${{ matrix.config != 'Debug' && '3' || '0' }} -fdiagnostics-color -static-libgcc"
-          CXXFLAGS: "-fstack-protector-all -mshstk -fcf-protection=full -D_FORTIFY_SOURCE=${{ matrix.config != 'Debug' && '3' || '0' }} -fdiagnostics-color -static-libgcc -static-libstdc++"
-      # Upload
-      - name: Upload Wheels
+          python-version: '3.12'
+          cache-key: build-sdist
+
+      - name: Build Wheel package
+        run: ./scripts/ci/build-linux-hardened.sh . dist ${{ matrix.config }}
+
+      - name: Upload Wheel
         uses: actions/upload-artifact@v4
         with:
-          name: whl-${{ env.PYTHON_VERSION }}-${{ matrix.config }}-linux-test
-          retention-days: 1
+          name: hardened-wheels-${{ matrix.config }}
           path: dist/*.whl
+          retention-days: 1
+
+      - run: conan cache clean
 
   test-linux:
     needs: [build-linux]
     runs-on: ubuntu-latest
-    container: python:3.11-bullseye
+    container: python:3.12-trixie
     strategy:
       matrix:
-        config: [RelWithDebInfo, Debug]
+        config: [relwithdebinfo, debug]
     steps:
-      - uses: actions/checkout@v4
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Download wheels
+        uses: actions/download-artifact@v4
         with:
-          submodules: recursive
-      - uses: actions/download-artifact@v4
-        with:
-          name: whl-${{ env.PYTHON_VERSION }}-${{ matrix.config }}-linux-test
+          name: hardened-wheels-${{ matrix.config }}
           path: dist
+
+      - name: Install Valgrind, libgfortran
+        run: apt-get update && apt-get install -y valgrind libgfortran5 --no-install-recommends
+
       - name: Install test dependencies
-        run: |
-          python3 -m pip install -U pip twine
-          python3 -m pip install --find-links=dist "${PACKAGE_NAME}[test]==${PACKAGE_VERSION}"
+        run: python3 -m pip install -U pip cmake ninja twine
+      - name: Install
+        run: python3 -m pip install --find-links=dist "${PACKAGE_NAME}[test]==${PACKAGE_VERSION}"
+
       - name: Test (${{ matrix.config }})
         run: python3 -m pytest -rP
         env:
-          QPALM_PYTHON_DEBUG: ${{ matrix.config == 'Debug' }}
-      - name: Install Valgrind
-        run: |
-          apt update
-          apt install -y valgrind --no-install-recommends
+          QPALM_PYTHON_DEBUG: ${{ matrix.config == 'debug' }}
+
       - name: Test (Valgrind, ${{ matrix.config }})
         run: valgrind --gen-suppressions=all --suppressions=scripts/valgrind/python.supp --error-exitcode=234 python3 -m pytest -rP
         env:
-          QPALM_PYTHON_DEBUG: ${{ matrix.config == 'Debug' }}
+          QPALM_PYTHON_DEBUG: ${{ matrix.config == 'debug' }}
+
       - name: Check Wheel metadata
         run: python -m twine check dist/*.whl
+
+  build-macos-windows:
+    name: Build (${{ matrix.cibw-arch }}-${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - {os: windows-latest, cibw-arch: AMD64, arch: amd64}
+          - {os: macos-latest, cibw-arch: arm64}
+      fail-fast: false
+    env:
+      SCCACHE_CACHE_MULTIARCH: "1"
+      CIBW_ARCHS: ${{ matrix.cibw-arch }}
+      CIBW_ENABLE: 'pypy'
+      CIBW_TEST_SKIP: 'pp* *-win32'
+      CIBW_BUILD: 'cp311-* pp310-*'
+      PYTHONUTF8: 1
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Conan and sccache
+        uses: ./.github/workflows/setup-conan
+        with:
+          python-version: "3.12"
+          cache-key: cibuildwheel-short-${{ matrix.cibw-arch }}
+
+      - name: Install cibuildwheel
+        run: python -m pip install cibuildwheel~=3.1.3
+
+      - name: Build wheels
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: |
+          call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" ${{ matrix.arch }}
+          cibuildwheel . --output-dir dist
+
+      - name: Build wheels
+        if: runner.os != 'Windows'
+        run: cibuildwheel . --output-dir dist
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: wheels-short-${{ matrix.os }}-${{ matrix.cibw-arch }}
+          path: ./dist/*.whl
+
+      - run: conan cache clean

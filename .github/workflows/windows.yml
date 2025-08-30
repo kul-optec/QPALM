@@ -108,7 +108,7 @@ jobs:
   release:
     if: ${{ github.event.action == 'released' || github.event.action == 'prereleased' }}
     needs: [test]
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Download

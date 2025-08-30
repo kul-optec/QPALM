@@ -11,156 +11,108 @@ on:
     types: ['released', 'prereleased']
 
 jobs:
-  build-linux:
-    runs-on: ubuntu-latest
-    env:
-      HOST: 'x86_64-centos7-linux-gnu'
-      TOOLS_VERSION: '0.1.0-beta3'
-      TOOLS_URL: 'https://github.com/tttapa/cross-python/releases/download'
-    steps:
-    - uses: actions/checkout@v4
-      with:
-        submodules: recursive
-    - name: Set up MATLAB
-      uses: matlab-actions/setup-matlab@64144ac4bb7c754f9ef7642f693671c873701c60
-      with:
-        release: R2020b
-    - name: Download toolchain
-      run: wget "${{ env.TOOLS_URL }}/${{ env.TOOLS_VERSION }}/full-${{ env.HOST }}.tar.xz" -O- | sudo tar xJ -C /opt
-    - name: Configure
-      run: |
-        host="${{ env.HOST }}"
-        staging="/opt/$host"
-        cmake -B build -S QPALM \
-          -D CMAKE_BUILD_TYPE=RelWithDebInfo \
-          -D QPALM_WITH_MEX=On \
-          -D CMAKE_POSITION_INDEPENDENT_CODE=On \
-          -D CMAKE_C_COMPILER="$staging/x-tools/$host/bin/$host-gcc" \
-          -D CMAKE_CXX_COMPILER="$staging/x-tools/$host/bin/$host-g++" \
-          -D CMAKE_Fortran_COMPILER="$staging/x-tools/$host/bin/$host-gfortran"
-      env:
-        CXXFLAGS: "-march=skylake -static-libstdc++ -static-libgcc"
-        LDFLAGS: "-static-libstdc++ -static-libgcc"
-        CFLAGS: "-march=skylake -static-libgcc"
-    - name: Build
-      run: |
-        cmake --build build \
-          --config RelWithDebInfo \
-          -j
-    - name: Install
-      run: |
-        cmake --install build \
-          --config RelWithDebInfo \
-          --component mex_interface \
-          --prefix staging
-    - name: Package
-      run: |
-        zip -r ../qpalm-matlab-glnxa64.zip ./*
-      working-directory: staging
-    - name: Upload
-      uses: actions/upload-artifact@v4
-      with:
-        name: qpalm-matlab-glnxa64
-        path: qpalm-matlab-glnxa64.zip
-    - name: Release
-      if: ${{ github.event.action == 'released' || github.event.action == 'prereleased' }}
-      uses: softprops/action-gh-release@73e673b2dead314c6b971e962dd8e84e230ae99d
-      with:
-        files: qpalm-matlab-glnxa64.zip
-        
-  build-macos:
-    runs-on: macos-${{ matrix.macos-version }}
+  build:
     strategy:
       matrix:
-        macos-version: ['13', '14']
         include:
-          - macos-version: '14'
-            arch: 'maca64'
-            matlab-release: 'R2023b'
-          - macos-version: '13'
-            arch: 'maci64'
+          - os: ubuntu-22.04
+            name: glnxa64
             matlab-release: 'R2021a'
+            host: x86_64-bionic-linux-gnu
+          - os: macos-14
+            name: maca64
+            matlab-release: 'R2023b'
+            host: macos
+          - os: macos-13
+            name: maci64
+            matlab-release: 'R2021a'
+            host: macos
+      fail-fast: false
+    runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
       with:
         submodules: recursive
+
+    - name: Setup Conan and sccache
+      uses: ./.github/workflows/setup-conan
+      with:
+        python-version: '3.12'
+        cache-key: build-matlab-${{ matrix.name }}
+
     - name: Set up MATLAB
       uses: matlab-actions/setup-matlab@64144ac4bb7c754f9ef7642f693671c873701c60
+      id: matlab
       with:
         release: ${{ matrix.matlab-release }}
-    - name: Configure
-      run: |
-        cmake -B build -S QPALM \
-          -D CMAKE_BUILD_TYPE=RelWithDebInfo \
-          -D QPALM_WITH_MEX=On \
-          -D CMAKE_POSITION_INDEPENDENT_CODE=On
+
     - name: Build
-      run: |
-        cmake --build build \
-          --config RelWithDebInfo \
-          -j
-    - name: Install
-      run: |
-        cmake --install build \
-          --config RelWithDebInfo \
-          --component mex_interface \
-          --prefix staging
+      run: >
+        bash scripts/ci/build-matlab.sh
+        "${{ steps.matlab.outputs.matlabroot }}" ${{ matrix.host }} . staging
+
     - name: Package
-      run: |
-        zip -r ../qpalm-matlab-${{ matrix.arch }}.zip ./*
+      run: zip -r ../qpalm-matlab-${{ matrix.name }}.zip ./*
       working-directory: staging
+
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
-        name: qpalm-matlab-${{ matrix.arch }}
-        path: qpalm-matlab-${{ matrix.arch }}.zip
+        name: qpalm-matlab-${{ matrix.name }}
+        path: qpalm-matlab-${{ matrix.name }}.zip
     - name: Release
       if: ${{ github.event.action == 'released' || github.event.action == 'prereleased' }}
-      uses: softprops/action-gh-release@73e673b2dead314c6b971e962dd8e84e230ae99d
+      uses: softprops/action-gh-release@17cd0d34deddf848fc0e7d9be5202c148c270a0a
       with:
-        files: qpalm-matlab-${{ matrix.arch }}.zip
+        files: qpalm-matlab-${{ matrix.name }}.zip
+
+    - run: conan cache clean
 
   build-windows:
-    runs-on: windows-latest
+    strategy:
+      matrix:
+        include:
+          - os: windows-2022
+            name: win64
+            matlab-release: 'R2021a'
+            host: amd64
+    runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
       with:
         submodules: recursive
+
+    - name: Setup Conan and sccache
+      uses: ./.github/workflows/setup-conan
+      with:
+        python-version: '3.12'
+        cache-key: build-matlab-${{ matrix.name }}
+
     - name: Set up MATLAB
       uses: matlab-actions/setup-matlab@64144ac4bb7c754f9ef7642f693671c873701c60
+      id: matlab
       with:
-        release: R2021a
-    - name: Configure
-      shell: pwsh
-      run: |
-        cmake -B build -S QPALM `
-          -D CMAKE_BUILD_TYPE=RelWithDebInfo `
-          -D QPALM_WITH_MEX=On `
-          -D CMAKE_POSITION_INDEPENDENT_CODE=On
+        release: ${{ matrix.matlab-release }}
+
     - name: Build
-      shell: pwsh
-      run: |
-        cmake --build build `
-          --config RelWithDebInfo `
-          -j
-    - name: Install
-      shell: pwsh
-      run: |
-        cmake --install build `
-          --config RelWithDebInfo `
-          --component mex_interface `
-          --prefix staging
+      shell: cmd
+      run: >
+        call .\scripts\ci\build-matlab-windows.bat
+        "${{ steps.matlab.outputs.matlabroot }}" "${{ matrix.host }}" "." "staging"
+
     - name: Package
       shell: pwsh
-      run: |
-        Compress-Archive -Path staging\* qpalm-matlab-win64.zip
+      run: Compress-Archive -Path staging\* qpalm-matlab-${{ matrix.name }}.zip
+
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
-        name: qpalm-matlab-win64
-        path: qpalm-matlab-win64.zip
+        name: qpalm-matlab-${{ matrix.name }}
+        path: qpalm-matlab-${{ matrix.name }}.zip
     - name: Release
       if: ${{ github.event.action == 'released' || github.event.action == 'prereleased' }}
-      uses: softprops/action-gh-release@73e673b2dead314c6b971e962dd8e84e230ae99d
+      uses: softprops/action-gh-release@17cd0d34deddf848fc0e7d9be5202c148c270a0a
       with:
-        files: qpalm-matlab-win64.zip
+        files: qpalm-matlab-${{ matrix.name }}.zip
+
+    - run: conan cache clean

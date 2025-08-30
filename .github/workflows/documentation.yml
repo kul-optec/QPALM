@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy-docs:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - uses: actions/checkout@v4
@@ -68,8 +68,6 @@ jobs:
     - name: Generate documentation
       run: ./scripts/ci/gen-docs.sh /tmp/staging
       env:
-        CC: gcc-10
-        CXX: g++-10
         CMAKE_PREFIX_PATH: /tmp/gtest
 
     # Commit the new documentation, squash the commits, and push it to GitHub

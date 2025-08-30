@@ -27,7 +27,7 @@ void async_solve(bool async, bool suppress_interrupt, Solver &solver, Invoker &i
         // Invoke the solver asynchronously
         auto done = std::async(std::launch::async, invoke_solver);
         {
-            py::gil_scoped_release gil;
+            py::gil_scoped_release no_gil;
             while (done.wait_for(50ms) != std::future_status::ready) {
                 py::gil_scoped_acquire gil;
                 // Check if Python received a signal (e.g. Ctrl+C)
@@ -35,7 +35,7 @@ void async_solve(bool async, bool suppress_interrupt, Solver &solver, Invoker &i
                     // Nicely ask the solver to stop
                     solver.cancel();
                     // It should return a result soon
-                    if (py::gil_scoped_release gil;
+                    if (py::gil_scoped_release no_gil_wait;
                         done.wait_for(15s) != std::future_status::ready) {
                         // If it doesn't, we terminate the entire program,
                         // because the solver uses variables local to this
