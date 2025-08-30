@@ -58,7 +58,7 @@ class QPALMRecipe(ConanFile):
     generators = ("CMakeDeps",)
 
     def requirements(self):
-        self.requires("ladel/0.0.3", transitive_headers=True)
+        self.requires("ladel/0.0.4", transitive_headers=True)
         self.test_requires("gtest/1.17.0")
         if self.options.with_cxx:
             self.requires("eigen/3.4.0", transitive_headers=True)
