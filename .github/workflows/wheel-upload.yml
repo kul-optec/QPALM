@@ -86,7 +86,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        host: [x86_64-bionic-linux-gnu, aarch64-rpi3-linux-gnu]
+        host: [x86_64-bionic-linux-gnu, aarch64-rpi3-linux-gnu, armv7-neon-linux-gnueabihf, armv6-rpi-linux-gnueabihf]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
