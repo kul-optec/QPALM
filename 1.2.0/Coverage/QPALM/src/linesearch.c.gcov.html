@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - 236a53df4a2c90995e3ba1f0829d44a6e9b76f58 - QPALM/src/linesearch.c</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">QPALM/src</a> - linesearch.c<span style="font-size: 80%;"> (source / <a href="linesearch.c.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">236a53df4a2c90995e3ba1f0829d44a6e9b76f58</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">81</td>
+            <td class="headerCovTableEntry">88</td>
+            <td class="headerCovTableEntryHi">92.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2023-08-29 16:38:42</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Legend:</td>
+            <td class="headerValueLeg">            Lines:
+            <span class="coverLegendCov">hit</span>
+            <span class="coverLegendNoCov">not hit</span>
+</td>
+            <td></td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /**</a>
+<a name="2"><span class="lineNum">       2 </span>            :  * @file linesearch.c</a>
+<a name="3"><span class="lineNum">       3 </span>            :  * @author Ben Hermans</a>
+<a name="4"><span class="lineNum">       4 </span>            :  * @brief Routines to perform exact or backtracking linesearch.</a>
+<a name="5"><span class="lineNum">       5 </span>            :  * @details Once the direction is found using the semismooth Newton method, the functions in this file can </a>
+<a name="6"><span class="lineNum">       6 </span>            :  * be called to calculate a stepsize, either using exact linesearch or a backtracking linesearch to</a>
+<a name="7"><span class="lineNum">       7 </span>            :  * satisfy the armijo condition.</a>
+<a name="8"><span class="lineNum">       8 </span>            :  */</a>
+<a name="9"><span class="lineNum">       9 </span>            : </a>
+<a name="10"><span class="lineNum">      10 </span>            : #include &lt;qpalm/linesearch.h&gt;</a>
+<a name="11"><span class="lineNum">      11 </span>            : #include &lt;qpalm/lin_alg.h&gt;</a>
+<a name="12"><span class="lineNum">      12 </span>            : #include &lt;stdlib.h&gt; //for sorting</a>
+<a name="13"><span class="lineNum">      13 </span>            : </a>
+<a name="14"><span class="lineNum">      14 </span><span class="lineCov">        430 : c_float exact_linesearch(QPALMWorkspace *work, solver_common *c) {</span></a>
+<a name="15"><span class="lineNum">      15 </span><span class="lineCov">        430 :     size_t n = work-&gt;data-&gt;n;</span></a>
+<a name="16"><span class="lineNum">      16 </span><span class="lineCov">        430 :     size_t m = work-&gt;data-&gt;m;</span></a>
+<a name="17"><span class="lineNum">      17 </span>            :     //Qd</a>
+<a name="18"><span class="lineNum">      18 </span><span class="lineCov">        430 :     mat_vec(work-&gt;data-&gt;Q, work-&gt;solver-&gt;d, work-&gt;solver-&gt;Qd, c);</span></a>
+<a name="19"><span class="lineNum">      19 </span><span class="lineCov">        430 :     if (work-&gt;settings-&gt;proximal) {</span></a>
+<a name="20"><span class="lineNum">      20 </span><span class="lineCov">        322 :         vec_add_scaled(work-&gt;Qd, work-&gt;d, work-&gt;Qd, 1/work-&gt;gamma, n);</span></a>
+<a name="21"><span class="lineNum">      21 </span>            :     }</a>
+<a name="22"><span class="lineNum">      22 </span>            :     //Ad</a>
+<a name="23"><span class="lineNum">      23 </span><span class="lineCov">        430 :     mat_vec(work-&gt;data-&gt;A, work-&gt;solver-&gt;d, work-&gt;solver-&gt;Ad, c);</span></a>
+<a name="24"><span class="lineNum">      24 </span>            :     //eta = d'*Qd</a>
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">        430 :     work-&gt;eta = vec_prod(work-&gt;d, work-&gt;Qd, n);</span></a>
+<a name="26"><span class="lineNum">      26 </span>            :     //beta = d'*df</a>
+<a name="27"><span class="lineNum">      27 </span><span class="lineCov">        430 :     work-&gt;beta = vec_prod(work-&gt;d, work-&gt;df, n);</span></a>
+<a name="28"><span class="lineNum">      28 </span>            : </a>
+<a name="29"><span class="lineNum">      29 </span>            :     //delta = [-sqrt(sigma).*Ad; sqrt(sigma).*Ad]</a>
+<a name="30"><span class="lineNum">      30 </span><span class="lineCov">        430 :     vec_ew_prod(work-&gt;sqrt_sigma, work-&gt;Ad, work-&gt;temp_m, m);</span></a>
+<a name="31"><span class="lineNum">      31 </span><span class="lineCov">        430 :     prea_vec_copy(work-&gt;temp_m, work-&gt;delta + m, m); //shifted copy</span></a>
+<a name="32"><span class="lineNum">      32 </span><span class="lineCov">        430 :     vec_self_mult_scalar(work-&gt;temp_m, -1, m);</span></a>
+<a name="33"><span class="lineNum">      33 </span><span class="lineCov">        430 :     prea_vec_copy(work-&gt;temp_m, work-&gt;delta, m); </span></a>
+<a name="34"><span class="lineNum">      34 </span>            :     //alpha = [(y+sigma.*(Ax-bmin))./sigma_sqrt; (-y+sigma.*(bmax-Ax))./sigma_sqrt]</a>
+<a name="35"><span class="lineNum">      35 </span><span class="lineCov">        430 :     vec_add_scaled(work-&gt;Ax, work-&gt;data-&gt;bmin, work-&gt;temp_m, -1, m);</span></a>
+<a name="36"><span class="lineNum">      36 </span><span class="lineCov">        430 :     vec_ew_prod(work-&gt;sigma, work-&gt;temp_m, work-&gt;temp_m, m);</span></a>
+<a name="37"><span class="lineNum">      37 </span><span class="lineCov">        430 :     vec_add_scaled(work-&gt;y, work-&gt;temp_m, work-&gt;temp_m, 1, m);</span></a>
+<a name="38"><span class="lineNum">      38 </span><span class="lineCov">        430 :     vec_ew_div(work-&gt;temp_m, work-&gt;sqrt_sigma, work-&gt;temp_m, m);</span></a>
+<a name="39"><span class="lineNum">      39 </span><span class="lineCov">        430 :     prea_vec_copy(work-&gt;temp_m, work-&gt;alpha, m);</span></a>
+<a name="40"><span class="lineNum">      40 </span><span class="lineCov">        430 :     vec_add_scaled(work-&gt;data-&gt;bmax, work-&gt;Ax, work-&gt;temp_m, -1, m);</span></a>
+<a name="41"><span class="lineNum">      41 </span><span class="lineCov">        430 :     vec_ew_prod(work-&gt;sigma, work-&gt;temp_m, work-&gt;temp_m, m);</span></a>
+<a name="42"><span class="lineNum">      42 </span><span class="lineCov">        430 :     vec_add_scaled(work-&gt;temp_m, work-&gt;y, work-&gt;temp_m, -1, m);</span></a>
+<a name="43"><span class="lineNum">      43 </span><span class="lineCov">        430 :     vec_ew_div(work-&gt;temp_m, work-&gt;sqrt_sigma, work-&gt;temp_m, m);</span></a>
+<a name="44"><span class="lineNum">      44 </span><span class="lineCov">        430 :     prea_vec_copy(work-&gt;temp_m, work-&gt;alpha + m, m); //shifted copy</span></a>
+<a name="45"><span class="lineNum">      45 </span>            :     // s = alpha./delta</a>
+<a name="46"><span class="lineNum">      46 </span><span class="lineCov">        430 :     vec_ew_div(work-&gt;alpha, work-&gt;delta, work-&gt;temp_2m, m*2);</span></a>
+<a name="47"><span class="lineNum">      47 </span><span class="lineCov">        430 :     vec_array_copy(work-&gt;temp_2m, work-&gt;s, m*2);</span></a>
+<a name="48"><span class="lineNum">      48 </span>            :     // index_L = s&gt;0</a>
+<a name="49"><span class="lineNum">      49 </span><span class="lineCov">        430 :     size_t nL = 0;</span></a>
+<a name="50"><span class="lineNum">      50 </span>            :     size_t i;</a>
+<a name="51"><span class="lineNum">      51 </span><span class="lineCov">       4884 :     for (i = 0; i&lt;m*2; i++){</span></a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">       4454 :         if (work-&gt;temp_2m[i] &gt; 0) {</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">       2883 :             work-&gt;index_L[i] = TRUE;</span></a>
+<a name="54"><span class="lineNum">      54 </span><span class="lineCov">       2883 :             nL++;</span></a>
+<a name="55"><span class="lineNum">      55 </span>            :         } else {</a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineCov">       1571 :             work-&gt;index_L[i] = FALSE;</span></a>
+<a name="57"><span class="lineNum">      57 </span>            :         }     </a>
+<a name="58"><span class="lineNum">      58 </span>            :     };</a>
+<a name="59"><span class="lineNum">      59 </span>            : </a>
+<a name="60"><span class="lineNum">      60 </span>            :     //s = s(indL)</a>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">        430 :     select_subsequence(work-&gt;s, work-&gt;s, work-&gt;index_L, m*2);</span></a>
+<a name="62"><span class="lineNum">      62 </span>            : </a>
+<a name="63"><span class="lineNum">      63 </span>            :     // index_P = delta &gt; 0</a>
+<a name="64"><span class="lineNum">      64 </span><span class="lineCov">       4884 :     for (i = 0; i&lt;m*2; i++){</span></a>
+<a name="65"><span class="lineNum">      65 </span><span class="lineCov">       4454 :         if (work-&gt;delta[i] &gt; 0) {</span></a>
+<a name="66"><span class="lineNum">      66 </span><span class="lineCov">       2017 :             work-&gt;index_P[i] = TRUE;</span></a>
+<a name="67"><span class="lineNum">      67 </span>            :         } else {</a>
+<a name="68"><span class="lineNum">      68 </span><span class="lineCov">       2437 :             work-&gt;index_P[i] = FALSE;</span></a>
+<a name="69"><span class="lineNum">      69 </span>            :         }     </a>
+<a name="70"><span class="lineNum">      70 </span>            :     };</a>
+<a name="71"><span class="lineNum">      71 </span>            :     // index_J = (P&amp;~L)|(~P&amp;L);</a>
+<a name="72"><span class="lineNum">      72 </span><span class="lineCov">       4884 :     for (i = 0; i&lt;m*2; i++){</span></a>
+<a name="73"><span class="lineNum">      73 </span><span class="lineCov">       4454 :         if ((work-&gt;index_P[i] + work-&gt;index_L[i]) == 1) {</span></a>
+<a name="74"><span class="lineNum">      74 </span><span class="lineCov">       1142 :             work-&gt;index_J[i] = TRUE;</span></a>
+<a name="75"><span class="lineNum">      75 </span>            :         } else {</a>
+<a name="76"><span class="lineNum">      76 </span><span class="lineCov">       3312 :             work-&gt;index_J[i] = FALSE;</span></a>
+<a name="77"><span class="lineNum">      77 </span>            :         }     </a>
+<a name="78"><span class="lineNum">      78 </span>            :     };</a>
+<a name="79"><span class="lineNum">      79 </span>            : </a>
+<a name="80"><span class="lineNum">      80 </span>            :     // a = eta+delta(J)'*delta(J);</a>
+<a name="81"><span class="lineNum">      81 </span>            :     // b = beta-delta(J)'*alpha(J);</a>
+<a name="82"><span class="lineNum">      82 </span>            :     c_float a, b;</a>
+<a name="83"><span class="lineNum">      83 </span><span class="lineCov">        430 :     a = work-&gt;eta + vec_prod_ind(work-&gt;delta, work-&gt;delta, work-&gt;index_J, m*2);</span></a>
+<a name="84"><span class="lineNum">      84 </span><span class="lineCov">        430 :     b = work-&gt;beta - vec_prod_ind(work-&gt;delta, work-&gt;alpha, work-&gt;index_J, m*2);</span></a>
+<a name="85"><span class="lineNum">      85 </span>            :     // return 0;</a>
+<a name="86"><span class="lineNum">      86 </span>            :     //s = sort(s)</a>
+<a name="87"><span class="lineNum">      87 </span>            :     // qsort(work-&gt;s, m*2, sizeof(array_element), compare);</a>
+<a name="88"><span class="lineNum">      88 </span><span class="lineCov">        430 :     qsort(work-&gt;s, nL, sizeof(array_element), compare);</span></a>
+<a name="89"><span class="lineNum">      89 </span>            :     </a>
+<a name="90"><span class="lineNum">      90 </span><span class="lineCov">        430 :     if (nL == 0 || a*work-&gt;s[0].x+b &gt; 0) {</span></a>
+<a name="91"><span class="lineNum">      91 </span><span class="lineCov">        243 :         return -b/a; </span></a>
+<a name="92"><span class="lineNum">      92 </span>            :     }</a>
+<a name="93"><span class="lineNum">      93 </span>            : </a>
+<a name="94"><span class="lineNum">      94 </span><span class="lineCov">        187 :     i = 0;</span></a>
+<a name="95"><span class="lineNum">      95 </span>            :     size_t iz;</a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">        206 :     while (i &lt; nL-1) {</span></a>
+<a name="97"><span class="lineNum">      97 </span><span class="lineCov">        206 :         iz = work-&gt;s[i].i;</span></a>
+<a name="98"><span class="lineNum">      98 </span><span class="lineCov">        206 :         if (work-&gt;index_P[iz]) {</span></a>
+<a name="99"><span class="lineNum">      99 </span><span class="lineCov">        196 :             a = a + work-&gt;delta[iz]*work-&gt;delta[iz];</span></a>
+<a name="100"><span class="lineNum">     100 </span><span class="lineCov">        196 :             b = b - work-&gt;delta[iz]*work-&gt;alpha[iz];</span></a>
+<a name="101"><span class="lineNum">     101 </span>            :         } else {</a>
+<a name="102"><span class="lineNum">     102 </span><span class="lineCov">         10 :             a = a - work-&gt;delta[iz]*work-&gt;delta[iz];</span></a>
+<a name="103"><span class="lineNum">     103 </span><span class="lineCov">         10 :             b = b + work-&gt;delta[iz]*work-&gt;alpha[iz];</span></a>
+<a name="104"><span class="lineNum">     104 </span>            :         }</a>
+<a name="105"><span class="lineNum">     105 </span><span class="lineCov">        206 :         i++;</span></a>
+<a name="106"><span class="lineNum">     106 </span><span class="lineCov">        206 :         if (a*work-&gt;s[i].x+b &gt; 0) {</span></a>
+<a name="107"><span class="lineNum">     107 </span><span class="lineCov">        187 :             return -b/a;</span></a>
+<a name="108"><span class="lineNum">     108 </span>            :         }</a>
+<a name="109"><span class="lineNum">     109 </span>            :     }</a>
+<a name="110"><span class="lineNum">     110 </span><span class="lineNoCov">          0 :     iz = work-&gt;s[i].i;</span></a>
+<a name="111"><span class="lineNum">     111 </span><span class="lineNoCov">          0 :     if (work-&gt;index_P[iz]) {</span></a>
+<a name="112"><span class="lineNum">     112 </span><span class="lineNoCov">          0 :         a = a + work-&gt;delta[iz]*work-&gt;delta[iz];</span></a>
+<a name="113"><span class="lineNum">     113 </span><span class="lineNoCov">          0 :         b = b - work-&gt;delta[iz]*work-&gt;alpha[iz];</span></a>
+<a name="114"><span class="lineNum">     114 </span>            :     } else {</a>
+<a name="115"><span class="lineNum">     115 </span><span class="lineNoCov">          0 :         a = a - work-&gt;delta[iz]*work-&gt;delta[iz];</span></a>
+<a name="116"><span class="lineNum">     116 </span><span class="lineNoCov">          0 :         b = b + work-&gt;delta[iz]*work-&gt;alpha[iz];</span></a>
+<a name="117"><span class="lineNum">     117 </span>            :     }</a>
+<a name="118"><span class="lineNum">     118 </span><span class="lineNoCov">          0 :     return -b/a;</span></a>
+<a name="119"><span class="lineNum">     119 </span>            : </a>
+<a name="120"><span class="lineNum">     120 </span>            : }</a>
+<a name="121"><span class="lineNum">     121 </span>            : </a>
+<a name="122"><span class="lineNum">     122 </span><span class="lineCov">        430 : void vec_array_copy(c_float *a, array_element* b, size_t n) {</span></a>
+<a name="123"><span class="lineNum">     123 </span>            :     size_t i;</a>
+<a name="124"><span class="lineNum">     124 </span>            :     array_element ae;</a>
+<a name="125"><span class="lineNum">     125 </span>            : </a>
+<a name="126"><span class="lineNum">     126 </span><span class="lineCov">       4884 :     for (i = 0; i &lt; n; i++) {</span></a>
+<a name="127"><span class="lineNum">     127 </span><span class="lineCov">       4454 :         ae.x = a[i];</span></a>
+<a name="128"><span class="lineNum">     128 </span><span class="lineCov">       4454 :         ae.i = i;</span></a>
+<a name="129"><span class="lineNum">     129 </span><span class="lineCov">       4454 :         b[i] = ae; </span></a>
+<a name="130"><span class="lineNum">     130 </span>            :     }</a>
+<a name="131"><span class="lineNum">     131 </span>            : </a>
+<a name="132"><span class="lineNum">     132 </span><span class="lineCov">        430 : }</span></a>
+<a name="133"><span class="lineNum">     133 </span>            : </a>
+<a name="134"><span class="lineNum">     134 </span><span class="lineCov">        430 : void select_subsequence(const array_element *a, array_element *b, const c_int *L, size_t n) {</span></a>
+<a name="135"><span class="lineNum">     135 </span>            :     size_t i;</a>
+<a name="136"><span class="lineNum">     136 </span><span class="lineCov">        430 :     size_t nb_elements = 0;</span></a>
+<a name="137"><span class="lineNum">     137 </span><span class="lineCov">       4884 :     for (i = 0; i &lt; n; i++) {</span></a>
+<a name="138"><span class="lineNum">     138 </span><span class="lineCov">       4454 :         if (L[i]) {</span></a>
+<a name="139"><span class="lineNum">     139 </span><span class="lineCov">       2883 :             b[nb_elements] = a[i];</span></a>
+<a name="140"><span class="lineNum">     140 </span><span class="lineCov">       2883 :             nb_elements++;</span></a>
+<a name="141"><span class="lineNum">     141 </span>            :         }</a>
+<a name="142"><span class="lineNum">     142 </span>            :     }</a>
+<a name="143"><span class="lineNum">     143 </span><span class="lineCov">        430 : }</span></a>
+<a name="144"><span class="lineNum">     144 </span>            : </a>
+<a name="145"><span class="lineNum">     145 </span><span class="lineCov">        860 : c_float vec_prod_ind(const c_float *a, const c_float *b, const c_int *L, size_t n) {</span></a>
+<a name="146"><span class="lineNum">     146 </span><span class="lineCov">        860 :   c_float prod = 0.0;</span></a>
+<a name="147"><span class="lineNum">     147 </span>            :   size_t i;</a>
+<a name="148"><span class="lineNum">     148 </span>            : </a>
+<a name="149"><span class="lineNum">     149 </span><span class="lineCov">       9768 :   for (i = 0; i &lt; n; i++) {</span></a>
+<a name="150"><span class="lineNum">     150 </span><span class="lineCov">       8908 :       if (L[i]) {</span></a>
+<a name="151"><span class="lineNum">     151 </span><span class="lineCov">       2284 :           prod += a[i] * b[i];</span></a>
+<a name="152"><span class="lineNum">     152 </span>            :       }   </a>
+<a name="153"><span class="lineNum">     153 </span>            :   }</a>
+<a name="154"><span class="lineNum">     154 </span>            : </a>
+<a name="155"><span class="lineNum">     155 </span><span class="lineCov">        860 :   return prod;</span></a>
+<a name="156"><span class="lineNum">     156 </span>            : }</a>
+<a name="157"><span class="lineNum">     157 </span>            : </a>
+<a name="158"><span class="lineNum">     158 </span><span class="lineCov">       5998 : int compare (const void * a, const void * b)</span></a>
+<a name="159"><span class="lineNum">     159 </span>            : {</a>
+<a name="160"><span class="lineNum">     160 </span><span class="lineCov">       5998 :     c_float f = ((struct array_element*)a)-&gt;x;</span></a>
+<a name="161"><span class="lineNum">     161 </span><span class="lineCov">       5998 :     c_float s = ((struct array_element*)b)-&gt;x;</span></a>
+<a name="162"><span class="lineNum">     162 </span><span class="lineCov">       5998 :     if (f &gt; s) return  1;</span></a>
+<a name="163"><span class="lineNum">     163 </span><span class="lineCov">       3248 :     if (f &lt; s) return -1;</span></a>
+<a name="164"><span class="lineNum">     164 </span><span class="lineCov">         38 :     return 0;</span></a>
+<a name="165"><span class="lineNum">     165 </span>            : </a>
+<a name="166"><span class="lineNum">     166 </span>            : }</a>
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

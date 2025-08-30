@@ -1,0 +1,9 @@
+<map id="initialize_sigma" name="initialize_sigma">
+<area shape="rect" id="node1" title="Initialize penalty factors from initial x." alt="" coords="5,129,131,155"/>
+<area shape="rect" id="node2" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="183,5,308,31"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#a93df027e9826a479bf77a0770817c71a" title="Elementwise mid between vectors, ." alt="" coords="179,55,312,80"/>
+<area shape="rect" id="node4" href="$lin__alg_8c.html#aebb20e932bc52e918667db2a70cb0781" title="Elementwise reciprocal ." alt="" coords="188,104,303,129"/>
+<area shape="rect" id="node5" href="$lin__alg_8c.html#aff49f7b83b7dc6ec1b18557c9f4ea995" title="Elementwise square root, ." alt="" coords="194,153,297,179"/>
+<area shape="rect" id="node6" href="$lin__alg_8c.html#ab83e787c2e0edb5803a860b1c894f53d" title="Inner product between two vectors, ." alt="" coords="205,203,286,228"/>
+<area shape="rect" id="node7" href="$lin__alg_8c.html#a67ead739705f515285526db604c5bb7d" title="Fill float vector with a scalar value." alt="" coords="186,252,305,277"/>
+</map>

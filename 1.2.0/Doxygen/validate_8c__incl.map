@@ -1,0 +1,26 @@
+<map id="QPALM/src/validate.c" name="QPALM/src/validate.c">
+<area shape="rect" id="Node000001" title="Validation of the user provided settings and data." alt="" coords="160,5,319,31"/>
+<area shape="rect" id="Node000002" href="$validate_8h.html" title="Validation of the user provided settings and data." alt="" coords="5,152,137,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,33,168,81,96,144,92,140,164,77,223,29"/>
+<area shape="rect" id="Node000007" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="178,79,301,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="242,31,242,65,237,65,237,31"/>
+<area shape="rect" id="Node000009" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="352,225,495,251"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="265,29,299,47,339,74,378,109,411,151,422,181,426,211,421,211,417,182,406,153,374,113,335,79,296,52,262,33"/>
+<area shape="rect" id="Node000003" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="140,225,211,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,175,148,215,145,219,87,180"/>
+<area shape="rect" id="Node000004" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="71,299,226,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="173,252,160,287,155,285,168,250"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="255,372,322,397"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="192,249,215,270,240,297,262,328,279,358,274,361,257,331,236,300,212,274,188,253"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="172,322,255,363,253,368,170,326"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="115,372,183,397"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="151,324,151,358,146,358,146,324"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="233,106,203,153,183,212,178,211,198,151,228,103"/>
+<area shape="rect" id="Node000008" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="213,152,397,177"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="252,103,287,140,283,144,248,106"/>
+<area shape="poly" id="edge13_Node000008_Node000003" title=" " alt="" coords="285,180,210,221,208,216,283,175"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="296,179,224,253,177,292,173,288,220,249,292,175"/>
+<area shape="poly" id="edge14_Node000008_Node000005" title=" " alt="" coords="306,178,293,358,288,358,301,177"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="325,175,393,216,391,220,322,180"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="414,253,311,364,307,360,410,249"/>
+</map>

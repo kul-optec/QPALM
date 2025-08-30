@@ -1,0 +1,12 @@
+<map id="QPALM/include/qpalm/nonconvex.h" name="QPALM/include/qpalm/nonconvex.h">
+<area shape="rect" id="Node000001" title="Routines to deal with nonconvex QPs." alt="" coords="5,5,168,45"/>
+<area shape="rect" id="Node000002" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="29,93,144,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,46,89,79,84,79,84,46"/>
+<area shape="rect" id="Node000003" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="67,167,221,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,117,128,154,124,158,94,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="8,240,75,265"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="81,120,57,168,50,198,46,227,40,226,44,197,52,166,76,118"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="129,194,71,234,68,230,126,190"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="110,240,178,265"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="147,192,147,226,141,226,141,192"/>
+</map>

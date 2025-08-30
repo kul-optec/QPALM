@@ -1,0 +1,50 @@
+<map id="prea_vec_copy" name="prea_vec_copy">
+<area shape="rect" id="Node000001" title="Copy vector a into preallocated vector b." alt="" coords="1043,338,1161,364"/>
+<area shape="rect" id="Node000002" href="$linesearch_8c.html#a647cabae1574f21e412110765ea1e70d" title="Execute exact linesearch (using qsort)" alt="" coords="609,10,741,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1097,325,1092,268,1076,194,1063,156,1045,119,1022,85,993,57,965,39,934,26,901,17,867,11,801,9,742,14,742,8,801,3,868,6,902,11,936,21,967,34,996,53,1026,82,1049,116,1068,154,1081,192,1097,267,1103,325"/>
+<area shape="rect" id="Node000003" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="361,86,528,112"/>
+<area shape="poly" id="edge25_Node000001_Node000003" title=" " alt="" coords="1095,325,1086,277,1068,219,1055,190,1038,162,1018,138,993,117,930,85,862,65,790,55,719,53,650,58,587,67,489,89,488,84,586,62,650,53,719,48,791,49,863,59,932,80,996,113,1021,134,1042,159,1059,188,1073,218,1091,276,1100,324"/>
+<area shape="rect" id="Node000004" href="$group__solver-grp.html#ga17fcba910c32b8518df93617591b1cf1" title="Solve the quadratic program." alt="" coords="208,260,313,285"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="1068,334,1033,317,994,303,898,284,800,271,702,263,606,260,436,262,314,270,313,265,436,257,606,254,702,258,801,265,899,278,995,298,1035,312,1070,329"/>
+<area shape="rect" id="Node000007" href="$solver__interface_8c.html#aca80eaf7b897030273f1a6820b7e6d38" title="Solve the KKT system &#160;." alt="" coords="866,212,951,237"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1078,330,1040,294,993,259,950,239,953,234,996,254,1044,290,1082,326"/>
+<area shape="rect" id="Node000008" href="$newton_8c.html#af1654e5597faac8b0ade25acf1fc1bc9" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="595,137,756,162"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="1093,325,1082,284,1063,236,1034,189,1015,168,993,152,960,136,924,126,886,121,848,120,777,127,719,140,718,134,776,122,848,115,886,116,925,121,962,131,996,147,1019,164,1038,185,1068,233,1087,283,1098,324"/>
+<area shape="rect" id="Node000009" href="$solver__interface_8c.html#a03ad73d0e41054e90232d141e73474ab" title="Solve the linear system ." alt="" coords="831,162,987,188"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1087,327,1051,264,1025,230,993,201,972,190,975,186,996,197,1029,226,1056,261,1092,325"/>
+<area shape="rect" id="Node000010" href="$group__solver-grp.html#ga586e7a22d9ed41fb2d477490fdabc875" title="Update the lower and upper bounds." alt="" coords="824,313,993,338"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="1029,344,993,340,994,334,1029,339"/>
+<area shape="rect" id="Node000012" href="$group__solver-grp.html#gac6fc63096cd84c85c7e4a31ab950a00b" title="Update the linear part of the cost." alt="" coords="843,362,974,388"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="1029,363,975,370,974,364,1029,357"/>
+<area shape="rect" id="Node000014" href="$group__solver-grp.html#ga5c65cd8a7357df09df6d20f7173feb6f" title="Update the matrix entries of Q and A." alt="" coords="835,412,983,437"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="1064,372,996,402,957,414,956,409,994,397,1062,367"/>
+<area shape="rect" id="Node000016" href="$group__solver-grp.html#ga647edc4e31481ccafe1813205a87ecbd" title="Warm start workspace variables x, x_0, x_prev, Ax, Qx, y and sigma." alt="" coords="837,461,981,486"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1083,377,1045,415,996,452,970,463,968,459,993,447,1042,411,1079,373"/>
+<area shape="rect" id="Node000018" href="$scaling_8c.html#a3735b6c9c3aeeddfb3bb0982ae5f70ba" title="Scale problem matrices." alt="" coords="863,510,955,536"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="1092,378,1055,440,1028,473,996,501,976,512,956,519,954,514,974,507,993,497,1024,469,1051,437,1087,375"/>
+<area shape="rect" id="Node000019" href="$termination_8c.html#a59f3d4d2ea459665833cc3d5e9265d5e" title="Helper function to store the (unscaled) solution in the solution struct." alt="" coords="851,560,966,585"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="1096,378,1084,416,1063,463,1034,510,996,551,968,566,965,561,993,546,1030,507,1058,460,1079,414,1091,376"/>
+<area shape="rect" id="Node000020" href="$iteration_8c.html#a1ad7b6cb4924a8de3378ed35890b02e7" title=" " alt="" coords="599,603,751,643"/>
+<area shape="poly" id="edge23_Node000001_Node000020" title=" " alt="" coords="1101,378,1092,427,1074,488,1060,520,1043,550,1022,577,996,600,968,617,938,629,873,643,809,645,751,640,752,635,809,640,872,637,936,624,966,612,993,596,1018,573,1039,547,1056,517,1069,486,1087,426,1095,377"/>
+<area shape="rect" id="Node000021" href="$iteration_8c.html#a786f2d2af82a141fe3825a3964659d50" title=" " alt="" coords="823,660,995,700"/>
+<area shape="poly" id="edge26_Node000001_Node000021" title=" " alt="" coords="1101,378,1092,432,1073,502,1043,576,1022,612,997,644,972,663,968,658,993,640,1017,609,1038,574,1068,500,1086,430,1095,377"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="623,42,577,58,484,89,483,84,575,53,621,37"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="422,123,277,262,273,258,418,120"/>
+<area shape="rect" id="Node000005" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,234,147,260"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="194,266,147,259,147,254,195,260"/>
+<area shape="rect" id="Node000006" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,284,160,309"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="195,284,161,289,160,283,194,279"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="852,211,822,202,712,165,714,160,823,197,854,206"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="602,137,503,114,504,109,604,131"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="817,168,756,161,757,156,817,163"/>
+<area shape="rect" id="Node000011" href="$classqpalm_1_1Solver.html#a6df33bfd68c5b8caaaa6f726f1a9f517" title=" " alt="" coords="593,310,758,350"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="810,330,758,331,758,326,810,325"/>
+<area shape="rect" id="Node000013" href="$classqpalm_1_1Solver.html#a43cbe4e495be0898c733d9589531e63c" title=" " alt="" coords="585,374,765,400"/>
+<area shape="poly" id="edge16_Node000012_Node000013" title=" " alt="" coords="829,382,766,385,765,380,829,376"/>
+<area shape="rect" id="Node000015" href="$classqpalm_1_1Solver.html#a11e9742322ad77345b32d806b8b3b81c" title=" " alt="" coords="576,424,775,449"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="821,432,775,434,775,429,821,426"/>
+<area shape="rect" id="Node000017" href="$classqpalm_1_1Solver.html#a693af99e39a9035bbbc4fb61fcb427d1" title=" " alt="" coords="597,474,754,514"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="823,484,755,490,754,484,822,478"/>
+<area shape="poly" id="edge24_Node000020_Node000004" title=" " alt="" coords="638,596,275,287,279,283,641,592"/>
+<area shape="poly" id="edge27_Node000021_Node000020" title=" " alt="" coords="813,660,751,644,752,639,814,654"/>
+</map>

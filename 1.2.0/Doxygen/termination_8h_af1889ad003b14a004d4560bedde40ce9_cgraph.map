@@ -1,0 +1,9 @@
+<map id="calculate_dual_residuals" name="calculate_dual_residuals">
+<area shape="rect" id="Node000001" title="Calculates the infinity norm of the dual residual and the residual of the subproblem and stores them ..." alt="" coords="5,55,188,80"/>
+<area shape="rect" id="Node000002" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="236,5,361,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,52,232,31,233,37,150,57"/>
+<area shape="rect" id="Node000003" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="245,55,352,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,65,231,65,231,70,188,70"/>
+<area shape="rect" id="Node000004" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="243,104,354,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="150,77,233,98,232,103,149,83"/>
+</map>

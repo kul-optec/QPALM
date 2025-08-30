@@ -1,0 +1,39 @@
+<map id="QPALM/include/qpalm/lin_alg.h" name="QPALM/include/qpalm/lin_alg.h">
+<area shape="rect" id="Node000001" title="Linear algebra with vectors." alt="" coords="1056,5,1219,45"/>
+<area shape="rect" id="Node000002" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="207,181,382,207"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1042,30,885,35,699,46,525,65,455,79,402,96,371,114,343,138,305,183,301,179,340,134,368,110,400,91,453,74,524,60,699,40,885,30,1042,25"/>
+<area shape="rect" id="Node000006" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="400,262,547,287"/>
+<area shape="poly" id="edge15_Node000001_Node000006" title=" " alt="" coords="1042,32,878,38,691,49,530,68,476,81,447,95,435,114,430,136,430,160,435,183,451,228,468,261,464,263,446,230,429,185,425,160,425,135,430,112,444,91,474,76,529,63,691,44,878,32,1042,26"/>
+<area shape="rect" id="Node000007" href="$scaling_8h.html" title="Problem data scaling during setup." alt="" coords="457,93,620,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1043,41,856,64,639,96,621,99,620,94,638,91,855,59,1042,35"/>
+<area shape="rect" id="Node000008" href="$scaling_8c.html" title="Problem data scaling during setup." alt="" coords="579,181,730,207"/>
+<area shape="poly" id="edge16_Node000001_Node000008" title=" " alt="" coords="1042,31,944,37,838,48,745,67,709,80,684,95,670,115,661,138,657,181,652,181,656,137,665,112,681,91,707,75,744,62,837,43,944,32,1042,26"/>
+<area shape="rect" id="Node000009" href="$iteration_8c.html" title="QPALM main solver routines." alt="" coords="695,101,855,126"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="1045,51,824,103,822,98,1044,46"/>
+<area shape="rect" id="Node000010" href="$lin__alg_8c.html" title="Linear algebra with vectors." alt="" coords="879,101,1027,126"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1086,54,979,103,977,98,1083,49"/>
+<area shape="rect" id="Node000011" href="$linesearch_8c.html" title="Routines to perform exact or backtracking linesearch." alt="" coords="1051,101,1223,126"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="1140,59,1140,100,1135,100,1135,59"/>
+<area shape="rect" id="Node000012" href="$newton_8c.html" title="Functions to calculate the semismooth Newton direction." alt="" coords="1247,101,1401,126"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="1192,49,1300,98,1298,103,1189,53"/>
+<area shape="rect" id="Node000013" href="$nonconvex_8c.html" title="Routines to deal with nonconvex QPs." alt="" coords="1425,101,1601,126"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="1233,46,1464,98,1462,103,1232,51"/>
+<area shape="rect" id="Node000014" href="$solver__interface_8c.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="1625,101,1836,126"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="1233,37,1614,91,1661,98,1660,103,1613,96,1232,42"/>
+<area shape="rect" id="Node000015" href="$termination_8c.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="1860,101,2041,126"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1233,30,1510,53,1679,70,1848,91,1894,98,1893,103,1848,96,1678,75,1509,58,1233,36"/>
+<area shape="rect" id="Node000016" href="$util_8c.html" title="Utility functions." alt="" coords="2066,101,2193,126"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1232,26,1389,31,1594,42,1823,61,2054,91,2089,98,2088,103,2053,96,1823,67,1594,47,1389,36,1232,31"/>
+<area shape="rect" id="Node000017" href="$validate_8c.html" title="Validation of the user provided settings and data." alt="" coords="2217,101,2375,126"/>
+<area shape="poly" id="edge20_Node000001_Node000017" title=" " alt="" coords="1232,25,1413,31,1655,42,1929,61,2206,91,2248,98,2247,103,2205,96,1929,66,1655,47,1413,36,1232,31"/>
+<area shape="rect" id="Node000003" href="$qpalm_8cpp.html" title=" " alt="" coords="213,255,376,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,220,297,255,292,255,292,220"/>
+<area shape="rect" id="Node000004" href="$qpalm__fortran_8h.html" title=" " alt="" coords="5,255,189,295"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="254,214,146,257,144,252,252,209"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="334,210,448,260,446,264,332,215"/>
+<area shape="rect" id="Node000005" href="$qpalm__fortran_8c.html" title=" " alt="" coords="5,343,189,383"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="100,309,100,342,95,342,95,309"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="468,140,331,184,330,179,466,135"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="528,147,481,263,476,261,523,145"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="580,139,639,179,636,183,577,143"/>
+</map>

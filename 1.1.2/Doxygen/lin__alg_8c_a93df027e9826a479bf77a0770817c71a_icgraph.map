@@ -1,0 +1,5 @@
+<map id="vec_ew_mid_vec" name="vec_ew_mid_vec">
+<area shape="rect" id="node1" title="Elementwise mid between vectors, ." alt="" coords="199,31,332,57"/>
+<area shape="rect" id="node2" href="$iteration_8c.html#ae21af0f956f1ccf8ee41c4cf68698279" title="Compute the residuals (in vector form)" alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node3" href="$iteration_8c.html#a155f5c99c7a442c554cca914de34eba7" title="Initialize penalty factors from initial x." alt="" coords="15,56,141,83"/>
+</map>

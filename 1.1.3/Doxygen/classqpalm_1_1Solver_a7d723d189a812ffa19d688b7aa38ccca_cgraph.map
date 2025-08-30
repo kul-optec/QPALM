@@ -1,0 +1,52 @@
+<map id="qpalm::Solver::solve" name="qpalm::Solver::solve">
+<area shape="rect" id="node1" title="Solve the problem." alt="" coords="5,649,160,675"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#ga9bbc8b47dfd2e86a81dd77feb4077bde" title="Solve the quadratic program." alt="" coords="208,649,313,675"/>
+<area shape="rect" id="node3" href="$termination_8c.html#a50775fd01103420a3cfe7452a8be3874" title="Calls the routines that compute the norm of the residuals and the tolerances." alt="" coords="387,354,563,394"/>
+<area shape="rect" id="node11" href="$termination_8c.html#aa1d7800c435fff9310d684b4154e7fdb" title="Check whether the subproblem is solved." alt="" coords="361,776,588,801"/>
+<area shape="rect" id="node12" href="$iteration_8c.html#a1a0ad2638fa3206a6f671619f689364f" title="Compute the (unscaled) dual objective value at the current iterate." alt="" coords="645,164,826,189"/>
+<area shape="rect" id="node14" href="$iteration_8c.html#ad071efc96075a8506c9c45448b9d48e6" title="Compute the (unscaled) primal objective value at the current iterate." alt="" coords="401,825,548,851"/>
+<area shape="rect" id="node15" href="$iteration_8c.html#ae21af0f956f1ccf8ee41c4cf68698279" title="Compute the residuals (in vector form)" alt="" coords="663,105,808,131"/>
+<area shape="rect" id="node18" href="$termination_8c.html#a8cf01c07469436e7c562c9f3e162fd2b" title="Check whether the problem is dual infeasible." alt="" coords="666,213,805,239"/>
+<area shape="rect" id="node19" href="$termination_8c.html#a4df388b37067a843cbb2c6b244496d9c" title="Check whether the problem is primal infeasible." alt="" coords="659,460,812,485"/>
+<area shape="rect" id="node20" href="$termination_8c.html#a6dbbbcff619e13f4164f7248365cfec0" title="Check whether the primal and dual residual norms are smaller than the primal and dual tolerances." alt="" coords="433,875,516,900"/>
+<area shape="rect" id="node21" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="1143,1239,1261,1264"/>
+<area shape="rect" id="node22" href="$util_8c.html#a6ee0584322ee4cac18e04eb9d13932e8" title="Print information about the current iteration." alt="" coords="417,924,532,949"/>
+<area shape="rect" id="node23" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="431,973,518,999"/>
+<area shape="rect" id="node24" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="429,1023,520,1048"/>
+<area shape="rect" id="node25" href="$iteration_8c.html#a1ad7b6cb4924a8de3378ed35890b02e7" title=" " alt="" coords="399,559,551,599"/>
+<area shape="rect" id="node28" href="$iteration_8c.html#a2493eaf6f46fae7e188477e427acfece" title="Update the proximal penalty." alt="" coords="1140,560,1264,585"/>
+<area shape="rect" id="node30" href="$iteration_8c.html#a8ea42d3c9ff0d6d8dc8f144d0b03dc0d" title="Update the penalty factors." alt="" coords="678,509,793,535"/>
+<area shape="rect" id="node32" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="391,675,558,700"/>
+<area shape="rect" id="node4" href="$termination_8c.html#af1889ad003b14a004d4560bedde40ce9" title="Calculates the infinity norm of the dual residual and the residual of the subproblem and stores them ..." alt="" coords="644,263,827,288"/>
+<area shape="rect" id="node8" href="$termination_8c.html#ad746ec6ec47a1240e5e910abfb01fee3" title="Calculates the dual tolerance for the problem and current subproblem and stores them in work&#45;&gt;eps_dua..." alt="" coords="640,312,831,337"/>
+<area shape="rect" id="node9" href="$termination_8c.html#afc13c2c286796ec381cdb5c83d9f764f" title="Calculates the infinity norm of the primal residual and stores it in work&#45;&gt;info&#45;&gt;pri_res_norm." alt="" coords="641,361,830,387"/>
+<area shape="rect" id="node10" href="$termination_8c.html#ac638a8fe12bfee736c6832fa6140c92d" title="Calculates the primal tolerance and stores it in work&#45;&gt;eps_pri." alt="" coords="636,411,835,436"/>
+<area shape="rect" id="node5" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="1329,484,1455,509"/>
+<area shape="rect" id="node6" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="925,359,1032,384"/>
+<area shape="rect" id="node7" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="923,408,1034,433"/>
+<area shape="rect" id="node13" href="$lin__alg_8c.html#ab83e787c2e0edb5803a860b1c894f53d" title="Inner product between two vectors, ." alt="" coords="938,207,1019,232"/>
+<area shape="rect" id="node16" href="$solver__interface_8c.html#aa0574481a6dc6221dd3b9562f8c54cd5" title="Matrix&#45;transpose&#45;vector multiplication." alt="" coords="918,5,1039,31"/>
+<area shape="rect" id="node17" href="$lin__alg_8c.html#a93df027e9826a479bf77a0770817c71a" title="Elementwise mid between vectors, ." alt="" coords="912,55,1045,80"/>
+<area shape="rect" id="node26" href="$iteration_8c.html#a786f2d2af82a141fe3825a3964659d50" title=" " alt="" coords="649,559,821,599"/>
+<area shape="rect" id="node27" href="$iteration_8c.html#a95e8560aaf51a2c4f68de9b65b0c6a15" title=" " alt="" coords="885,559,1072,584"/>
+<area shape="rect" id="node29" href="$lin__alg_8c.html#a7b3d3b23f9254b8dc1bf53823ef42b42" title="Elementwise division, ." alt="" coords="1153,711,1251,736"/>
+<area shape="rect" id="node31" href="$solver__interface_8c.html#a759f2a0d608b6cd90863e5871d6f8474" title="Update the &#160;factorization given a set of indexes where &#160;has been updated." alt="" coords="883,509,1075,535"/>
+<area shape="rect" id="node33" href="$linesearch_8c.html#a647cabae1574f21e412110765ea1e70d" title="Execute exact linesearch (using qsort)" alt="" coords="669,939,801,964"/>
+<area shape="rect" id="node39" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="1123,1465,1281,1491"/>
+<area shape="rect" id="node40" href="$newton_8c.html#af1654e5597faac8b0ade25acf1fc1bc9" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="655,1605,816,1631"/>
+<area shape="rect" id="node34" href="$linesearch_8c.html#ac70138609ef6aa6fabca57aca8681e83" title="Helper function for qsort." alt="" coords="939,1012,1018,1037"/>
+<area shape="rect" id="node35" href="$solver__interface_8c.html#a4824fb035d8cdb8ba46e4ac5c4049d5d" title="Matrix&#45;vector multiplication." alt="" coords="939,1315,1018,1340"/>
+<area shape="rect" id="node36" href="$linesearch_8c.html#a33a2554aa831be51296f2dafedd076d4" title="Select subsequence based on a set of indices, ." alt="" coords="902,1061,1055,1087"/>
+<area shape="rect" id="node37" href="$linesearch_8c.html#a21cd94f0684dd9e1bfe7236260e9e8d5" title="Helper function to copy vector a in array b (with indices)" alt="" coords="917,913,1041,939"/>
+<area shape="rect" id="node38" href="$linesearch_8c.html#ac4bdfc80a644d8c75a672963c7682af9" title="Inner product over index set, ." alt="" coords="925,963,1033,988"/>
+<area shape="rect" id="node41" href="$solver__interface_8c.html#aca80eaf7b897030273f1a6820b7e6d38" title="Solve the KKT system &#160;." alt="" coords="936,1465,1021,1491"/>
+<area shape="rect" id="node42" href="$solver__interface_8c.html#a7ab6022f2624a8f13bf8f54067c9f2cd" title="Perform a factorization update for the entering constraints." alt="" coords="901,1794,1057,1834"/>
+<area shape="rect" id="node43" href="$solver__interface_8c.html#a172614d18d4dd82e001245d7ceea389f" title="Perform a factorization update for the leaving constraints." alt="" coords="903,1858,1054,1898"/>
+<area shape="rect" id="node44" href="$solver__interface_8c.html#ab4921dab7206bd333c9e7dc679dce0b1" title="Calculate &#160;factorization of a matrix ." alt="" coords="1169,2049,1235,2075"/>
+<area shape="rect" id="node45" href="$solver__interface_8c.html#a972c4868a7391f4b18d836f1ca0810d9" title="Calculate &#160;factorization of , with &#160;and &#160;the set of active constraints." alt="" coords="909,2075,1048,2100"/>
+<area shape="rect" id="node46" href="$solver__interface_8c.html#a6892fee611934ae5337f1be0235bfc80" title="Downdate the &#160;factorization given a set of leaving constraints." alt="" coords="900,1566,1057,1606"/>
+<area shape="rect" id="node47" href="$solver__interface_8c.html#a03ad73d0e41054e90232d141e73474ab" title="Solve the linear system ." alt="" coords="901,1416,1057,1441"/>
+<area shape="rect" id="node48" href="$solver__interface_8c.html#adee67b7c00941da3be82394e4f58c47e" title="Update the &#160;factorization given a set of entering constraints." alt="" coords="907,1630,1051,1670"/>
+<area shape="rect" id="node49" href="$lin__alg_8c.html#ade8612cfab1bef397f1ff7a36f202e73" title="Copy integer vector a into preallocated vector b." alt="" coords="907,1695,1050,1720"/>
+<area shape="rect" id="node50" href="$solver__interface_8c.html#a1d321f8b340db936d2f62a9abb350600" title="Form the KKT system &#160;." alt="" coords="914,1744,1043,1769"/>
+</map>

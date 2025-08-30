@@ -1,0 +1,5 @@
+<map id="ldldowndate_leaving_constraints" name="ldldowndate_leaving_constraints">
+<area shape="rect" id="node1" title="Downdate the &#160;factorization given a set of leaving constraints." alt="" coords="429,5,587,47"/>
+<area shape="rect" id="node2" href="$newton_8c.html#af1654e5597faac8b0ade25acf1fc1bc9" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="220,13,381,39"/>
+<area shape="rect" id="node3" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="5,13,172,39"/>
+</map>

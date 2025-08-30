@@ -1,0 +1,12 @@
+<map id="newton.h" name="newton.h">
+<area shape="rect" id="Node000001" title="Functions to calculate the semismooth Newton direction." alt="" coords="43,5,125,31"/>
+<area shape="rect" id="Node000002" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="49,79,119,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,31,87,65,81,65,81,31"/>
+<area shape="rect" id="Node000003" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="76,152,185,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,103,118,139,113,142,89,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,225,72,251"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="83,105,67,153,48,213,43,211,61,151,78,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="118,179,66,219,63,215,114,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="97,225,165,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="133,178,133,212,128,212,128,178"/>
+</map>

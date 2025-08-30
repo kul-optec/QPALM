@@ -1,0 +1,4 @@
+<map id="qpalm_set_factorization_method" name="qpalm_set_factorization_method">
+<area shape="rect" id="node1" title="Choose the linear systems solver method based on the problem data sizes." alt="" coords="160,5,339,47"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#gaaff827465b1299909f394de8771baef9" title="Initialize QPALM solver allocating memory." alt="" coords="5,13,112,39"/>
+</map>

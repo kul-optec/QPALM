@@ -1,0 +1,7 @@
+<map id="unscale_data" name="unscale_data">
+<area shape="rect" id="Node000001" title="Unscale the problem data." alt="" coords="5,31,113,56"/>
+<area shape="rect" id="Node000002" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="187,5,294,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,33,173,25,174,30,114,38"/>
+<area shape="rect" id="Node000003" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="161,55,320,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,48,148,52,147,58,113,53"/>
+</map>

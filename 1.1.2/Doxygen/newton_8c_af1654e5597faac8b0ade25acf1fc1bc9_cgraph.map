@@ -1,0 +1,23 @@
+<map id="newton_set_direction" name="newton_set_direction">
+<area shape="rect" id="node1" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="5,515,167,541"/>
+<area shape="rect" id="node2" href="$solver__interface_8c.html#aca80eaf7b897030273f1a6820b7e6d38" title="Solve the KKT system ." alt="" coords="256,56,341,83"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="451,56,569,83"/>
+<area shape="rect" id="node4" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="431,107,589,133"/>
+<area shape="rect" id="node6" href="$solver__interface_8c.html#a7ab6022f2624a8f13bf8f54067c9f2cd" title="Perform a factorization update for the entering constraints." alt="" coords="221,209,377,250"/>
+<area shape="rect" id="node7" href="$solver__interface_8c.html#a172614d18d4dd82e001245d7ceea389f" title="Perform a factorization update for the leaving constraints." alt="" coords="223,274,374,315"/>
+<area shape="rect" id="node8" href="$solver__interface_8c.html#ab4921dab7206bd333c9e7dc679dce0b1" title="Calculate &#160;factorization of a matrix ." alt="" coords="477,365,543,392"/>
+<area shape="rect" id="node9" href="$solver__interface_8c.html#a972c4868a7391f4b18d836f1ca0810d9" title="Calculate &#160;factorization of , with &#160;and &#160;the set of active constraints." alt="" coords="229,340,368,367"/>
+<area shape="rect" id="node10" href="$solver__interface_8c.html#a6892fee611934ae5337f1be0235bfc80" title="Downdate the &#160;factorization given a set of leaving constraints." alt="" coords="220,442,377,483"/>
+<area shape="rect" id="node11" href="$solver__interface_8c.html#a03ad73d0e41054e90232d141e73474ab" title="Solve the linear system ." alt="" coords="221,107,377,133"/>
+<area shape="rect" id="node12" href="$solver__interface_8c.html#adee67b7c00941da3be82394e4f58c47e" title="Update the &#160;factorization given a set of entering constraints." alt="" coords="227,507,371,549"/>
+<area shape="rect" id="node13" href="$solver__interface_8c.html#a4824fb035d8cdb8ba46e4ac5c4049d5d" title="Matrix&#45;vector multiplication." alt="" coords="259,573,338,600"/>
+<area shape="rect" id="node14" href="$lin__alg_8c.html#ade8612cfab1bef397f1ff7a36f202e73" title="Copy integer vector a into preallocated vector b." alt="" coords="227,624,370,651"/>
+<area shape="rect" id="node15" href="$solver__interface_8c.html#a1d321f8b340db936d2f62a9abb350600" title="Form the KKT system ." alt="" coords="234,675,363,701"/>
+<area shape="rect" id="node16" href="$solver__interface_8c.html#ad0f4712f4b0ab25ecca938a1f4b1e0a1" title="Reform the KKT system (i.e." alt="" coords="227,725,370,752"/>
+<area shape="rect" id="node17" href="$newton_8c.html#ae27a99e2b3249e8455b72c2e2a977dd8" title="Computes the set of active constraints and stores it in work&#45;&gt;solver&#45;&gt;active_constraints." alt="" coords="215,776,383,803"/>
+<area shape="rect" id="node18" href="$newton_8c.html#a43d518127e8561034e35ba18d0e15b31" title="Determines the entering and leaving constraints and stores them in work&#45;&gt;solver&#45;&gt;enter and work&#45;&gt;solv..." alt="" coords="219,827,378,869"/>
+<area shape="rect" id="node19" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="236,893,361,920"/>
+<area shape="rect" id="node20" href="$lin__alg_8c.html#a863f6634d67489350855e97c36c8c59c" title="Scaled addition of one vector to another vector, both being scaled, ." alt="" coords="217,944,380,971"/>
+<area shape="rect" id="node21" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="243,995,354,1021"/>
+<area shape="rect" id="node5" href="$lin__alg_8c.html#a67ead739705f515285526db604c5bb7d" title="Fill float vector with a scalar value." alt="" coords="451,5,569,32"/>
+</map>

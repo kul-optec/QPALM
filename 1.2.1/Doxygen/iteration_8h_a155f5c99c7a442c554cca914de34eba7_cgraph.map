@@ -1,0 +1,15 @@
+<map id="initialize_sigma" name="initialize_sigma">
+<area shape="rect" id="Node000001" title="Initialize penalty factors from initial x." alt="" coords="5,129,131,155"/>
+<area shape="rect" id="Node000002" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="183,5,308,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,127,119,85,147,61,177,40,188,34,190,39,180,44,150,65,123,89,82,131"/>
+<area shape="rect" id="Node000003" href="$lin__alg_8c.html#a93df027e9826a479bf77a0770817c71a" title="Elementwise mid between vectors, ." alt="" coords="179,55,312,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,127,178,89,194,82,196,87,180,94,96,132"/>
+<area shape="rect" id="Node000004" href="$lin__alg_8c.html#aebb20e932bc52e918667db2a70cb0781" title="Elementwise reciprocal ." alt="" coords="188,104,303,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,130,174,124,175,129,131,136"/>
+<area shape="rect" id="Node000005" href="$lin__alg_8c.html#aff49f7b83b7dc6ec1b18557c9f4ea995" title="Elementwise square root, ." alt="" coords="194,153,297,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="131,148,181,155,180,160,131,153"/>
+<area shape="rect" id="Node000006" href="$lin__alg_8c.html#ab83e787c2e0edb5803a860b1c894f53d" title="Inner product between two vectors, ." alt="" coords="205,203,286,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="99,152,180,188,199,195,197,200,178,192,96,157"/>
+<area shape="rect" id="Node000007" href="$lin__alg_8c.html#a67ead739705f515285526db604c5bb7d" title="Fill float vector with a scalar value." alt="" coords="186,252,305,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="83,153,124,194,180,237,193,244,191,249,177,242,120,198,79,157"/>
+</map>

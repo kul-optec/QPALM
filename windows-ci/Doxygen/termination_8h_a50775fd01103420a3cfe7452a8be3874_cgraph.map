@@ -1,0 +1,10 @@
+<map id="calculate_residual_norms_and_tolerances" name="calculate_residual_norms_and_tolerances">
+<area shape="rect" id="node1" title="Calls the routines that compute the norm of the residuals and the tolerances." alt="" coords="5,74,181,115"/>
+<area shape="rect" id="node2" href="$termination_8c.html#af1889ad003b14a004d4560bedde40ce9" title="Calculates the infinity norm of the dual residual and the residual of the subproblem and stores them ..." alt="" coords="237,5,420,32"/>
+<area shape="rect" id="node6" href="$termination_8c.html#ad746ec6ec47a1240e5e910abfb01fee3" title="Calculates the dual tolerance for the problem and current subproblem and stores them in work&#45;&gt;eps_dua..." alt="" coords="233,56,424,83"/>
+<area shape="rect" id="node7" href="$termination_8c.html#afc13c2c286796ec381cdb5c83d9f764f" title="Calculates the infinity norm of the primal residual and stores it in work&#45;&gt;info&#45;&gt;pri_res_norm." alt="" coords="234,107,423,133"/>
+<area shape="rect" id="node8" href="$termination_8c.html#ac638a8fe12bfee736c6832fa6140c92d" title="Calculates the primal tolerance and stores it in work&#45;&gt;eps_pri." alt="" coords="229,157,428,184"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="476,5,601,32"/>
+<area shape="rect" id="node4" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="485,107,592,133"/>
+<area shape="rect" id="node5" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="483,56,594,83"/>
+</map>

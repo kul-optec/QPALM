@@ -1,0 +1,19 @@
+<map id="scale_data" name="scale_data">
+<area shape="rect" id="Node000001" title="Scale problem matrices." alt="" coords="5,179,97,204"/>
+<area shape="rect" id="Node000002" href="$scaling_8c.html#a6d8255033fe7895a885af496fc510407" title=" " alt="" coords="172,5,277,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,177,85,112,111,73,144,40,158,31,161,36,147,44,115,77,89,115,60,179"/>
+<area shape="rect" id="Node000003" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="165,55,284,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="59,177,93,134,117,110,144,89,155,83,158,88,147,94,120,114,97,138,63,180"/>
+<area shape="rect" id="Node000004" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="171,104,278,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="72,176,144,138,163,131,165,136,146,143,74,181"/>
+<area shape="rect" id="Node000005" href="$lin__alg_8c.html#aebb20e932bc52e918667db2a70cb0781" title="Elementwise reciprocal ." alt="" coords="167,153,282,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="97,182,153,174,154,179,98,187"/>
+<area shape="rect" id="Node000006" href="$lin__alg_8c.html#aff49f7b83b7dc6ec1b18557c9f4ea995" title="Elementwise square root, ." alt="" coords="173,203,276,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="98,195,160,204,159,209,97,200"/>
+<area shape="rect" id="Node000007" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="169,252,280,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="76,202,146,237,168,245,166,250,144,242,73,206"/>
+<area shape="rect" id="Node000008" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="145,301,304,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="64,203,98,244,121,267,147,286,161,294,158,299,144,291,117,271,94,248,60,206"/>
+<area shape="rect" id="Node000009" href="$lin__alg_8c.html#a67ead739705f515285526db604c5bb7d" title="Fill float vector with a scalar value." alt="" coords="165,351,284,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="60,203,90,266,115,304,147,336,157,342,154,347,144,340,111,307,85,269,55,205"/>
+</map>

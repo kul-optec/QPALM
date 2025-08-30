@@ -1,0 +1,6 @@
+<map id="qpalm_update_q" name="qpalm_update_q">
+<area shape="rect" id="node1" title="Update the linear part of the cost." alt="" coords="5,56,136,83"/>
+<area shape="rect" id="node2" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="184,5,303,32"/>
+<area shape="rect" id="node3" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="200,56,287,83"/>
+<area shape="rect" id="node4" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="198,107,289,133"/>
+</map>

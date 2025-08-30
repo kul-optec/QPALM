@@ -1,0 +1,16 @@
+<map id="termination.h" name="termination.h">
+<area shape="rect" id="Node000001" title="Routines to check the termination and infeasibility criteria." alt="" coords="148,5,259,31"/>
+<area shape="rect" id="Node000002" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="5,174,204,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,37,102,54,88,66,76,80,69,103,72,128,82,152,93,173,89,175,77,154,67,129,64,103,72,77,84,62,99,50,133,32"/>
+<area shape="rect" id="Node000003" href="$termination_8c.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="86,79,321,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,44,206,79,201,79,201,44"/>
+<area shape="rect" id="Node000004" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="345,86,419,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="243,34,357,84,355,88,241,39"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="340,119,334,121,166,177,164,171,332,116,338,114"/>
+<area shape="rect" id="Node000005" href="$qpalm_8cpp.html" title=" " alt="" coords="257,167,451,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="377,125,364,167,359,166,372,124"/>
+<area shape="rect" id="Node000006" href="$qpalm__fortran_8h.html" title=" " alt="" coords="475,167,670,221"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="419,115,520,164,518,169,416,120"/>
+<area shape="rect" id="Node000007" href="$qpalm__fortran_8c.html" title=" " alt="" coords="475,269,670,324"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="575,235,575,269,570,269,570,235"/>
+</map>

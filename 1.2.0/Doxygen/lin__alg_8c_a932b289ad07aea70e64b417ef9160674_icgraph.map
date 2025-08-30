@@ -1,0 +1,29 @@
+<map id="vec_self_mult_scalar" name="vec_self_mult_scalar">
+<area shape="rect" id="Node000001" title="Mulitply vector with a constant scale factor." alt="" coords="989,183,1148,208"/>
+<area shape="rect" id="Node000002" href="$linesearch_8c.html#a647cabae1574f21e412110765ea1e70d" title="Execute exact linesearch (using qsort)" alt="" coords="591,5,723,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1052,172,1033,143,1008,110,977,78,940,52,886,31,829,20,773,15,723,15,723,10,773,10,830,14,888,26,943,48,980,74,1012,106,1037,140,1056,169"/>
+<area shape="rect" id="Node000003" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="361,56,528,81"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="1045,174,1000,132,972,112,940,96,888,80,832,67,721,55,616,55,528,61,528,55,616,49,721,50,833,62,889,74,942,92,974,107,1004,128,1049,170"/>
+<area shape="rect" id="Node000007" href="$solver__interface_8c.html#aca80eaf7b897030273f1a6820b7e6d38" title="Solve the KKT system &#160;." alt="" coords="821,107,906,132"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1020,180,898,135,900,130,1022,175"/>
+<area shape="rect" id="Node000008" href="$newton_8c.html#af1654e5597faac8b0ade25acf1fc1bc9" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="576,132,737,157"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="975,187,737,157,738,152,976,181"/>
+<area shape="rect" id="Node000009" href="$solver__interface_8c.html#a03ad73d0e41054e90232d141e73474ab" title="Solve the linear system ." alt="" coords="785,208,941,233"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="976,209,942,214,941,208,975,204"/>
+<area shape="rect" id="Node000010" href="$scaling_8c.html#a3735b6c9c3aeeddfb3bb0982ae5f70ba" title="Scale problem matrices." alt="" coords="817,257,909,283"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="1026,216,942,249,908,260,907,255,940,243,1024,211"/>
+<area shape="rect" id="Node000011" href="$termination_8c.html#a59f3d4d2ea459665833cc3d5e9265d5e" title="Helper function to store the (unscaled) solution in the solution struct." alt="" coords="806,307,921,332"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="1046,220,1001,259,943,298,916,309,914,304,940,293,997,255,1043,216"/>
+<area shape="rect" id="Node000012" href="$scaling_8c.html#ade09374cb3567d09382e0bc68df5acba" title="Unscale the problem data." alt="" coords="809,356,917,381"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="1055,222,1010,284,979,318,943,347,919,359,916,354,940,342,975,314,1006,281,1051,218"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="590,37,499,59,498,53,589,31"/>
+<area shape="rect" id="Node000004" href="$group__solver-grp.html#ga17fcba910c32b8518df93617591b1cf1" title="Solve the quadratic program." alt="" coords="208,56,313,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="348,71,314,71,314,66,348,66"/>
+<area shape="rect" id="Node000005" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,31,147,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="194,62,147,55,147,50,195,57"/>
+<area shape="rect" id="Node000006" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,80,160,105"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="195,80,161,85,160,80,194,75"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="807,129,738,137,737,132,806,124"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="606,130,480,84,482,79,608,125"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="814,206,691,160,693,155,816,201"/>
+</map>

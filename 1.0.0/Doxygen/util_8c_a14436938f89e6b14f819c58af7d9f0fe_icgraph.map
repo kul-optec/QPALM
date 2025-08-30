@@ -1,0 +1,6 @@
+<map id="copy_settings" name="copy_settings">
+<area shape="rect" id="node1" title="Copy settings creating a new settings structure." alt="" coords="441,31,553,57"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#gaaff827465b1299909f394de8771baef9" title="Initialize QPALM solver allocating memory." alt="" coords="253,5,359,32"/>
+<area shape="rect" id="node3" href="$group__solver-grp.html#ga581cf986cb484ec5721f76b025eda704" title="Update the settings to the new settings." alt="" coords="219,56,393,83"/>
+<area shape="rect" id="node4" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="5,49,171,90"/>
+</map>

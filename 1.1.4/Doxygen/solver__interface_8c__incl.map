@@ -1,0 +1,11 @@
+<map id="QPALM/src/solver_interface.c" name="QPALM/src/solver_interface.c">
+<area shape="rect" id="node1" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="190,5,400,31"/>
+<area shape="rect" id="node2" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="131,79,208,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="136,372,203,397"/>
+<area shape="rect" id="node7" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="100,152,239,177"/>
+<area shape="rect" id="node9" title=" " alt="" coords="380,79,447,104"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="10,225,81,251"/>
+<area shape="rect" id="node4" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="23,299,132,324"/>
+<area shape="rect" id="node6" title=" " alt="" coords="44,372,112,397"/>
+<area shape="rect" id="node8" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="208,299,305,324"/>
+</map>

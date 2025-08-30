@@ -1,0 +1,17 @@
+<map id="QPALMWorkspace" name="QPALMWorkspace">
+<area shape="rect" id="Node000001" title="QPALM Workspace." alt="" coords="478,733,631,2999"/>
+<area shape="rect" id="Node000002" href="$structQPALMData.html" title="Data structure." alt="" coords="5,235,96,441"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,440,84,552,111,670,150,808,195,948,292,1222,389,1471,474,1675,469,1677,384,1473,287,1224,190,950,145,810,105,671,79,553,61,441"/>
+<area shape="rect" id="Node000003" href="$structarray__element.html" title="Array to sort in linesearch." alt="" coords="120,295,229,381"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,380,210,510,244,670,362,1148,476,1574,471,1576,357,1150,239,671,205,511,180,381"/>
+<area shape="rect" id="Node000004" href="$structQPALMSolver.html" title="Variables for linear system solving." alt="" coords="254,5,429,671"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="390,670,478,1300,473,1301,385,671"/>
+<area shape="rect" id="Node000005" href="$structQPALMSettings.html" title="Settings struct." alt="" coords="453,15,656,661"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="557,661,557,717,552,717,552,661"/>
+<area shape="rect" id="Node000006" href="$structQPALMScaling.html" title="Problem scaling matrices stored as vectors." alt="" coords="680,255,787,421"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="726,421,636,1194,631,1194,721,420"/>
+<area shape="rect" id="Node000007" href="$structQPALMSolution.html" title="Solution structure." alt="" coords="811,295,923,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="861,381,637,1474,632,1473,856,380"/>
+<area shape="rect" id="Node000008" href="$structQPALMInfo.html" title="Solver return information." alt="" coords="946,195,1075,481"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="983,482,937,671,863,929,784,1185,639,1628,634,1626,779,1184,858,927,932,670,978,480"/>
+</map>

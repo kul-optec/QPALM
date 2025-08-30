@@ -1,0 +1,29 @@
+<map id="QPALM/include/types.h" name="QPALM/include/types.h">
+<area shape="rect" id="node1" title="Internal data structures used in QPALM." alt="" coords="1851,5,2021,32"/>
+<area shape="rect" id="node2" href="$iteration_8h.html" title="QPALM main solver routines." alt="" coords="2412,169,2601,196"/>
+<area shape="rect" id="node3" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="2021,319,2195,345"/>
+<area shape="rect" id="node10" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="1042,169,1219,196"/>
+<area shape="rect" id="node11" href="$scaling_8h.html" title="Problem data scaling during setup." alt="" coords="617,244,797,271"/>
+<area shape="rect" id="node16" href="$nonconvex_8c.html" title="Routines to deal with nonconvex QPs." alt="" coords="2108,244,2284,271"/>
+<area shape="rect" id="node18" href="$util_8c.html" title="Utility functions." alt="" coords="1418,244,1545,271"/>
+<area shape="rect" id="node20" href="$linesearch_8h.html" title="Routines to perform exact linesearch." alt="" coords="1419,169,1621,196"/>
+<area shape="rect" id="node21" href="$newton_8h.html" title="Functions to calculate the semismooth Newton direction." alt="" coords="1645,169,1827,196"/>
+<area shape="rect" id="node22" href="$nonconvex_8h.html" title="Routines to deal with nonconvex QPs." alt="" coords="1953,169,2159,196"/>
+<area shape="rect" id="node23" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="1071,80,1233,121"/>
+<area shape="rect" id="node24" href="$termination_8h.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="2676,169,2887,196"/>
+<area shape="rect" id="node25" href="$util_8h.html" title="Utility functions." alt="" coords="2233,169,2388,196"/>
+<area shape="rect" id="node26" href="$validate_8h.html" title="Validation of the user provided settings and data." alt="" coords="233,169,420,196"/>
+<area shape="rect" id="node27" href="$qpalm_8hpp.html" title=" " alt="" coords="2807,80,2969,121"/>
+<area shape="rect" id="node7" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="1611,401,1757,427"/>
+<area shape="rect" id="node8" href="$iteration_8c.html" title="QPALM main solver routines." alt="" coords="1772,244,1932,271"/>
+<area shape="rect" id="node9" href="$termination_8c.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="2409,244,2591,271"/>
+<area shape="rect" id="node4" href="$qpalm_8cpp.html" title=" " alt="" coords="2552,393,2715,435"/>
+<area shape="rect" id="node5" href="$qpalm__fortran_8h.html" title=" " alt="" coords="2016,393,2200,435"/>
+<area shape="rect" id="node6" href="$qpalm__fortran_8c.html" title=" " alt="" coords="2016,483,2200,524"/>
+<area shape="rect" id="node12" href="$scaling_8c.html" title="Problem data scaling during setup." alt="" coords="574,319,725,345"/>
+<area shape="rect" id="node13" href="$lin__alg_8c.html" title="Linear algebra with vectors." alt="" coords="821,244,969,271"/>
+<area shape="rect" id="node14" href="$linesearch_8c.html" title="Routines to perform exact or backtracking linesearch." alt="" coords="1045,244,1217,271"/>
+<area shape="rect" id="node15" href="$newton_8c.html" title="Functions to calculate the semismooth Newton direction." alt="" coords="1241,244,1394,271"/>
+<area shape="rect" id="node17" href="$solver__interface_8c.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="229,244,440,271"/>
+<area shape="rect" id="node19" href="$validate_8c.html" title="Validation of the user provided settings and data." alt="" coords="46,244,205,271"/>
+</map>

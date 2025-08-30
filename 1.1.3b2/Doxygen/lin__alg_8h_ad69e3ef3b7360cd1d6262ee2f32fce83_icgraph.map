@@ -1,0 +1,19 @@
+<map id="vec_norm_inf" name="vec_norm_inf">
+<area shape="rect" id="node1" title="Infinity norm of a vector, ." alt="" coords="832,229,943,255"/>
+<area shape="rect" id="node2" href="$termination_8c.html#af1889ad003b14a004d4560bedde40ce9" title="Calculates the infinity norm of the dual residual and the residual of the subproblem and stores them ..." alt="" coords="593,5,776,31"/>
+<area shape="rect" id="node7" href="$termination_8c.html#ad746ec6ec47a1240e5e910abfb01fee3" title="Calculates the dual tolerance for the problem and current subproblem and stores them in work&#45;&gt;eps_dua..." alt="" coords="589,55,780,80"/>
+<area shape="rect" id="node8" href="$termination_8c.html#afc13c2c286796ec381cdb5c83d9f764f" title="Calculates the infinity norm of the primal residual and stores it in work&#45;&gt;info&#45;&gt;pri_res_norm." alt="" coords="590,104,779,129"/>
+<area shape="rect" id="node9" href="$termination_8c.html#ac638a8fe12bfee736c6832fa6140c92d" title="Calculates the primal tolerance and stores it in work&#45;&gt;eps_pri." alt="" coords="585,153,784,179"/>
+<area shape="rect" id="node10" href="$termination_8c.html#a8cf01c07469436e7c562c9f3e162fd2b" title="Check whether the problem is dual infeasible." alt="" coords="380,204,519,229"/>
+<area shape="rect" id="node11" href="$termination_8c.html#a4df388b37067a843cbb2c6b244496d9c" title="Check whether the problem is primal infeasible." alt="" coords="373,255,526,280"/>
+<area shape="rect" id="node12" href="$newton_8c.html#af1654e5597faac8b0ade25acf1fc1bc9" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="604,305,765,331"/>
+<area shape="rect" id="node14" href="$scaling_8c.html#a3735b6c9c3aeeddfb3bb0982ae5f70ba" title="Scale problem matrices." alt="" coords="639,355,731,380"/>
+<area shape="rect" id="node15" href="$iteration_8c.html#a786f2d2af82a141fe3825a3964659d50" title=" " alt="" coords="599,405,771,445"/>
+<area shape="rect" id="node17" href="$iteration_8c.html#a8ea42d3c9ff0d6d8dc8f144d0b03dc0d" title="Update the penalty factors." alt="" coords="627,469,742,495"/>
+<area shape="rect" id="node3" href="$termination_8c.html#a50775fd01103420a3cfe7452a8be3874" title="Calls the routines that compute the norm of the residuals and the tolerances." alt="" coords="361,97,537,137"/>
+<area shape="rect" id="node4" href="$group__solver-grp.html#ga9bbc8b47dfd2e86a81dd77feb4077bde" title="Solve the quadratic program." alt="" coords="208,280,313,305"/>
+<area shape="rect" id="node5" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,255,147,280"/>
+<area shape="rect" id="node6" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,304,160,329"/>
+<area shape="rect" id="node13" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="366,305,533,331"/>
+<area shape="rect" id="node16" href="$iteration_8c.html#a1ad7b6cb4924a8de3378ed35890b02e7" title=" " alt="" coords="373,405,525,445"/>
+</map>

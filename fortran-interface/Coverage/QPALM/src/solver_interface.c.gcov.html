@@ -1,0 +1,449 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - 8934aaf910efa2f52d2fe3af819245666530b709 - QPALM/src/solver_interface.c</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">QPALM/src</a> - solver_interface.c<span style="font-size: 80%;"> (source / <a href="solver_interface.c.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">8934aaf910efa2f52d2fe3af819245666530b709</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">204</td>
+            <td class="headerCovTableEntry">207</td>
+            <td class="headerCovTableEntryHi">98.6 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2022-04-29 18:39:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">14</td>
+            <td class="headerCovTableEntry">14</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Legend:</td>
+            <td class="headerValueLeg">            Lines:
+            <span class="coverLegendCov">hit</span>
+            <span class="coverLegendNoCov">not hit</span>
+</td>
+            <td></td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : /**</a>
+<a name="2"><span class="lineNum">       2 </span>            :  * @file solver_interface.c</a>
+<a name="3"><span class="lineNum">       3 </span>            :  * @author Ben Hermans</a>
+<a name="4"><span class="lineNum">       4 </span>            :  * @brief Interface and wrapper to matrix/factorization (ladel) functions</a>
+<a name="5"><span class="lineNum">       5 </span>            :  * @details This file includes all calls to ladel functions apart from scaling in scaling.c and memory</a>
+<a name="6"><span class="lineNum">       6 </span>            :  * allocation/deallocation in the main functions in qpalm.c. It includes all matrix operations, such as</a>
+<a name="7"><span class="lineNum">       7 </span>            :  * matrix vector products, row- and columnwise norms, cholesky factorizations, factorization updates and</a>
+<a name="8"><span class="lineNum">       8 </span>            :  * solving the linear system. </a>
+<a name="9"><span class="lineNum">       9 </span>            :  * </a>
+<a name="10"><span class="lineNum">      10 </span>            :  */</a>
+<a name="11"><span class="lineNum">      11 </span>            : </a>
+<a name="12"><span class="lineNum">      12 </span>            : #include &quot;lin_alg.h&quot;</a>
+<a name="13"><span class="lineNum">      13 </span>            : #include &quot;solver_interface.h&quot;</a>
+<a name="14"><span class="lineNum">      14 </span>            : #include &lt;stdio.h&gt;</a>
+<a name="15"><span class="lineNum">      15 </span>            : </a>
+<a name="16"><span class="lineNum">      16 </span>            : #include &quot;ladel.h&quot;</a>
+<a name="17"><span class="lineNum">      17 </span>            : </a>
+<a name="18"><span class="lineNum">      18 </span><span class="lineCov">         94 : void qpalm_set_factorization_method(QPALMWorkspace *work, solver_common *c)</span></a>
+<a name="19"><span class="lineNum">      19 </span>            : {</a>
+<a name="20"><span class="lineNum">      20 </span><span class="lineCov">         94 :   if (work-&gt;settings-&gt;factorization_method == FACTORIZE_KKT_OR_SCHUR)</span></a>
+<a name="21"><span class="lineNum">      21 </span>            :   {</a>
+<a name="22"><span class="lineNum">      22 </span><span class="lineCov">         37 :     ladel_int col, index, nnz_kkt, nnz_schur, n = work-&gt;data-&gt;n, m = work-&gt;data-&gt;m;</span></a>
+<a name="23"><span class="lineNum">      23 </span><span class="lineCov">         37 :     solver_sparse *Q = work-&gt;data-&gt;Q, *A = work-&gt;data-&gt;A;</span></a>
+<a name="24"><span class="lineNum">      24 </span>            :     /* Compute nnz in KKT */</a>
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">         37 :     nnz_kkt = Q-&gt;nzmax + n + A-&gt;nzmax + m;</span></a>
+<a name="26"><span class="lineNum">      26 </span>            :     /* Compensate for diagonal entries present in Q */ </a>
+<a name="27"><span class="lineNum">      27 </span><span class="lineCov">        160 :     for (col = 1; col &lt;= n; col++)</span></a>
+<a name="28"><span class="lineNum">      28 </span>            :     {</a>
+<a name="29"><span class="lineNum">      29 </span><span class="lineCov">        123 :       index = Q-&gt;p[col]-1;</span></a>
+<a name="30"><span class="lineNum">      30 </span><span class="lineCov">        123 :       if (index &gt;= 0 &amp;&amp; Q-&gt;i[index] == col-1) nnz_kkt--;</span></a>
+<a name="31"><span class="lineNum">      31 </span>            :     } </a>
+<a name="32"><span class="lineNum">      32 </span>            : </a>
+<a name="33"><span class="lineNum">      33 </span>            :     /* Compute nnz in SCHUR (approximately) */</a>
+<a name="34"><span class="lineNum">      34 </span><span class="lineCov">         37 :     nnz_schur = nnz_kkt - A-&gt;nzmax - m; /* Q + diagonal */</span></a>
+<a name="35"><span class="lineNum">      35 </span>            : </a>
+<a name="36"><span class="lineNum">      36 </span>            :     /* (over)estimate the nnz introduced by AtA */</a>
+<a name="37"><span class="lineNum">      37 </span>            :     solver_sparse *At;</a>
+<a name="38"><span class="lineNum">      38 </span><span class="lineCov">         37 :     c-&gt;array_int_ncol1 = work-&gt;index_L; /* Avoid allocating full workspace */</span></a>
+<a name="39"><span class="lineNum">      39 </span><span class="lineCov">         37 :     At = ladel_transpose(work-&gt;data-&gt;A, FALSE, c);</span></a>
+<a name="40"><span class="lineNum">      40 </span><span class="lineCov">         37 :     c-&gt;array_int_ncol1 = NULL;</span></a>
+<a name="41"><span class="lineNum">      41 </span>            : </a>
+<a name="42"><span class="lineNum">      42 </span><span class="lineCov">         37 :     ladel_int Atnz_col, Atnz_col_max = 0;</span></a>
+<a name="43"><span class="lineNum">      43 </span><span class="lineCov">        192 :     for (col = 0; col &lt; m; col++) Atnz_col_max = c_max(At-&gt;p[col+1] - At-&gt;p[col], Atnz_col_max);</span></a>
+<a name="44"><span class="lineNum">      44 </span><span class="lineCov">        192 :     for (col = 0; col &lt; m; col++)</span></a>
+<a name="45"><span class="lineNum">      45 </span>            :     {</a>
+<a name="46"><span class="lineNum">      46 </span><span class="lineCov">        155 :       Atnz_col = At-&gt;p[col+1] - At-&gt;p[col];</span></a>
+<a name="47"><span class="lineNum">      47 </span><span class="lineCov">        155 :       if (Atnz_col + Atnz_col_max &lt;= n)</span></a>
+<a name="48"><span class="lineNum">      48 </span><span class="lineCov">         99 :         nnz_schur += (Atnz_col*(Atnz_col-1))/2;</span></a>
+<a name="49"><span class="lineNum">      49 </span>            :       else</a>
+<a name="50"><span class="lineNum">      50 </span><span class="lineCov">         56 :                   nnz_schur += (Atnz_col*(n - Atnz_col_max) - ((n - Atnz_col_max)*(n - Atnz_col_max + 1)) / 2);</span></a>
+<a name="51"><span class="lineNum">      51 </span>            :     }</a>
+<a name="52"><span class="lineNum">      52 </span><span class="lineCov">         37 :         if (2 * Atnz_col_max &gt; n) nnz_schur += (Atnz_col_max*(Atnz_col_max - 1)) / 2 - (Atnz_col_max*(n - Atnz_col_max) - ((n - Atnz_col_max)*(n - Atnz_col_max + 1)) / 2);</span></a>
+<a name="53"><span class="lineNum">      53 </span><span class="lineCov">         37 :     nnz_schur = c_max(c_min(nnz_schur, (n*(n-1))/2), 1);</span></a>
+<a name="54"><span class="lineNum">      54 </span>            :     /* NB: If nnz(KKT) == nnz(Q+AtA) &lt;&lt; n^2, then KKT will perform a bit better due to the </a>
+<a name="55"><span class="lineNum">      55 </span>            :     ordering. */;</a>
+<a name="56"><span class="lineNum">      56 </span><span class="lineCov">         37 :     At = ladel_sparse_free(At);</span></a>
+<a name="57"><span class="lineNum">      57 </span>            : </a>
+<a name="58"><span class="lineNum">      58 </span>            :     /* Switching criterion */</a>
+<a name="59"><span class="lineNum">      59 </span><span class="lineCov">         37 :     if ((nnz_kkt*nnz_kkt)/(nnz_schur*nnz_schur)*n/(n+m) &lt; 2) </span></a>
+<a name="60"><span class="lineNum">      60 </span><span class="lineCov">          1 :         work-&gt;solver-&gt;factorization_method = FACTORIZE_KKT;</span></a>
+<a name="61"><span class="lineNum">      61 </span>            :     else</a>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">         36 :         work-&gt;solver-&gt;factorization_method = FACTORIZE_SCHUR;</span></a>
+<a name="63"><span class="lineNum">      63 </span>            : </a>
+<a name="64"><span class="lineNum">      64 </span>            :   } else</a>
+<a name="65"><span class="lineNum">      65 </span>            :   {</a>
+<a name="66"><span class="lineNum">      66 </span><span class="lineCov">         57 :     work-&gt;solver-&gt;factorization_method = work-&gt;settings-&gt;factorization_method;</span></a>
+<a name="67"><span class="lineNum">      67 </span>            :   }</a>
+<a name="68"><span class="lineNum">      68 </span>            : </a>
+<a name="69"><span class="lineNum">      69 </span><span class="lineCov">         94 : }</span></a>
+<a name="70"><span class="lineNum">      70 </span>            : </a>
+<a name="71"><span class="lineNum">      71 </span>            : </a>
+<a name="72"><span class="lineNum">      72 </span>            : </a>
+<a name="73"><span class="lineNum">      73 </span><span class="lineCov">       1095 : void mat_vec(solver_sparse *A, solver_dense *x, solver_dense *y, solver_common *c) </span></a>
+<a name="74"><span class="lineNum">      74 </span>            : {</a>
+<a name="75"><span class="lineNum">      75 </span>            :     (void)c;</a>
+<a name="76"><span class="lineNum">      76 </span><span class="lineCov">       1095 :     ladel_int n = A-&gt;ncol;</span></a>
+<a name="77"><span class="lineNum">      77 </span><span class="lineCov">       1095 :     if (x!=y) {</span></a>
+<a name="78"><span class="lineNum">      78 </span><span class="lineCov">       1094 :       if (A-&gt;symmetry == UNSYMMETRIC)</span></a>
+<a name="79"><span class="lineNum">      79 </span><span class="lineCov">        446 :         ladel_matvec(A, x, y, TRUE);</span></a>
+<a name="80"><span class="lineNum">      80 </span>            :       else</a>
+<a name="81"><span class="lineNum">      81 </span><span class="lineCov">        648 :         ladel_symmetric_matvec(A, x, y, TRUE);</span></a>
+<a name="82"><span class="lineNum">      82 </span>            :     } else {</a>
+<a name="83"><span class="lineNum">      83 </span><span class="lineCov">          1 :       ladel_double* x2 = ladel_malloc(n, sizeof(c_float));</span></a>
+<a name="84"><span class="lineNum">      84 </span><span class="lineCov">          1 :       ladel_double_vector_copy(x, n, x2);</span></a>
+<a name="85"><span class="lineNum">      85 </span><span class="lineCov">          1 :       if (A-&gt;symmetry == UNSYMMETRIC)</span></a>
+<a name="86"><span class="lineNum">      86 </span><span class="lineNoCov">          0 :         ladel_matvec(A, x2, y, TRUE);</span></a>
+<a name="87"><span class="lineNum">      87 </span>            :       else</a>
+<a name="88"><span class="lineNum">      88 </span><span class="lineCov">          1 :         ladel_symmetric_matvec(A, x2, y, TRUE);</span></a>
+<a name="89"><span class="lineNum">      89 </span><span class="lineCov">          1 :       ladel_free(x2);</span></a>
+<a name="90"><span class="lineNum">      90 </span>            :     }</a>
+<a name="91"><span class="lineNum">      91 </span><span class="lineCov">       1095 : }</span></a>
+<a name="92"><span class="lineNum">      92 </span>            : </a>
+<a name="93"><span class="lineNum">      93 </span><span class="lineCov">        801 : void mat_tpose_vec(solver_sparse *A, solver_dense *x, solver_dense *y, solver_common *c)</span></a>
+<a name="94"><span class="lineNum">      94 </span>            : {</a>
+<a name="95"><span class="lineNum">      95 </span>            :     (void)c;</a>
+<a name="96"><span class="lineNum">      96 </span><span class="lineCov">        801 :     ladel_int m = A-&gt;nrow;</span></a>
+<a name="97"><span class="lineNum">      97 </span><span class="lineCov">        801 :     if (x!=y) {</span></a>
+<a name="98"><span class="lineNum">      98 </span><span class="lineCov">        800 :       if (A-&gt;symmetry == UNSYMMETRIC)</span></a>
+<a name="99"><span class="lineNum">      99 </span><span class="lineCov">        800 :         ladel_tpose_matvec(A, x, y, TRUE);</span></a>
+<a name="100"><span class="lineNum">     100 </span>            :       else</a>
+<a name="101"><span class="lineNum">     101 </span><span class="lineNoCov">          0 :         ladel_symmetric_matvec(A, x, y, TRUE);  </span></a>
+<a name="102"><span class="lineNum">     102 </span>            :     } else {</a>
+<a name="103"><span class="lineNum">     103 </span><span class="lineCov">          1 :       ladel_double* x2 = ladel_malloc(m, sizeof(c_float));</span></a>
+<a name="104"><span class="lineNum">     104 </span><span class="lineCov">          1 :       ladel_double_vector_copy(x, m, x2);</span></a>
+<a name="105"><span class="lineNum">     105 </span><span class="lineCov">          1 :       if (A-&gt;symmetry == UNSYMMETRIC)</span></a>
+<a name="106"><span class="lineNum">     106 </span><span class="lineNoCov">          0 :         ladel_tpose_matvec(A, x2, y, TRUE);</span></a>
+<a name="107"><span class="lineNum">     107 </span>            :       else</a>
+<a name="108"><span class="lineNum">     108 </span><span class="lineCov">          1 :         ladel_symmetric_matvec(A, x2, y, TRUE); </span></a>
+<a name="109"><span class="lineNum">     109 </span><span class="lineCov">          1 :       ladel_free(x2);</span></a>
+<a name="110"><span class="lineNum">     110 </span>            :     }</a>
+<a name="111"><span class="lineNum">     111 </span><span class="lineCov">        801 : }</span></a>
+<a name="112"><span class="lineNum">     112 </span>            : </a>
+<a name="113"><span class="lineNum">     113 </span>            : // TODO: incorporate the factorizations here also, and write a version of FACTORIZE_KKT using cholmod </a>
+<a name="114"><span class="lineNum">     114 </span><span class="lineCov">         30 : void qpalm_form_kkt(QPALMWorkspace *work)</span></a>
+<a name="115"><span class="lineNum">     115 </span>            : {</a>
+<a name="116"><span class="lineNum">     116 </span><span class="lineCov">         30 :     solver_sparse *Q = work-&gt;data-&gt;Q, *kkt = work-&gt;solver-&gt;kkt, *kkt_full = work-&gt;solver-&gt;kkt_full, *At = work-&gt;solver-&gt;At;</span></a>
+<a name="117"><span class="lineNum">     117 </span><span class="lineCov">         30 :     ladel_int col, index, index_kkt, n = work-&gt;data-&gt;n, m = work-&gt;data-&gt;m, Qnz = Q-&gt;nzmax;</span></a>
+<a name="118"><span class="lineNum">     118 </span><span class="lineCov">         30 :     c_float *sigma_inv = work-&gt;sigma_inv, *first_elem_A = work-&gt;solver-&gt;first_elem_A;</span></a>
+<a name="119"><span class="lineNum">     119 </span><span class="lineCov">         30 :     c_int *first_row_A = work-&gt;solver-&gt;first_row_A;</span></a>
+<a name="120"><span class="lineNum">     120 </span>            :     /* copy Q */</a>
+<a name="121"><span class="lineNum">     121 </span><span class="lineCov">        145 :     for (col = 0; col &lt; n; col++)</span></a>
+<a name="122"><span class="lineNum">     122 </span>            :     {</a>
+<a name="123"><span class="lineNum">     123 </span><span class="lineCov">        115 :         kkt-&gt;p[col] = kkt_full-&gt;p[col] = Q-&gt;p[col];</span></a>
+<a name="124"><span class="lineNum">     124 </span><span class="lineCov">        115 :         kkt-&gt;nz[col] = Q-&gt;p[col+1] - Q-&gt;p[col];</span></a>
+<a name="125"><span class="lineNum">     125 </span>            :     }</a>
+<a name="126"><span class="lineNum">     126 </span><span class="lineCov">         30 :     kkt-&gt;p[col] = kkt_full-&gt;p[col] = Q-&gt;p[col];</span></a>
+<a name="127"><span class="lineNum">     127 </span><span class="lineCov">        145 :     for (index = 0; index &lt; Qnz; index++)</span></a>
+<a name="128"><span class="lineNum">     128 </span>            :     {</a>
+<a name="129"><span class="lineNum">     129 </span><span class="lineCov">        115 :         kkt-&gt;i[index] = kkt_full-&gt;i[index] = Q-&gt;i[index];</span></a>
+<a name="130"><span class="lineNum">     130 </span><span class="lineCov">        115 :         kkt-&gt;x[index] = kkt_full-&gt;x[index] = Q-&gt;x[index];</span></a>
+<a name="131"><span class="lineNum">     131 </span>            :     }</a>
+<a name="132"><span class="lineNum">     132 </span>            : </a>
+<a name="133"><span class="lineNum">     133 </span>            :     /* copy [At; -\Sigma^{-1}] */</a>
+<a name="134"><span class="lineNum">     134 </span><span class="lineCov">         30 :     index_kkt = Qnz;</span></a>
+<a name="135"><span class="lineNum">     135 </span><span class="lineCov">        172 :     for (; col &lt; m+n; col++)</span></a>
+<a name="136"><span class="lineNum">     136 </span>            :     {</a>
+<a name="137"><span class="lineNum">     137 </span><span class="lineCov">        142 :         kkt_full-&gt;i[index_kkt] = first_row_A[col-n] = At-&gt;i[At-&gt;p[col-n]];</span></a>
+<a name="138"><span class="lineNum">     138 </span><span class="lineCov">        142 :         kkt_full-&gt;x[index_kkt] = first_elem_A[col-n] = At-&gt;x[At-&gt;p[col-n]];</span></a>
+<a name="139"><span class="lineNum">     139 </span>            : </a>
+<a name="140"><span class="lineNum">     140 </span><span class="lineCov">        142 :         if (work-&gt;solver-&gt;active_constraints[col-n])</span></a>
+<a name="141"><span class="lineNum">     141 </span>            :         {</a>
+<a name="142"><span class="lineNum">     142 </span><span class="lineCov">         12 :             kkt-&gt;nz[col] = At-&gt;p[col-n+1] - At-&gt;p[col-n] + 1;</span></a>
+<a name="143"><span class="lineNum">     143 </span><span class="lineCov">         12 :             kkt-&gt;i[index_kkt] = At-&gt;i[At-&gt;p[col-n]];</span></a>
+<a name="144"><span class="lineNum">     144 </span><span class="lineCov">         12 :             kkt-&gt;x[index_kkt] = At-&gt;x[At-&gt;p[col-n]];</span></a>
+<a name="145"><span class="lineNum">     145 </span>            :         } </a>
+<a name="146"><span class="lineNum">     146 </span>            :         else </a>
+<a name="147"><span class="lineNum">     147 </span>            :         {</a>
+<a name="148"><span class="lineNum">     148 </span><span class="lineCov">        130 :             kkt-&gt;nz[col] = 1;</span></a>
+<a name="149"><span class="lineNum">     149 </span><span class="lineCov">        130 :             kkt-&gt;i[index_kkt] = col;</span></a>
+<a name="150"><span class="lineNum">     150 </span><span class="lineCov">        130 :             kkt-&gt;x[index_kkt] = 1;</span></a>
+<a name="151"><span class="lineNum">     151 </span>            :         }</a>
+<a name="152"><span class="lineNum">     152 </span>            : </a>
+<a name="153"><span class="lineNum">     153 </span><span class="lineCov">        142 :         if (At-&gt;p[col-n+1]-At-&gt;p[col-n] != 0) index_kkt++;</span></a>
+<a name="154"><span class="lineNum">     154 </span>            : </a>
+<a name="155"><span class="lineNum">     155 </span><span class="lineCov">        184 :         for (index = At-&gt;p[col-n]+1; index &lt; At-&gt;p[col-n+1]; index++)</span></a>
+<a name="156"><span class="lineNum">     156 </span>            :         {</a>
+<a name="157"><span class="lineNum">     157 </span><span class="lineCov">         42 :             kkt-&gt;i[index_kkt] = kkt_full-&gt;i[index_kkt] = At-&gt;i[index];</span></a>
+<a name="158"><span class="lineNum">     158 </span><span class="lineCov">         42 :             kkt-&gt;x[index_kkt] = kkt_full-&gt;x[index_kkt] = At-&gt;x[index];</span></a>
+<a name="159"><span class="lineNum">     159 </span><span class="lineCov">         42 :             index_kkt++;</span></a>
+<a name="160"><span class="lineNum">     160 </span>            :         }</a>
+<a name="161"><span class="lineNum">     161 </span>            : </a>
+<a name="162"><span class="lineNum">     162 </span><span class="lineCov">        142 :         kkt-&gt;i[index_kkt] = kkt_full-&gt;i[index_kkt] = col;</span></a>
+<a name="163"><span class="lineNum">     163 </span><span class="lineCov">        142 :         kkt-&gt;x[index_kkt] = kkt_full-&gt;x[index_kkt] = -sigma_inv[col-n];</span></a>
+<a name="164"><span class="lineNum">     164 </span><span class="lineCov">        142 :         if (At-&gt;p[col-n+1]-At-&gt;p[col-n] == 0) kkt-&gt;x[index_kkt] = 1;</span></a>
+<a name="165"><span class="lineNum">     165 </span><span class="lineCov">        142 :         index_kkt++;</span></a>
+<a name="166"><span class="lineNum">     166 </span>            : </a>
+<a name="167"><span class="lineNum">     167 </span><span class="lineCov">        142 :         kkt-&gt;p[col+1] = kkt_full-&gt;p[col+1] = Qnz + At-&gt;p[col+1-n] + 1 + col - n;</span></a>
+<a name="168"><span class="lineNum">     168 </span>            :     }</a>
+<a name="169"><span class="lineNum">     169 </span><span class="lineCov">         30 : }</span></a>
+<a name="170"><span class="lineNum">     170 </span>            : </a>
+<a name="171"><span class="lineNum">     171 </span>            : </a>
+<a name="172"><span class="lineNum">     172 </span><span class="lineCov">         60 : void qpalm_reform_kkt(QPALMWorkspace *work)</span></a>
+<a name="173"><span class="lineNum">     173 </span>            : {</a>
+<a name="174"><span class="lineNum">     174 </span><span class="lineCov">         60 :     solver_sparse *kkt = work-&gt;solver-&gt;kkt, *At = work-&gt;solver-&gt;At;</span></a>
+<a name="175"><span class="lineNum">     175 </span><span class="lineCov">         60 :     ladel_int col, n = work-&gt;data-&gt;n, m = work-&gt;data-&gt;m;</span></a>
+<a name="176"><span class="lineNum">     176 </span><span class="lineCov">         60 :     ladel_int *first_row_A = work-&gt;solver-&gt;first_row_A;</span></a>
+<a name="177"><span class="lineNum">     177 </span><span class="lineCov">         60 :     ladel_double *sigma_inv = work-&gt;sigma_inv, *first_elem_A = work-&gt;solver-&gt;first_elem_A;</span></a>
+<a name="178"><span class="lineNum">     178 </span>            : </a>
+<a name="179"><span class="lineNum">     179 </span><span class="lineCov">        303 :     for (col = n; col &lt; n+m; col++)</span></a>
+<a name="180"><span class="lineNum">     180 </span>            :     {</a>
+<a name="181"><span class="lineNum">     181 </span><span class="lineCov">        243 :         if (work-&gt;solver-&gt;active_constraints[col-n])</span></a>
+<a name="182"><span class="lineNum">     182 </span>            :         {</a>
+<a name="183"><span class="lineNum">     183 </span><span class="lineCov">        139 :             kkt-&gt;nz[col] = At-&gt;p[col-n+1] - At-&gt;p[col-n] + 1;</span></a>
+<a name="184"><span class="lineNum">     184 </span><span class="lineCov">        139 :             kkt-&gt;i[kkt-&gt;p[col]] = first_row_A[col-n];</span></a>
+<a name="185"><span class="lineNum">     185 </span><span class="lineCov">        139 :             kkt-&gt;x[kkt-&gt;p[col]] = first_elem_A[col-n];</span></a>
+<a name="186"><span class="lineNum">     186 </span><span class="lineCov">        139 :             kkt-&gt;x[kkt-&gt;p[col+1]-1] = -sigma_inv[col-n]; /* row index should be correct already */</span></a>
+<a name="187"><span class="lineNum">     187 </span><span class="lineCov">        139 :             kkt-&gt;i[kkt-&gt;p[col+1]-1] = col;</span></a>
+<a name="188"><span class="lineNum">     188 </span>            :         } else</a>
+<a name="189"><span class="lineNum">     189 </span>            :         {</a>
+<a name="190"><span class="lineNum">     190 </span><span class="lineCov">        104 :             kkt-&gt;nz[col] = 1;</span></a>
+<a name="191"><span class="lineNum">     191 </span><span class="lineCov">        104 :             kkt-&gt;i[kkt-&gt;p[col]] = col;</span></a>
+<a name="192"><span class="lineNum">     192 </span><span class="lineCov">        104 :             kkt-&gt;x[kkt-&gt;p[col]] = 1; </span></a>
+<a name="193"><span class="lineNum">     193 </span>            :         }</a>
+<a name="194"><span class="lineNum">     194 </span>            :     }</a>
+<a name="195"><span class="lineNum">     195 </span><span class="lineCov">         60 : }</span></a>
+<a name="196"><span class="lineNum">     196 </span>            : </a>
+<a name="197"><span class="lineNum">     197 </span><span class="lineCov">         64 : void kkt_update_entering_constraints(QPALMWorkspace *work, solver_common *c)</span></a>
+<a name="198"><span class="lineNum">     198 </span>            : {</a>
+<a name="199"><span class="lineNum">     199 </span><span class="lineCov">         64 :     solver_sparse *kkt = work-&gt;solver-&gt;kkt, *At = work-&gt;solver-&gt;At;</span></a>
+<a name="200"><span class="lineNum">     200 </span><span class="lineCov">         64 :     ladel_int col, index, n = work-&gt;data-&gt;n;</span></a>
+<a name="201"><span class="lineNum">     201 </span><span class="lineCov">         64 :     ladel_int *first_row_A = work-&gt;solver-&gt;first_row_A;</span></a>
+<a name="202"><span class="lineNum">     202 </span><span class="lineCov">         64 :     ladel_double *sigma_inv = work-&gt;sigma_inv, *first_elem_A = work-&gt;solver-&gt;first_elem_A;</span></a>
+<a name="203"><span class="lineNum">     203 </span>            : </a>
+<a name="204"><span class="lineNum">     204 </span><span class="lineCov">        129 :     for (index = 0; index &lt; work-&gt;solver-&gt;nb_enter; index++)</span></a>
+<a name="205"><span class="lineNum">     205 </span>            :     {</a>
+<a name="206"><span class="lineNum">     206 </span><span class="lineCov">         65 :         col = work-&gt;solver-&gt;enter[index] + n;</span></a>
+<a name="207"><span class="lineNum">     207 </span><span class="lineCov">         65 :         kkt-&gt;nz[col] = At-&gt;p[col-n+1] - At-&gt;p[col-n] + 1;</span></a>
+<a name="208"><span class="lineNum">     208 </span><span class="lineCov">         65 :         kkt-&gt;i[kkt-&gt;p[col]] = first_row_A[col-n];</span></a>
+<a name="209"><span class="lineNum">     209 </span><span class="lineCov">         65 :         kkt-&gt;x[kkt-&gt;p[col]] = first_elem_A[col-n];</span></a>
+<a name="210"><span class="lineNum">     210 </span><span class="lineCov">         65 :         kkt-&gt;x[kkt-&gt;p[col+1]-1] = -sigma_inv[col-n]; /* row index should be correct already */</span></a>
+<a name="211"><span class="lineNum">     211 </span><span class="lineCov">         65 :         ladel_row_add(work-&gt;solver-&gt;LD, work-&gt;solver-&gt;sym, col, kkt, col, -sigma_inv[col-n], c);</span></a>
+<a name="212"><span class="lineNum">     212 </span>            :     }</a>
+<a name="213"><span class="lineNum">     213 </span><span class="lineCov">         64 : }</span></a>
+<a name="214"><span class="lineNum">     214 </span>            : </a>
+<a name="215"><span class="lineNum">     215 </span><span class="lineCov">          1 : void kkt_update_leaving_constraints(QPALMWorkspace *work, solver_common *c)</span></a>
+<a name="216"><span class="lineNum">     216 </span>            : {</a>
+<a name="217"><span class="lineNum">     217 </span><span class="lineCov">          1 :     ladel_int col, index, n = work-&gt;data-&gt;n;</span></a>
+<a name="218"><span class="lineNum">     218 </span><span class="lineCov">          1 :     ladel_double *sigma_inv = work-&gt;sigma_inv;</span></a>
+<a name="219"><span class="lineNum">     219 </span><span class="lineCov">          1 :     solver_sparse *kkt = work-&gt;solver-&gt;kkt;</span></a>
+<a name="220"><span class="lineNum">     220 </span>            : </a>
+<a name="221"><span class="lineNum">     221 </span><span class="lineCov">          2 :     for (index = 0; index &lt; work-&gt;solver-&gt;nb_leave; index++)</span></a>
+<a name="222"><span class="lineNum">     222 </span>            :     {</a>
+<a name="223"><span class="lineNum">     223 </span><span class="lineCov">          1 :         col = work-&gt;solver-&gt;leave[index] + n;</span></a>
+<a name="224"><span class="lineNum">     224 </span><span class="lineCov">          1 :         ladel_row_del(work-&gt;solver-&gt;LD, work-&gt;solver-&gt;sym, col, c);</span></a>
+<a name="225"><span class="lineNum">     225 </span>            :         </a>
+<a name="226"><span class="lineNum">     226 </span>            :         /* no need to update the kkt system here, except for iterative refinement */</a>
+<a name="227"><span class="lineNum">     227 </span><span class="lineCov">          1 :         kkt-&gt;nz[col] = 1;</span></a>
+<a name="228"><span class="lineNum">     228 </span><span class="lineCov">          1 :         kkt-&gt;i[kkt-&gt;p[col]] = col;</span></a>
+<a name="229"><span class="lineNum">     229 </span><span class="lineCov">          1 :         kkt-&gt;x[kkt-&gt;p[col]] = -sigma_inv[col-n];</span></a>
+<a name="230"><span class="lineNum">     230 </span>            :     }</a>
+<a name="231"><span class="lineNum">     231 </span><span class="lineCov">          1 : }</span></a>
+<a name="232"><span class="lineNum">     232 </span>            : </a>
+<a name="233"><span class="lineNum">     233 </span><span class="lineCov">        167 : void kkt_solve(QPALMWorkspace *work, solver_common *c)</span></a>
+<a name="234"><span class="lineNum">     234 </span>            : {</a>
+<a name="235"><span class="lineNum">     235 </span><span class="lineCov">        167 :     c_int n = work-&gt;data-&gt;n, m = work-&gt;data-&gt;m;</span></a>
+<a name="236"><span class="lineNum">     236 </span><span class="lineCov">        167 :     prea_vec_copy(work-&gt;dphi, work-&gt;solver-&gt;rhs_kkt, n);</span></a>
+<a name="237"><span class="lineNum">     237 </span><span class="lineCov">        167 :     vec_self_mult_scalar(work-&gt;solver-&gt;rhs_kkt, -1, n);</span></a>
+<a name="238"><span class="lineNum">     238 </span><span class="lineCov">        167 :     vec_set_scalar(work-&gt;solver-&gt;rhs_kkt + n, 0, m);</span></a>
+<a name="239"><span class="lineNum">     239 </span>            : </a>
+<a name="240"><span class="lineNum">     240 </span><span class="lineCov">        167 :     ladel_dense_solve(work-&gt;solver-&gt;LD, work-&gt;solver-&gt;rhs_kkt, work-&gt;solver-&gt;sol_kkt, c);</span></a>
+<a name="241"><span class="lineNum">     241 </span><span class="lineCov">        167 :     prea_vec_copy(work-&gt;solver-&gt;sol_kkt, work-&gt;d, n);</span></a>
+<a name="242"><span class="lineNum">     242 </span><span class="lineCov">        167 : }</span></a>
+<a name="243"><span class="lineNum">     243 </span>            : </a>
+<a name="244"><span class="lineNum">     244 </span>            : </a>
+<a name="245"><span class="lineNum">     245 </span>            : </a>
+<a name="246"><span class="lineNum">     246 </span><span class="lineCov">         67 : void ldlchol(solver_sparse *M, QPALMWorkspace *work, solver_common *c) {</span></a>
+<a name="247"><span class="lineNum">     247 </span>            :   ladel_diag d;</a>
+<a name="248"><span class="lineNum">     248 </span><span class="lineCov">         67 :   d.diag_elem = 1.0/work-&gt;gamma;</span></a>
+<a name="249"><span class="lineNum">     249 </span><span class="lineCov">         67 :   if (work-&gt;settings-&gt;proximal) d.diag_size = work-&gt;data-&gt;n;</span></a>
+<a name="250"><span class="lineNum">     250 </span><span class="lineCov">         16 :   else d.diag_size = 0;</span></a>
+<a name="251"><span class="lineNum">     251 </span>            : </a>
+<a name="252"><span class="lineNum">     252 </span><span class="lineCov">         67 :   if (work-&gt;solver-&gt;first_factorization)</span></a>
+<a name="253"><span class="lineNum">     253 </span>            :   {</a>
+<a name="254"><span class="lineNum">     254 </span><span class="lineCov">         53 :     work-&gt;solver-&gt;LD = ladel_factor_free(work-&gt;solver-&gt;LD);</span></a>
+<a name="255"><span class="lineNum">     255 </span>            :     /* Compute the pattern of Q+A^T*A to allocate L */</a>
+<a name="256"><span class="lineNum">     256 </span>            :     solver_sparse *AtA, *QAtA;</a>
+<a name="257"><span class="lineNum">     257 </span><span class="lineCov">         53 :     AtA = ladel_mat_mat_transpose_pattern(work-&gt;solver-&gt;At_sqrt_sigma, work-&gt;data-&gt;A, c);</span></a>
+<a name="258"><span class="lineNum">     258 </span><span class="lineCov">         53 :     QAtA = ladel_add_matrices_pattern(work-&gt;data-&gt;Q, AtA, c);</span></a>
+<a name="259"><span class="lineNum">     259 </span><span class="lineCov">         53 :     QAtA-&gt;symmetry = UPPER;</span></a>
+<a name="260"><span class="lineNum">     260 </span>            : </a>
+<a name="261"><span class="lineNum">     261 </span>            :     /* TODO: consider SCHUR method also with ordering */</a>
+<a name="262"><span class="lineNum">     262 </span><span class="lineCov">         53 :     ladel_factorize_advanced_with_diag(M, d, work-&gt;solver-&gt;sym, NO_ORDERING, &amp;work-&gt;solver-&gt;LD, QAtA, c);</span></a>
+<a name="263"><span class="lineNum">     263 </span>            :     </a>
+<a name="264"><span class="lineNum">     264 </span><span class="lineCov">         53 :     ladel_sparse_free(AtA);</span></a>
+<a name="265"><span class="lineNum">     265 </span><span class="lineCov">         53 :     ladel_sparse_free(QAtA);</span></a>
+<a name="266"><span class="lineNum">     266 </span><span class="lineCov">         53 :     work-&gt;solver-&gt;first_factorization = FALSE;</span></a>
+<a name="267"><span class="lineNum">     267 </span>            :   }</a>
+<a name="268"><span class="lineNum">     268 </span>            :   else</a>
+<a name="269"><span class="lineNum">     269 </span>            :   {</a>
+<a name="270"><span class="lineNum">     270 </span><span class="lineCov">         14 :     ladel_factorize_with_prior_basis_with_diag(M, d, work-&gt;solver-&gt;sym, work-&gt;solver-&gt;LD, c);</span></a>
+<a name="271"><span class="lineNum">     271 </span>            :   }</a>
+<a name="272"><span class="lineNum">     272 </span><span class="lineCov">         67 : }</span></a>
+<a name="273"><span class="lineNum">     273 </span>            : </a>
+<a name="274"><span class="lineNum">     274 </span><span class="lineCov">         22 : void ldlcholQAtsigmaA(QPALMWorkspace *work, solver_common *c) {</span></a>
+<a name="275"><span class="lineNum">     275 </span>            :   solver_sparse *AtsigmaA;</a>
+<a name="276"><span class="lineNum">     276 </span>            :   solver_sparse *QAtsigmaA;</a>
+<a name="277"><span class="lineNum">     277 </span><span class="lineCov">         22 :   size_t nb_active = 0;</span></a>
+<a name="278"><span class="lineNum">     278 </span><span class="lineCov">        122 :   for (size_t i = 0; i &lt; work-&gt;data-&gt;m; i++) {</span></a>
+<a name="279"><span class="lineNum">     279 </span><span class="lineCov">        100 :       if (work-&gt;solver-&gt;active_constraints[i]){</span></a>
+<a name="280"><span class="lineNum">     280 </span><span class="lineCov">         39 :           work-&gt;solver-&gt;enter[nb_active] = (c_int)i;</span></a>
+<a name="281"><span class="lineNum">     281 </span><span class="lineCov">         39 :           nb_active++;</span></a>
+<a name="282"><span class="lineNum">     282 </span>            :       }      </a>
+<a name="283"><span class="lineNum">     283 </span>            :   }</a>
+<a name="284"><span class="lineNum">     284 </span><span class="lineCov">         22 :   solver_sparse *At_sqrt_sigma = ladel_column_submatrix(work-&gt;solver-&gt;At_sqrt_sigma, work-&gt;solver-&gt;enter, nb_active);</span></a>
+<a name="285"><span class="lineNum">     285 </span><span class="lineCov">         22 :   solver_sparse *A_sqrt_sigma = ladel_transpose(At_sqrt_sigma, TRUE, c);</span></a>
+<a name="286"><span class="lineNum">     286 </span><span class="lineCov">         22 :   AtsigmaA = ladel_mat_mat_transpose(At_sqrt_sigma, A_sqrt_sigma, c);</span></a>
+<a name="287"><span class="lineNum">     287 </span><span class="lineCov">         22 :   QAtsigmaA = ladel_add_matrices(1.0, work-&gt;data-&gt;Q, 1.0, AtsigmaA, c);</span></a>
+<a name="288"><span class="lineNum">     288 </span><span class="lineCov">         22 :   QAtsigmaA-&gt;symmetry = UPPER;</span></a>
+<a name="289"><span class="lineNum">     289 </span><span class="lineCov">         22 :   ldlchol(QAtsigmaA, work, c);</span></a>
+<a name="290"><span class="lineNum">     290 </span>            : </a>
+<a name="291"><span class="lineNum">     291 </span><span class="lineCov">         22 :   AtsigmaA = ladel_sparse_free(AtsigmaA);</span></a>
+<a name="292"><span class="lineNum">     292 </span><span class="lineCov">         22 :   QAtsigmaA = ladel_sparse_free(QAtsigmaA);</span></a>
+<a name="293"><span class="lineNum">     293 </span><span class="lineCov">         22 :   At_sqrt_sigma = ladel_sparse_free(At_sqrt_sigma);</span></a>
+<a name="294"><span class="lineNum">     294 </span><span class="lineCov">         22 :   A_sqrt_sigma = ladel_sparse_free(A_sqrt_sigma);</span></a>
+<a name="295"><span class="lineNum">     295 </span><span class="lineCov">         22 : }</span></a>
+<a name="296"><span class="lineNum">     296 </span>            : </a>
+<a name="297"><span class="lineNum">     297 </span><span class="lineCov">         99 : void ldlupdate_entering_constraints(QPALMWorkspace *work, solver_common *c) {</span></a>
+<a name="298"><span class="lineNum">     298 </span>            :   ladel_int index;</a>
+<a name="299"><span class="lineNum">     299 </span><span class="lineCov">        200 :   for (index = 0; index &lt; work-&gt;solver-&gt;nb_enter; index++)</span></a>
+<a name="300"><span class="lineNum">     300 </span>            :   {</a>
+<a name="301"><span class="lineNum">     301 </span><span class="lineCov">        101 :     ladel_rank1_update(work-&gt;solver-&gt;LD, work-&gt;solver-&gt;sym, work-&gt;solver-&gt;At_sqrt_sigma, </span></a>
+<a name="302"><span class="lineNum">     302 </span><span class="lineCov">        101 :                         work-&gt;solver-&gt;enter[index], 1.0, UPDATE, c);</span></a>
+<a name="303"><span class="lineNum">     303 </span>            :   }</a>
+<a name="304"><span class="lineNum">     304 </span><span class="lineCov">         99 : }</span></a>
+<a name="305"><span class="lineNum">     305 </span>            : </a>
+<a name="306"><span class="lineNum">     306 </span><span class="lineCov">         16 : void ldldowndate_leaving_constraints(QPALMWorkspace *work, solver_common *c) {</span></a>
+<a name="307"><span class="lineNum">     307 </span>            :   ladel_int index;</a>
+<a name="308"><span class="lineNum">     308 </span><span class="lineCov">         32 :   for (index = 0; index &lt; work-&gt;solver-&gt;nb_leave; index++)</span></a>
+<a name="309"><span class="lineNum">     309 </span>            :   {</a>
+<a name="310"><span class="lineNum">     310 </span><span class="lineCov">         16 :     ladel_rank1_update(work-&gt;solver-&gt;LD, work-&gt;solver-&gt;sym, work-&gt;solver-&gt;At_sqrt_sigma, </span></a>
+<a name="311"><span class="lineNum">     311 </span><span class="lineCov">         16 :                         work-&gt;solver-&gt;leave[index], 1.0, DOWNDATE, c);</span></a>
+<a name="312"><span class="lineNum">     312 </span>            :   }</a>
+<a name="313"><span class="lineNum">     313 </span><span class="lineCov">         16 : }</span></a>
+<a name="314"><span class="lineNum">     314 </span>            : </a>
+<a name="315"><span class="lineNum">     315 </span><span class="lineCov">        128 : void ldlupdate_sigma_changed(QPALMWorkspace *work, solver_common *c) {</span></a>
+<a name="316"><span class="lineNum">     316 </span><span class="lineCov">        128 :   c_int *sigma_changed = work-&gt;solver-&gt;enter;</span></a>
+<a name="317"><span class="lineNum">     317 </span>            :   c_int row;</a>
+<a name="318"><span class="lineNum">     318 </span><span class="lineCov">        128 :   size_t k, nb_sigma_changed = (size_t) work-&gt;nb_sigma_changed;</span></a>
+<a name="319"><span class="lineNum">     319 </span>            :   </a>
+<a name="320"><span class="lineNum">     320 </span><span class="lineCov">        128 :   c_float *At_scalex = work-&gt;solver-&gt;At_scale;</span></a>
+<a name="321"><span class="lineNum">     321 </span>            :   </a>
+<a name="322"><span class="lineNum">     322 </span><span class="lineCov">        355 :   for (k = 0; k &lt; nb_sigma_changed; k++) {</span></a>
+<a name="323"><span class="lineNum">     323 </span><span class="lineCov">        227 :     row = sigma_changed[k];</span></a>
+<a name="324"><span class="lineNum">     324 </span><span class="lineCov">        227 :     At_scalex[row] = At_scalex[row]*At_scalex[row];</span></a>
+<a name="325"><span class="lineNum">     325 </span><span class="lineCov">        227 :     if (work-&gt;solver-&gt;factorization_method == FACTORIZE_SCHUR) </span></a>
+<a name="326"><span class="lineNum">     326 </span><span class="lineCov">        139 :       At_scalex[row] = c_sqrt(1-1/At_scalex[row]); </span></a>
+<a name="327"><span class="lineNum">     327 </span>            :   }</a>
+<a name="328"><span class="lineNum">     328 </span>            : </a>
+<a name="329"><span class="lineNum">     329 </span><span class="lineCov">        128 :   if (work-&gt;solver-&gt;factorization_method == FACTORIZE_KKT)</span></a>
+<a name="330"><span class="lineNum">     330 </span>            :   {</a>
+<a name="331"><span class="lineNum">     331 </span><span class="lineCov">         44 :     ladel_sparse_matrix *W = ladel_sparse_alloc(work-&gt;data-&gt;n + work-&gt;data-&gt;m, 1, 1, UNSYMMETRIC, TRUE, FALSE);</span></a>
+<a name="332"><span class="lineNum">     332 </span><span class="lineCov">         44 :     W-&gt;p[0] = 0;</span></a>
+<a name="333"><span class="lineNum">     333 </span><span class="lineCov">         44 :     W-&gt;p[1] = 1;</span></a>
+<a name="334"><span class="lineNum">     334 </span><span class="lineCov">         44 :     W-&gt;x[0] = 1.0;</span></a>
+<a name="335"><span class="lineNum">     335 </span>            :     c_int row;</a>
+<a name="336"><span class="lineNum">     336 </span>            :     c_float factor;</a>
+<a name="337"><span class="lineNum">     337 </span><span class="lineCov">        132 :     for (k = 0; k &lt; nb_sigma_changed; k++)</span></a>
+<a name="338"><span class="lineNum">     338 </span>            :     {</a>
+<a name="339"><span class="lineNum">     339 </span><span class="lineCov">         88 :       row = sigma_changed[k];</span></a>
+<a name="340"><span class="lineNum">     340 </span><span class="lineCov">         88 :       W-&gt;i[0] = (work-&gt;solver-&gt;LD-&gt;pinv) ? work-&gt;solver-&gt;LD-&gt;pinv[row] : row;</span></a>
+<a name="341"><span class="lineNum">     341 </span>            :       // ladel_print(&quot;Row: %d\n&quot;, row);</a>
+<a name="342"><span class="lineNum">     342 </span><span class="lineCov">         88 :       factor = work-&gt;sigma_inv[row]*(At_scalex[row] - 1.0);</span></a>
+<a name="343"><span class="lineNum">     343 </span>            :       // ladel_print(&quot;Factor: %f\n&quot;, factor);</a>
+<a name="344"><span class="lineNum">     344 </span><span class="lineCov">         88 :       ladel_rank1_update(work-&gt;solver-&gt;LD, work-&gt;solver-&gt;sym, W, 0, factor, UPDATE, c);</span></a>
+<a name="345"><span class="lineNum">     345 </span>            :     }</a>
+<a name="346"><span class="lineNum">     346 </span><span class="lineCov">         44 :     ladel_sparse_free(W);</span></a>
+<a name="347"><span class="lineNum">     347 </span><span class="lineCov">         44 :     work-&gt;solver-&gt;reset_newton = TRUE;</span></a>
+<a name="348"><span class="lineNum">     348 </span>            :   } else</a>
+<a name="349"><span class="lineNum">     349 </span>            :   {</a>
+<a name="350"><span class="lineNum">     350 </span><span class="lineCov">        223 :     for (k = 0; k &lt; nb_sigma_changed; k++)</span></a>
+<a name="351"><span class="lineNum">     351 </span>            :     {</a>
+<a name="352"><span class="lineNum">     352 </span><span class="lineCov">        139 :       ladel_rank1_update(work-&gt;solver-&gt;LD, work-&gt;solver-&gt;sym, work-&gt;solver-&gt;At_sqrt_sigma, </span></a>
+<a name="353"><span class="lineNum">     353 </span><span class="lineCov">        139 :                           sigma_changed[k], At_scalex[sigma_changed[k]], UPDATE, c);</span></a>
+<a name="354"><span class="lineNum">     354 </span>            :     }</a>
+<a name="355"><span class="lineNum">     355 </span>            :   }</a>
+<a name="356"><span class="lineNum">     356 </span>            :   </a>
+<a name="357"><span class="lineNum">     357 </span><span class="lineCov">        128 : }</span></a>
+<a name="358"><span class="lineNum">     358 </span>            : </a>
+<a name="359"><span class="lineNum">     359 </span><span class="lineCov">        263 : void ldlsolveLD_neg_dphi(QPALMWorkspace *work, solver_common *c) {</span></a>
+<a name="360"><span class="lineNum">     360 </span>            :   //set -dphi</a>
+<a name="361"><span class="lineNum">     361 </span><span class="lineCov">        263 :   prea_vec_copy(work-&gt;dphi, work-&gt;neg_dphi, work-&gt;data-&gt;n);</span></a>
+<a name="362"><span class="lineNum">     362 </span><span class="lineCov">        263 :   vec_self_mult_scalar(work-&gt;neg_dphi, -1, work-&gt;data-&gt;n);</span></a>
+<a name="363"><span class="lineNum">     363 </span><span class="lineCov">        263 :   ladel_dense_solve(work-&gt;solver-&gt;LD, work-&gt;neg_dphi, work-&gt;d, c);</span></a>
+<a name="364"><span class="lineNum">     364 </span><span class="lineCov">        263 : }</span></a>
+<a name="365"><span class="lineNum">     365 </span>            : </a>
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.15</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

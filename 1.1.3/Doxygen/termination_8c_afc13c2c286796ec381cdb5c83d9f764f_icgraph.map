@@ -1,0 +1,7 @@
+<map id="calculate_primal_residual" name="calculate_primal_residual">
+<area shape="rect" id="node1" title="Calculates the infinity norm of the primal residual and stores it in work&#45;&gt;info&#45;&gt;pri_res_norm." alt="" coords="585,31,775,56"/>
+<area shape="rect" id="node2" href="$termination_8c.html#a50775fd01103420a3cfe7452a8be3874" title="Calls the routines that compute the norm of the residuals and the tolerances." alt="" coords="361,23,537,63"/>
+<area shape="rect" id="node3" href="$group__solver-grp.html#ga9bbc8b47dfd2e86a81dd77feb4077bde" title="Solve the quadratic program." alt="" coords="208,31,313,56"/>
+<area shape="rect" id="node4" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,5,147,31"/>
+<area shape="rect" id="node5" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,55,160,80"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="QPALM/src/scaling.c" name="QPALM/src/scaling.c">
+<area shape="rect" id="node1" title="Problem data scaling during setup." alt="" coords="125,5,276,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="31,79,98,104"/>
+<area shape="rect" id="node3" href="$scaling_8h.html" title="Problem data scaling during setup." alt="" coords="122,79,202,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="136,445,203,471"/>
+<area shape="rect" id="node8" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="123,152,200,177"/>
+<area shape="rect" id="node4" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="10,299,81,324"/>
+<area shape="rect" id="node10" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="208,299,305,324"/>
+<area shape="rect" id="node5" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="23,372,132,397"/>
+<area shape="rect" id="node7" title=" " alt="" coords="44,445,112,471"/>
+<area shape="rect" id="node9" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="92,225,231,251"/>
+</map>

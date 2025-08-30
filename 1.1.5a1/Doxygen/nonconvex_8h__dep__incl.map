@@ -1,0 +1,18 @@
+<map id="nonconvex.h" name="nonconvex.h">
+<area shape="rect" id="Node000001" title="Routines to deal with nonconvex QPs." alt="" coords="381,5,486,31"/>
+<area shape="rect" id="Node000002" href="$iteration_8c.html" title="QPALM main solver routines." alt="" coords="5,79,219,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,37,190,81,189,76,373,31"/>
+<area shape="rect" id="Node000003" href="$nonconvex_8c.html" title="Routines to deal with nonconvex QPs." alt="" coords="243,79,472,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="415,42,378,80,374,77,411,39"/>
+<area shape="rect" id="Node000004" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="374,174,573,214"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="460,38,475,56,487,78,492,103,492,130,483,174,477,173,486,129,487,104,481,80,470,59,455,42"/>
+<area shape="rect" id="Node000005" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="620,86,695,111"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="480,33,626,83,624,88,478,38"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="624,120,512,176,509,172,621,115"/>
+<area shape="rect" id="Node000006" href="$qpalm_8cpp.html" title=" " alt="" coords="597,167,792,221"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="669,123,687,165,682,167,665,125"/>
+<area shape="rect" id="Node000007" href="$qpalm__fortran_8h.html" title=" " alt="" coords="816,167,1011,221"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="702,113,842,164,840,169,701,119"/>
+<area shape="rect" id="Node000008" href="$qpalm__fortran_8c.html" title=" " alt="" coords="816,269,1011,324"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="916,235,916,269,911,269,911,235"/>
+</map>

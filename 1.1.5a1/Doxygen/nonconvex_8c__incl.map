@@ -1,0 +1,33 @@
+<map id="/home/runner/work/QPALM/QPALM/QPALM/src/nonconvex.c" name="/home/runner/work/QPALM/QPALM/QPALM/src/nonconvex.c">
+<area shape="rect" id="Node000001" title="Routines to deal with nonconvex QPs." alt="" coords="173,5,403,45"/>
+<area shape="rect" id="Node000002" href="$nonconvex_8h.html" title="Routines to deal with nonconvex QPs." alt="" coords="326,93,431,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,44,357,82,353,86,308,48"/>
+<area shape="rect" id="Node000003" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="251,240,322,265"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="291,45,290,226,284,226,285,45"/>
+<area shape="rect" id="Node000004" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="251,313,360,339"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="380,43,417,62,433,76,446,92,459,122,458,154,448,185,430,214,382,268,335,307,331,303,378,264,425,211,443,182,453,153,453,123,442,95,429,79,414,67,377,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="283,387,351,412"/>
+<area shape="poly" id="edge21_Node000001_Node000006" title=" " alt="" coords="374,43,425,62,473,90,493,108,509,128,519,152,523,178,523,254,518,282,506,306,489,327,466,345,415,372,366,389,364,384,413,367,463,340,485,323,502,303,513,280,517,254,517,178,514,153,504,131,489,111,470,94,423,67,372,48"/>
+<area shape="rect" id="Node000007" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="14,240,111,265"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="193,48,142,65,91,90,46,124,27,145,12,168,8,184,13,200,38,229,34,233,9,202,3,184,7,166,23,141,42,120,88,85,140,60,191,43"/>
+<area shape="rect" id="Node000008" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="173,93,251,119"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="272,47,235,85,231,81,268,44"/>
+<area shape="rect" id="Node000010" href="$util_8h.html" title="Utility functions." alt="" coords="22,167,77,192"/>
+<area shape="poly" id="edge18_Node000001_Node000010" title=" " alt="" coords="250,48,163,96,75,160,72,156,160,91,247,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,120,368,154,349,193,314,233,310,229,345,191,363,152,374,118"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="292,265,302,300,296,301,287,266"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="167,387,233,412"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="278,267,241,315,212,375,207,373,237,312,274,264"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="290,341,230,381,227,377,287,336"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="310,339,316,373,311,374,305,339"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="76,264,182,375,178,379,72,268"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="223,117,254,165,281,226,276,228,250,168,219,120"/>
+<area shape="rect" id="Node000009" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="101,167,240,192"/>
+<area shape="poly" id="edge13_Node000008_Node000009" title=" " alt="" coords="208,120,187,156,182,153,203,118"/>
+<area shape="poly" id="edge16_Node000009_Node000003" title=" " alt="" coords="191,190,258,230,255,235,188,194"/>
+<area shape="poly" id="edge14_Node000009_Node000004" title=" " alt="" coords="181,190,241,264,282,302,279,306,237,267,177,194"/>
+<area shape="poly" id="edge17_Node000009_Node000005" title=" " alt="" coords="175,192,199,373,194,373,170,193"/>
+<area shape="poly" id="edge15_Node000009_Node000007" title=" " alt="" coords="155,194,93,235,90,230,152,190"/>
+<area shape="poly" id="edge19_Node000010_Node000003" title=" " alt="" coords="78,186,239,234,237,239,76,191"/>
+<area shape="poly" id="edge20_Node000010_Node000007" title=" " alt="" coords="54,192,61,226,55,227,49,193"/>
+</map>

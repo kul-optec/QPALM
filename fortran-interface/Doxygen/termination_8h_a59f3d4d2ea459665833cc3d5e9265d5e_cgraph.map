@@ -1,0 +1,7 @@
+<map id="store_solution" name="store_solution">
+<area shape="rect" id="node1" title="Helper function to store the (unscaled) solution in the solution struct." alt="" coords="5,81,120,108"/>
+<area shape="rect" id="node2" href="$iteration_8c.html#ad071efc96075a8506c9c45448b9d48e6" title="Compute the (unscaled) primal objective value at the current iterate." alt="" coords="174,5,321,32"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="188,56,307,83"/>
+<area shape="rect" id="node4" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="194,107,301,133"/>
+<area shape="rect" id="node5" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="168,157,327,184"/>
+</map>

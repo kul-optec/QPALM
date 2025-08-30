@@ -1,0 +1,12 @@
+<map id="qpalm::Solver::update_settings" name="qpalm::Solver::update_settings">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,171,166"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#ga581cf986cb484ec5721f76b025eda704" title="Update the settings to the new settings." alt="" coords="219,132,393,159"/>
+<area shape="rect" id="node3" href="$util_8c.html#a14436938f89e6b14f819c58af7d9f0fe" title="Copy settings creating a new settings structure." alt="" coords="453,5,565,32"/>
+<area shape="rect" id="node5" href="$global__opts_8c.html#a057129daf1349d96b074b9dca1994d09" title=" " alt="" coords="461,56,557,83"/>
+<area shape="rect" id="node6" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="465,107,552,133"/>
+<area shape="rect" id="node7" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="463,157,554,184"/>
+<area shape="rect" id="node8" href="$util_8c.html#a14fe651105f1f38b2a3a49614f4b8ae2" title="Update solver status (value and string)." alt="" coords="451,208,566,235"/>
+<area shape="rect" id="node10" href="$validate_8c.html#aa3fa0338cebc63078430fed1211df147" title="Validate problem settings." alt="" coords="441,259,576,285"/>
+<area shape="rect" id="node4" href="$global__opts_8c.html#a9a15c13f16dd6467bcee00e8bf62666a" title=" " alt="" coords="624,5,739,32"/>
+<area shape="rect" id="node9" href="$util_8c.html#a7645b56a91479fac2285909a25875b91" title="Custom string copy to avoid string.h library." alt="" coords="643,208,719,235"/>
+</map>

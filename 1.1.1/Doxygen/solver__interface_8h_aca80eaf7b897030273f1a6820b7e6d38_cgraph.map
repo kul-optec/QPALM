@@ -1,0 +1,6 @@
+<map id="kkt_solve" name="kkt_solve">
+<area shape="rect" id="node1" title="Solve the KKT system ." alt="" coords="5,56,91,83"/>
+<area shape="rect" id="node2" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="159,5,277,32"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="139,56,297,83"/>
+<area shape="rect" id="node4" href="$lin__alg_8c.html#a67ead739705f515285526db604c5bb7d" title="Fill float vector with a scalar value." alt="" coords="159,107,277,133"/>
+</map>

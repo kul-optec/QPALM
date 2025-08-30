@@ -1,0 +1,14 @@
+<map id="qpalm_toc" name="qpalm_toc">
+<area shape="rect" id="node1" title="Report time in seconds since last call to qpalm_tic." alt="" coords="475,132,565,159"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#gaaff827465b1299909f394de8771baef9" title="Initialize QPALM solver allocating memory." alt="" coords="286,5,393,32"/>
+<area shape="rect" id="node3" href="$group__solver-grp.html#ga385f399d0fb6afaaa0da5f3a114bf922" title="Update the lower and upper bounds." alt="" coords="255,56,424,83"/>
+<area shape="rect" id="node5" href="$group__solver-grp.html#gadc1a41812270a2a9539558e7eec403fe" title="Update the linear part of the cost." alt="" coords="274,107,405,133"/>
+<area shape="rect" id="node7" href="$group__solver-grp.html#ga327c43b0d2f129fc32e8ef2a47e289af" title="Update the matrix entries of Q and A." alt="" coords="265,157,413,184"/>
+<area shape="rect" id="node9" href="$group__solver-grp.html#ga581cf986cb484ec5721f76b025eda704" title="Update the settings to the new settings." alt="" coords="252,212,427,239"/>
+<area shape="rect" id="node11" href="$group__solver-grp.html#ga28824f01d01f181a6ad6b413f30a2609" title="Warm start workspace variables x, x_0, x_prev, Ax, Qx, y and sigma." alt="" coords="267,269,411,296"/>
+<area shape="rect" id="node4" href="$classqpalm_1_1Solver.html#a6df33bfd68c5b8caaaa6f726f1a9f517" title=" " alt="" coords="22,41,187,82"/>
+<area shape="rect" id="node6" href="$classqpalm_1_1Solver.html#a43cbe4e495be0898c733d9589531e63c" title=" " alt="" coords="15,107,195,133"/>
+<area shape="rect" id="node8" href="$classqpalm_1_1Solver.html#a11e9742322ad77345b32d806b8b3b81c" title=" " alt="" coords="5,157,204,184"/>
+<area shape="rect" id="node10" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="22,209,187,250"/>
+<area shape="rect" id="node12" href="$classqpalm_1_1Solver.html#a693af99e39a9035bbbc4fb61fcb427d1" title=" " alt="" coords="26,274,183,315"/>
+</map>

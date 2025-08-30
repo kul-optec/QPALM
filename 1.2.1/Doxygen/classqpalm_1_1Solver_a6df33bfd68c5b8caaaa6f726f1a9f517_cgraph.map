@@ -1,0 +1,15 @@
+<map id="qpalm::Solver::update_bounds" name="qpalm::Solver::update_bounds">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,171,113"/>
+<area shape="rect" id="Node000002" href="$group__solver-grp.html#ga586e7a22d9ed41fb2d477490fdabc875" title="Update the lower and upper bounds." alt="" coords="219,80,388,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,90,205,90,205,95,171,95"/>
+<area shape="rect" id="Node000003" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="436,5,555,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,77,448,33,450,38,338,82"/>
+<area shape="rect" id="Node000004" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="452,55,539,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="388,79,438,72,439,77,389,84"/>
+<area shape="rect" id="Node000005" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="450,104,541,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="389,101,437,107,436,112,388,106"/>
+<area shape="rect" id="Node000006" href="$util_8c.html#a14fe651105f1f38b2a3a49614f4b8ae2" title="Update solver status (value and string)." alt="" coords="438,153,553,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="339,103,449,146,447,151,337,108"/>
+<area shape="rect" id="Node000007" href="$util_8c.html#a7645b56a91479fac2285909a25875b91" title="Custom string copy to avoid string.h library." alt="" coords="603,153,679,179"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="553,163,589,163,589,169,553,169"/>
+</map>

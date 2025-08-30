@@ -1,0 +1,29 @@
+<map id="qpalm_setup" name="qpalm_setup">
+<area shape="rect" id="Node000001" title="Initialize QPALM solver allocating memory." alt="" coords="5,257,112,282"/>
+<area shape="rect" id="Node000002" href="$util_8c.html#a14436938f89e6b14f819c58af7d9f0fe" title="Copy settings creating a new settings structure." alt="" coords="193,306,305,332"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,280,187,300,185,305,108,285"/>
+<area shape="rect" id="Node000003" href="$global__opts_8c.html#a9a15c13f16dd6467bcee00e8bf62666a" title=" " alt="" coords="387,44,501,69"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="58,256,64,211,79,147,92,114,109,81,131,52,159,29,188,14,221,5,254,3,288,5,352,18,404,36,403,41,351,23,287,10,254,8,222,11,190,19,161,33,135,56,113,84,97,116,84,149,69,212,63,257"/>
+<area shape="rect" id="Node000004" href="$global__opts_8c.html#aa314b2eeaa0227e26c26bae34424f36f" title=" " alt="" coords="195,93,303,118"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="63,255,97,195,125,159,158,129,181,117,184,121,162,133,129,163,102,198,68,258"/>
+<area shape="rect" id="Node000005" href="$solver__interface_8c.html#a5b96b0c905b3ac7ef76d6b780d462ec7" title="Choose the linear systems solver method based on the problem data sizes." alt="" coords="160,143,339,183"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="73,254,110,224,159,193,172,186,174,191,161,197,114,228,76,259"/>
+<area shape="rect" id="Node000006" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="206,208,293,233"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="108,254,192,232,193,237,109,260"/>
+<area shape="rect" id="Node000007" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="204,257,295,282"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="112,267,190,267,190,272,112,272"/>
+<area shape="rect" id="Node000008" href="$util_8c.html#a14fe651105f1f38b2a3a49614f4b8ae2" title="Update solver status (value and string)." alt="" coords="192,454,307,480"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="66,282,77,314,97,357,125,402,162,441,181,452,178,456,158,445,120,406,92,360,72,316,61,283"/>
+<area shape="rect" id="Node000010" href="$validate_8c.html#a095cca2f68e07f3b0ebd35a2f4a12d9b" title="Validate problem data." alt="" coords="194,356,305,381"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="76,280,113,310,161,341,182,349,180,354,159,345,110,315,72,284"/>
+<area shape="rect" id="Node000011" href="$validate_8c.html#aa3fa0338cebc63078430fed1211df147" title="Validate problem settings." alt="" coords="182,405,317,430"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="69,281,104,334,131,364,162,390,175,397,172,402,158,395,127,368,100,337,65,284"/>
+<area shape="rect" id="Node000012" href="$lin__alg_8c.html#a256ef6c2562ed296f3c1bd23bc712f25" title="Copy vector a into output." alt="" coords="208,44,291,69"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="60,256,71,221,90,173,119,122,137,99,158,78,175,68,194,61,195,66,178,73,162,82,141,102,123,125,95,175,76,222,66,258"/>
+<area shape="rect" id="Node000013" href="$lin__alg_8c.html#a7e2e62d3c501d9f6df8410658c73a1ad" title="Fill int vector with a scalar value." alt="" coords="178,504,321,529"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="64,282,73,323,90,379,119,439,139,466,162,490,167,495,164,499,158,494,134,470,115,442,85,381,68,324,59,283"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,309,322,302,337,292,359,269,378,242,407,184,426,128,436,82,441,83,431,129,412,186,383,245,363,272,340,296,324,306,307,314"/>
+<area shape="rect" id="Node000009" href="$util_8c.html#a7645b56a91479fac2285909a25875b91" title="Custom string copy to avoid string.h library." alt="" coords="406,454,482,480"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="307,464,392,464,392,470,307,470"/>
+<area shape="poly" id="edge13_Node000012_Node000003" title=" " alt="" coords="291,54,373,54,373,59,291,59"/>
+</map>

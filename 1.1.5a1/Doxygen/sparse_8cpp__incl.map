@@ -1,0 +1,31 @@
+<map id="/home/runner/work/QPALM/QPALM/QPALM/interfaces/cxx/src/sparse.cpp" name="/home/runner/work/QPALM/QPALM/QPALM/interfaces/cxx/src/sparse.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="737,5,932,60"/>
+<area shape="rect" id="Node000002" href="$sparse_8hpp.html" title=" " alt="" coords="599,108,692,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="778,62,684,105,682,100,776,58"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="717,108,830,133"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="818,62,792,98,788,95,814,59"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="855,108,940,133"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="856,58,883,95,878,98,852,62"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="964,108,1033,133"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="886,58,966,99,963,104,884,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,181,112,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="599,129,398,150,126,184,125,179,397,145,598,124"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="137,181,295,207"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="599,132,299,182,298,176,598,127"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="320,181,493,207"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="608,136,459,180,458,175,606,131"/>
+<area shape="rect" id="Node000006" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="517,181,627,207"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="635,136,596,174,592,170,631,132"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="651,181,787,207"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="659,132,699,170,695,174,656,136"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="811,181,920,207"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="681,131,818,175,816,180,680,136"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="944,181,1021,207"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="693,129,931,178,930,184,692,134"/>
+<area shape="rect" id="Node000012" href="$qpalm__cxx-export_8hpp.html" title=" " alt="" coords="1045,181,1213,207"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="693,128,706,131,1032,178,1031,183,705,136,692,134"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="492,255,559,280"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="567,208,543,245,538,242,562,206"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="583,255,651,280"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="582,206,605,242,600,245,577,208"/>
+</map>

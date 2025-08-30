@@ -1,0 +1,10 @@
+<map id="QPALM/include/newton.h" name="QPALM/include/newton.h">
+<area shape="rect" id="node1" title="Functions to calculate the semismooth Newton direction." alt="" coords="425,5,607,32"/>
+<area shape="rect" id="node2" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="229,80,403,107"/>
+<area shape="rect" id="node6" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="400,162,547,189"/>
+<area shape="rect" id="node7" href="$iteration_8c.html" title="QPALM main solver routines." alt="" coords="495,80,655,107"/>
+<area shape="rect" id="node8" href="$newton_8c.html" title="Functions to calculate the semismooth Newton direction." alt="" coords="679,80,833,107"/>
+<area shape="rect" id="node3" href="$qpalm_8cpp.html" title=" " alt="" coords="5,155,168,196"/>
+<area shape="rect" id="node4" href="$qpalm__fortran_8h.html" title=" " alt="" coords="192,155,376,196"/>
+<area shape="rect" id="node5" href="$qpalm__fortran_8c.html" title=" " alt="" coords="192,244,376,285"/>
+</map>
