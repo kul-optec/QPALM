@@ -189,11 +189,11 @@ void qpalm_fortran_c( f_int n,
 
   // recover solution 
   for (int i = 0; i < n; i++) {
-    x[i] = work->x[i];
+    x[i] = work->solution->x[i];
     // printf("Solution variable %.10f \n",x[i]);
   }
   for (int i = 0; i < m; i++) {
-    y[i] = work->y[i];
+    y[i] = work->solution->y[i];
     // printf("Multiplier variable %.10f \n",y[i]);
   }
 

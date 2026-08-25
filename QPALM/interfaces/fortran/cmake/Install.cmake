@@ -13,6 +13,10 @@ install(TARGETS qpalm_fortran
         COMPONENT lib)
 
 # Install the header files
+install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/include/"
+    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
+        COMPONENT dev
+    FILES_MATCHING REGEX "/.*\.[hti](pp)?$")
 install(DIRECTORY "${QPALM_FORTRAN_MODULE_DIR}/"
     DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
         COMPONENT dev

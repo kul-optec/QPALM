@@ -18,6 +18,10 @@ add_executable(tests
     "src/test_basic_qp.cpp"
     "src/test_degen_hess.cpp"
 )
+if (QPALM_WITH_FORTRAN)
+    target_sources(tests PRIVATE "src/test_fortran_interface.cpp")
+    target_link_libraries(tests PRIVATE QPALM::qpalm_fortran)
+endif()
 target_include_directories(tests
     PRIVATE include
             include/Minunit
