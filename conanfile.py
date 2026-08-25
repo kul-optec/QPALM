@@ -8,7 +8,7 @@ from conan.tools.build import can_run
 
 class QPALMRecipe(ConanFile):
     name = "qpalm"
-    version = "1.2.7"
+    version = "1.3.0"
     package_type = "library"
 
     # Optional metadata
