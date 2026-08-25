@@ -48,6 +48,7 @@ cmake --preset conan-matlab-release \
 cmake --build --preset conan-matlab-release -v
 for component in mex_interface; do
     DESTDIR="$out_dir" \
-    cmake --install build/matlab-release --component $component --prefix=/
+    cmake --install build/matlab-release --config Release \
+        --component $component --prefix=/
 done
 popd

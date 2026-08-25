@@ -1,11 +1,10 @@
 [build-system]
 requires = [
-    "py-build-cmake~=0.6.0a1",
-    "conan~=2.19.1",
+    "py-build-cmake~=0.6.0a4",
+    "conan~=2.31.2",
     "pybind11-stubgen==2.5.5",
     "numpy>=1.19,<3",
     "scipy>=1.6,<2; implementation_name=='cpython'",
-    "mypy>=1.15.0,<1.18",
 ]
 build-backend = "py_build_cmake.build"
 
@@ -37,6 +36,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
     "Programming Language :: C",
     "Programming Language :: C++",
     "Operating System :: POSIX :: Linux",

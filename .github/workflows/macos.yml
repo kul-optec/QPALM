@@ -30,7 +30,7 @@ jobs:
           -DCMAKE_POSITION_INDEPENDENT_CODE=On \
           -DQPALM_WITH_CXX=On \
           -DQPALM_WITH_FORTRAN=On \
-          -DCMAKE_Fortran_COMPILER=gfortran-12
+          -DCMAKE_Fortran_COMPILER=gfortran-15
       env:
         CMAKE_PREFIX_PATH: /opt/local
     - name: Build Debug
@@ -74,7 +74,7 @@ jobs:
     - name: Build examples (Release)
       run: |
         cmake -B build-examples -S examples -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-            -DCMAKE_Fortran_COMPILER=gfortran-12 \
+            -DCMAKE_Fortran_COMPILER=gfortran-15 \
             -G "Ninja"
         cmake --build build-examples -j
       env:
@@ -87,7 +87,7 @@ jobs:
     - name: Build examples (Debug)
       run: |
         cmake -B build-examplesd -S examples -DCMAKE_BUILD_TYPE=Debug \
-            -DCMAKE_Fortran_COMPILER=gfortran-12 \
+            -DCMAKE_Fortran_COMPILER=gfortran-15 \
             -G "Ninja"
         cmake --build build-examplesd -j
       env:

@@ -107,7 +107,7 @@ jobs:
 
       - name: Build Wheels
         run: |
-          for v in 3.9 3.10 3.11 3.12 3.13 3.14; do
+          for v in 3.9 3.10 3.11 3.12 3.13 3.14 3.15; do
             ./scripts/ci/build-linux-cross.sh $v ${{ matrix.host }} sdist dist
           done
 
@@ -118,6 +118,49 @@ jobs:
           path: ./dist/*.whl
 
       - run: conan cache clean
+
+  test-linux-x:
+    name: Import ${{ matrix.python-version }} ${{ matrix.host }}
+    needs: [build-linux]
+    runs-on: ${{ matrix.os }}
+    container: '${{ matrix.python }}:${{ matrix.python-version }}${{ matrix.image-suffix }}-bookworm'
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ['ubuntu-latest', 'ubuntu-24.04-arm']
+        python: ['python']
+        python-version: ['3.9', '3.10', '3.11', '3.12', '3.13', '3.14']
+        include:
+          - os: 'ubuntu-latest'
+            python: 'python'
+            python-version: '3.15'
+            image-suffix: '-rc'  # Set this to '-rc' to test pre-releases
+            host: 'x86_64-bionic-linux-gnu'
+          - os: 'ubuntu-24.04-arm'
+            python: 'python'
+            python-version: '3.15'
+            image-suffix: '-rc'  # Set this to '-rc' to test pre-releases
+            host: 'aarch64-rpi3-linux-gnu'
+          - os: 'ubuntu-latest'
+            host: 'x86_64-bionic-linux-gnu'
+          - os: 'ubuntu-24.04-arm'
+            host: 'aarch64-rpi3-linux-gnu'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download wheels
+        uses: actions/download-artifact@v4
+        with:
+          name: wheels-${{ matrix.host }}
+          path: dist
+
+      - name: Install
+        run: python3 -m pip install --find-links=dist "${PACKAGE_NAME}==${PACKAGE_VERSION}"
+
+      - name: Import
+        run: objdump -p "$(python3 -c 'import qpalm; print(qpalm._qpalm.__file__)')"
 
   # Build for Windows and macOS using cibuildwheel.
   # Since we're not specifying any cross-compilation settings, py-build-cmake
@@ -130,9 +173,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - {os: windows-latest, cibw-arch: AMD64, arch: amd64}
-          # - {os: windows-latest, cibw-arch: x86, arch: amd64_x86}  # No SciPy binaries
-          - {os: windows-latest, cibw-arch: ARM64, arch: amd64_arm64}
+          - {os: windows-2022, cibw-arch: AMD64, arch: amd64}
+          # - {os: windows-2022, cibw-arch: x86, arch: amd64_x86}  # No SciPy binaries
+          - {os: windows-2022, cibw-arch: ARM64, arch: amd64_arm64}
           - {os: macos-latest, cibw-arch: universal2}
           - {os: macos-latest, cibw-arch: x86_64}
           - {os: macos-latest, cibw-arch: arm64}
@@ -142,6 +185,7 @@ jobs:
       CIBW_ARCHS: ${{ matrix.cibw-arch }}
       CIBW_ENABLE: 'pypy'
       CIBW_TEST_SKIP: 'pp* *-win32 cp314*'
+      CIBW_REPAIR_WHEEL_COMMAND_WINDOWS: ''
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -153,7 +197,7 @@ jobs:
           cache-key: cibuildwheel-${{ matrix.cibw-arch }}
 
       - name: Install cibuildwheel
-        run: python -m pip install cibuildwheel~=3.1.3
+        run: python -m pip install cibuildwheel~=4.2.0
 
       - name: Download sdist
         uses: actions/download-artifact@v4
@@ -189,7 +233,7 @@ jobs:
   check-release:
     name: Check release
     if: ${{ github.event.action == 'released' || github.event.action == 'prereleased' }}
-    needs: [build-sdist, test-linux, build-linux, build-macos-windows]
+    needs: [build-sdist, test-linux-x, build-linux, build-macos-windows]
     runs-on: ubuntu-latest
     container: python:3.12-bullseye
     steps:

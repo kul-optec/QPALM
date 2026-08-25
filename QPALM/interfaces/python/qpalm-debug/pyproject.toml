@@ -18,7 +18,7 @@ description = "Debug symbols for the qpalm package."
 
 [build-system]
 requires = [
-    "py-build-cmake~=0.6.0a1",
+    "py-build-cmake~=0.6.0a4",
     "pybind11-stubgen==2.5.5",
     "numpy>=1.19,<3; implementation_name=='cpython'",
     "scipy>=1.6,<2; implementation_name=='cpython'",
