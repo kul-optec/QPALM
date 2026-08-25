@@ -21,8 +21,7 @@
 
 MODULE QPALM_fiface
 
-   USE iso_c_binding, ONLY : C_FLOAT, C_DOUBLE, C_INT, C_LONG, C_CHAR,        &
-      C_INT32_T, C_INT64_T
+   USE iso_c_binding, ONLY : C_FLOAT, C_DOUBLE, C_CHAR, C_INT32_T, C_INT64_T
 
    IMPLICIT NONE
 
@@ -35,9 +34,9 @@ MODULE QPALM_fiface
    !  integer and real kinds for problem data
 
 #ifdef QPALM_FORTRAN_64BIT_INDICES
-   INTEGER, PARAMETER :: integer_kind = C_LONG
+   INTEGER, PARAMETER :: integer_kind = C_INT64_T
 #else
-   INTEGER, PARAMETER :: integer_kind = C_INT
+   INTEGER, PARAMETER :: integer_kind = C_INT32_T
 #endif
 
 #ifdef QPALM_FORTRAN_SINGLE_PRECISION

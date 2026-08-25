@@ -7,12 +7,13 @@ extern "C" {
 #define QPALM_FORTRAN_H
 
 // required packages
+#include <stdint.h>
 #include <qpalm.h>
 
 #ifdef QPALM_FORTRAN_64BIT_INDICES
-typedef long f_int;
+typedef int64_t f_int;
 #else
-typedef int f_int;
+typedef int32_t f_int;
 #endif
 
 #ifdef QPALM_FORTRAN_SINGLE_PRECISION
