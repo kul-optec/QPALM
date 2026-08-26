@@ -282,8 +282,7 @@ void qpalm_warm_start(QPALMWorkspace *work, const c_float *x_warm_start, const c
     } 
     else 
     {
-        qpalm_free(work->x);
-        work->x = NULL;
+        vec_set_scalar(work->x, 0., n);
     }
 
     if (y_warm_start != NULL) 
@@ -292,8 +291,7 @@ void qpalm_warm_start(QPALMWorkspace *work, const c_float *x_warm_start, const c
     } 
     else 
     {
-        qpalm_free(work->y);
-        work->y = NULL;
+        vec_set_scalar(work->y, 0., m);
     }
     
     work->initialized = TRUE;
@@ -382,6 +380,9 @@ static void qpalm_initialize(QPALMWorkspace *work, solver_common **common1, solv
     //Actions to perform after scaling
     prea_vec_copy(work->x, work->x0, n);
     prea_vec_copy(work->x, work->x_prev, n);
+    mat_tpose_vec(work->data->A, work->y, work->Aty, c);
+    prea_vec_copy(work->y, work->yh, m);
+    prea_vec_copy(work->Aty, work->Atyh, n);
 
     if (work->solver->factorization_method == FACTORIZE_KKT)
     {
