@@ -332,12 +332,12 @@ c_float compute_dual_objective(QPALMWorkspace *work, solver_common *c) {
 
     c_float dual_objective = 0;
 
-    vec_add_scaled(work->Aty, work->data->q, work->neg_dphi, 1.0, work->data->n);
+    vec_add_scaled(work->Atyh, work->data->q, work->neg_dphi, 1.0, work->data->n);
     ladel_dense_solve(work->solver->LD_Q, work->neg_dphi, work->D_temp, c);
 
     dual_objective -= 0.5*vec_prod(work->neg_dphi, work->D_temp, work->data->n);
     for (size_t i = 0; i < work->data->m; i++) {
-      dual_objective -= work->y[i] > 0 ? work->y[i]*work->data->bmax[i] : work->y[i]*work->data->bmin[i];
+      dual_objective -= work->yh[i] > 0 ? work->yh[i]*work->data->bmax[i] : work->yh[i]*work->data->bmin[i];
     }
 
     if(work->settings->scaling) {
