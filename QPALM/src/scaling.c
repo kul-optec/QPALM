@@ -91,8 +91,8 @@ void scale_data(QPALMWorkspace *work)
     // Scale initial vectors x, Ax and y (Qx already scaled)
     vec_ew_prod(work->x, work->scaling->Dinv, work->x, n);
     vec_ew_prod(work->Ax, work->scaling->E, work->Ax, m);
-    vec_ew_prod(work->y, work->scaling->E, work->y, m);
-    vec_self_mult_scalar(work->y, work->scaling->cinv, m);
+    vec_ew_prod(work->y, work->scaling->Einv, work->y, m);
+    vec_self_mult_scalar(work->y, work->scaling->c, m);
 }
 
 void unscale_data(QPALMWorkspace *work)
