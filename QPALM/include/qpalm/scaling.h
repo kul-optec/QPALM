@@ -33,7 +33,7 @@ extern "C" {
  * resulting in @f$\bar{x}\leftarrow D^{-1}x@f$. Therefore, also the cost matrix Q and vector q have 
  * to be scaled with @f$D@f$, @f$\bar{Q}\leftarrow DQD@f$ and @f$\bar{q}\leftarrow Dq@f$. Finally the 
  * objective function is scaled with a scalar @f$c@f$, thus @f$\bar{Q}, \bar{q} \leftarrow c\bar{Q}, 
- * c\bar{q} @f$, where @f$c=1/\textrm{max}(1, \nabla f(x_0))@f$. The dual variables in the scaled problem
+ * c\bar{q} @f$, where @f$c=1/\textrm{max}(1, \|D(Qx^0+q)\|_\infty)@f$. The dual variables in the scaled problem
  * become @f$\bar{y} \leftarrow c E^{-1} y@f$. The diagonals of @f$D@f$ and @f$E@f$ are stored and used in the
  * remainder of the problem.
  * 

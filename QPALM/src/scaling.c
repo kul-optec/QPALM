@@ -70,9 +70,8 @@ void scale_data(QPALMWorkspace *work)
     vec_ew_prod(work->scaling->D, work->data->q, work->data->q, n);
     vec_ew_prod(work->scaling->D, work->Qx, work->Qx, n);
     prea_vec_copy(work->scaling->D, work->D_temp, n);
-    // vec_add_scaled(work->Qx, work->data->q, work->dphi, 1, n);
-    // work->scaling->c = 1/c_max(1.0, vec_norm_inf(work->dphi, n));
-    work->scaling->c = 1/c_max(1.0, vec_norm_inf(work->data->q, n));
+    vec_add_scaled(work->Qx, work->data->q, work->dphi, 1, n);
+    work->scaling->c = 1/c_max(1.0, vec_norm_inf(work->dphi, n));
     vec_self_mult_scalar(work->data->q, work->scaling->c, n);
     vec_self_mult_scalar(work->Qx, work->scaling->c, n);
     
