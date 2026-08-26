@@ -233,7 +233,7 @@ jobs:
   check-release:
     name: Check release
     if: ${{ github.event.action == 'released' || github.event.action == 'prereleased' }}
-    needs: [build-sdist, test-linux-x, build-linux, build-macos-windows]
+    needs: [build-sdist, test-linux, test-linux-x, build-linux, build-macos-windows]
     runs-on: ubuntu-latest
     container: python:3.12-bullseye
     steps:
