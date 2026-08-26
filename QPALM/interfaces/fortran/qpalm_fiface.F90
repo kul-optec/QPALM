@@ -285,8 +285,8 @@ MODULE QPALM_fiface
       !> Invoke the QPALM solver.
       !> @see @ref qpalm_solve
       !> @ingroup qpalm-fortran-grp
-      SUBROUTINE qpalm_fortran( n, m, hne, hrow, hptr, hval, g, f,             &
-         ane, arow, aptr, aval, cl, cu, settings,       &
+      SUBROUTINE qpalm_fortran( n, m, hne, hptr, hrow, hval, g, f,             &
+         ane, aptr, arow, aval, cl, cu, settings,       &
          x, y, info ) BIND( C, NAME = 'qpalm_fortran_c' )
 
          !    dummy arguments
