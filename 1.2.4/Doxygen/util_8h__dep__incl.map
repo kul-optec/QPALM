@@ -1,0 +1,22 @@
+<map id="QPALM/include/qpalm/util.h" name="QPALM/include/qpalm/util.h">
+<area shape="rect" id="Node000001" title="Utility functions." alt="" coords="589,5,752,45"/>
+<area shape="rect" id="Node000002" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="229,93,403,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="577,50,368,96,367,91,576,45"/>
+<area shape="rect" id="Node000006" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="400,174,547,199"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="577,41,526,61,504,76,485,95,475,114,471,135,474,174,468,174,466,135,470,112,481,92,500,72,524,56,575,36"/>
+<area shape="rect" id="Node000007" href="$iteration_8c.html" title="QPALM main solver routines." alt="" coords="495,93,655,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="639,56,591,95,587,91,635,52"/>
+<area shape="rect" id="Node000008" href="$nonconvex_8c.html" title="Routines to deal with nonconvex QPs." alt="" coords="679,93,855,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="706,52,754,91,751,95,703,56"/>
+<area shape="rect" id="Node000009" href="$termination_8c.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="879,93,1060,119"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="756,46,926,91,925,96,755,51"/>
+<area shape="rect" id="Node000010" href="$util_8c.html" title="Utility functions." alt="" coords="1085,93,1211,119"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="766,40,1085,92,1084,97,765,45"/>
+<area shape="rect" id="Node000003" href="$qpalm_8cpp.html" title=" " alt="" coords="5,167,168,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="271,126,143,169,141,164,269,121"/>
+<area shape="rect" id="Node000004" href="$qpalm__fortran_8h.html" title=" " alt="" coords="192,167,376,207"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="309,132,294,168,289,166,304,130"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="352,122,452,172,449,176,350,127"/>
+<area shape="rect" id="Node000005" href="$qpalm__fortran_8c.html" title=" " alt="" coords="192,255,376,295"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="287,221,287,254,281,254,281,221"/>
+</map>

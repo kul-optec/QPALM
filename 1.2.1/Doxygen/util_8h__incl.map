@@ -1,0 +1,15 @@
+<map id="QPALM/include/qpalm/util.h" name="QPALM/include/qpalm/util.h">
+<area shape="rect" id="Node000001" title="Utility functions." alt="" coords="163,5,325,45"/>
+<area shape="rect" id="Node000002" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="140,93,255,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,47,214,83,209,80,230,44"/>
+<area shape="rect" id="Node000006" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="235,167,378,192"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="254,45,299,153,294,155,249,47"/>
+<area shape="rect" id="Node000003" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="5,167,160,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,121,114,162,112,157,178,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="164,240,231,265"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="200,119,200,226,195,226,195,119"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="102,190,168,230,166,235,100,194"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="49,240,117,265"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="85,192,85,226,80,226,80,192"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="291,194,228,235,225,230,288,190"/>
+</map>

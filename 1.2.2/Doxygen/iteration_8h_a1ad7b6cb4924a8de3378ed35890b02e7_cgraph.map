@@ -1,0 +1,35 @@
+<map id="update_dual_iterate_and_parameters" name="update_dual_iterate_and_parameters">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,154,157,194"/>
+<area shape="rect" id="Node000002" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="462,87,581,112"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,151,205,139,333,118,448,104,448,109,334,123,206,145,154,157"/>
+<area shape="rect" id="Node000003" href="$iteration_8c.html#a786f2d2af82a141fe3825a3964659d50" title=" " alt="" coords="205,154,377,194"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,171,192,171,192,177,158,177"/>
+<area shape="rect" id="Node000014" href="$iteration_8c.html#a8ea42d3c9ff0d6d8dc8f144d0b03dc0d" title="Update the penalty factors." alt="" coords="234,235,349,260"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="140,192,242,227,240,232,138,197"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="340,151,425,121,451,113,453,118,426,126,342,156"/>
+<area shape="rect" id="Node000004" href="$iteration_8c.html#a95e8560aaf51a2c4f68de9b65b0c6a15" title=" " alt="" coords="428,136,615,161"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="378,162,414,158,414,163,378,167"/>
+<area shape="rect" id="Node000012" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="468,185,575,211"/>
+<area shape="poly" id="edge14_Node000003_Node000012" title=" " alt="" coords="378,180,455,188,454,194,378,186"/>
+<area shape="rect" id="Node000013" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="466,235,577,260"/>
+<area shape="poly" id="edge15_Node000003_Node000013" title=" " alt="" coords="344,192,426,221,453,229,452,234,425,226,342,197"/>
+<area shape="rect" id="Node000005" href="$iteration_8c.html#addf0e547cbd4fd4b3bda2c1adccf22c8" title="Maximize the proximal penalty." alt="" coords="692,5,807,31"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="592,134,616,121,632,104,639,86,647,67,664,48,686,34,689,38,667,52,652,70,644,88,636,107,619,125,595,138"/>
+<area shape="rect" id="Node000007" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="882,56,1007,81"/>
+<area shape="poly" id="edge12_Node000004_Node000007" title=" " alt="" coords="580,133,616,121,640,106,664,92,716,78,770,69,868,64,868,69,770,75,717,83,666,96,642,110,619,126,581,139"/>
+<area shape="rect" id="Node000008" href="$newton_8c.html#ae27a99e2b3249e8455b72c2e2a977dd8" title="Computes the set of active constraints and stores it in work&#45;&gt;solver&#45;&gt;active_constraints." alt="" coords="665,107,833,132"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="615,134,651,129,652,135,615,139"/>
+<area shape="rect" id="Node000009" href="$newton_8c.html#a43d518127e8561034e35ba18d0e15b31" title="Determines the entering and leaving constraints and stores them in work&#45;&gt;solver&#45;&gt;enter and work&#45;&gt;solv..." alt="" coords="670,157,829,197"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="615,157,657,163,656,168,615,163"/>
+<area shape="rect" id="Node000010" href="$iteration_8c.html#a2493eaf6f46fae7e188477e427acfece" title="Update the proximal penalty." alt="" coords="687,221,811,247"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="584,159,619,172,643,189,667,206,686,214,683,219,664,211,640,193,616,176,583,164"/>
+<area shape="rect" id="Node000011" href="$lin__alg_8c.html#a7b3d3b23f9254b8dc1bf53823ef42b42" title="Elementwise division, ." alt="" coords="700,271,799,296"/>
+<area shape="poly" id="edge13_Node000004_Node000011" title=" " alt="" coords="596,159,619,172,637,194,644,216,651,237,667,257,688,269,686,274,664,261,646,240,639,217,632,196,616,176,594,164"/>
+<area shape="rect" id="Node000006" href="$nonconvex_8c.html#ab2a80b1d0a937afe2f6731b182ed63ac" title="Calculate the Gershgorin upper bound for the eigenvalues of a symmetric matrix." alt="" coords="881,5,1008,31"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="807,15,868,15,868,21,807,21"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="800,28,883,50,881,55,799,33"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="807,219,832,206,863,180,889,150,928,92,932,95,894,153,866,184,835,211,810,224"/>
+<area shape="poly" id="edge18_Node000014_Node000013" title=" " alt="" coords="349,245,452,245,452,250,349,250"/>
+<area shape="rect" id="Node000015" href="$solver__interface_8c.html#a759f2a0d608b6cd90863e5871d6f8474" title="Update the &#160;factorization given a set of indexes where &#160;has been updated." alt="" coords="425,284,617,309"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="349,257,448,278,447,284,348,262"/>
+</map>

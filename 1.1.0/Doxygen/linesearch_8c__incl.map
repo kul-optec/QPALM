@@ -1,0 +1,12 @@
+<map id="QPALM/src/linesearch.c" name="QPALM/src/linesearch.c">
+<area shape="rect" id="node1" title="Routines to perform exact or backtracking linesearch." alt="" coords="114,5,286,32"/>
+<area shape="rect" id="node2" href="$linesearch_8h.html" title="Routines to perform exact linesearch." alt="" coords="5,155,107,181"/>
+<area shape="rect" id="node8" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="161,80,239,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="263,80,334,107"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="181,229,251,256"/>
+<area shape="rect" id="node7" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="7,229,105,256"/>
+<area shape="rect" id="node4" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="231,304,340,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="135,379,201,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="251,379,319,405"/>
+<area shape="rect" id="node9" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="131,155,269,181"/>
+</map>

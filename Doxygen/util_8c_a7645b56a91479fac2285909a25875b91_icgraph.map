@@ -1,0 +1,19 @@
+<map id="c_strcpy" name="c_strcpy">
+<area shape="rect" id="Node000001" title="Custom string copy to avoid string.h library." alt="" coords="643,39,719,64"/>
+<area shape="rect" id="Node000002" href="$util_8c.html#ae4a3db21e55ea56c33c599e405771403" title="Print final message as a box with info." alt="" coords="441,13,595,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="629,46,595,41,595,35,630,41"/>
+<area shape="rect" id="Node000003" href="$util_8c.html#a14fe651105f1f38b2a3a49614f4b8ae2" title="Update solver status (value and string)." alt="" coords="461,63,575,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="629,62,576,69,576,64,629,56"/>
+<area shape="rect" id="Node000004" href="$group__solver-grp.html#ga2496e6b7b64f611e920c3c4a740d9ecd" title="Initialize QPALM solver allocating memory." alt="" coords="253,9,359,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="453,62,356,37,358,32,454,57"/>
+<area shape="rect" id="Node000006" href="$group__solver-grp.html#ga586e7a22d9ed41fb2d477490fdabc875" title="Update the lower and upper bounds." alt="" coords="221,63,391,88"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="447,78,391,78,391,73,447,73"/>
+<area shape="rect" id="Node000008" href="$group__solver-grp.html#ga349f4343b96fb674a823ae6e03634ff7" title="Update the settings to the new settings." alt="" coords="219,119,393,144"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="457,94,356,121,354,116,455,89"/>
+<area shape="rect" id="Node000005" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="24,5,152,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,23,152,22,152,16,239,18"/>
+<area shape="rect" id="Node000007" href="$classqpalm_1_1Solver.html#a6df33bfd68c5b8caaaa6f726f1a9f517" title=" " alt="" coords="5,55,171,95"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="207,78,171,78,171,73,207,73"/>
+<area shape="rect" id="Node000009" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="5,119,171,159"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="205,138,171,139,171,134,205,132"/>
+</map>

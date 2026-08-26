@@ -1,0 +1,16 @@
+<map id="scaling.h" name="scaling.h">
+<area shape="rect" id="Node000001" title="Problem data scaling during setup." alt="" coords="163,5,243,31"/>
+<area shape="rect" id="Node000002" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="5,174,204,214"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,35,117,53,103,65,91,80,83,103,84,128,98,173,92,175,78,129,78,102,86,77,99,62,114,49,149,31"/>
+<area shape="rect" id="Node000003" href="$scaling_8c.html" title="Problem data scaling during setup." alt="" coords="101,79,305,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,44,206,79,201,79,201,44"/>
+<area shape="rect" id="Node000004" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="330,86,405,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,34,345,84,342,88,238,39"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="325,118,318,121,160,176,158,171,316,116,323,113"/>
+<area shape="rect" id="Node000005" href="$qpalm_8cpp.html" title=" " alt="" coords="249,167,443,221"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="364,125,355,167,349,166,359,124"/>
+<area shape="rect" id="Node000006" href="$qpalm__fortran_8h.html" title=" " alt="" coords="467,167,662,221"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="405,115,510,164,508,169,403,120"/>
+<area shape="rect" id="Node000007" href="$qpalm__fortran_8c.html" title=" " alt="" coords="467,269,662,324"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="567,235,567,269,562,269,562,235"/>
+</map>

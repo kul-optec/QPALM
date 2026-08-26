@@ -1,0 +1,5 @@
+<map id="vec_prod_ind" name="vec_prod_ind">
+<area shape="rect" id="node1" title="Inner product over index set, ." alt="" coords="400,5,508,32"/>
+<area shape="rect" id="node2" href="$linesearch_8c.html#a647cabae1574f21e412110765ea1e70d" title="Execute exact linesearch (using qsort)" alt="" coords="220,5,352,32"/>
+<area shape="rect" id="node3" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="5,5,172,32"/>
+</map>

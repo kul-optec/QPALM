@@ -1,0 +1,11 @@
+<map id="compute_objective" name="compute_objective">
+<area shape="rect" id="Node000001" title="Compute the (unscaled) primal objective value at the current iterate." alt="" coords="371,55,517,80"/>
+<area shape="rect" id="Node000002" href="$group__solver-grp.html#ga17fcba910c32b8518df93617591b1cf1" title="Solve the quadratic program." alt="" coords="213,29,318,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,58,318,52,319,47,358,52"/>
+<area shape="rect" id="Node000005" href="$termination_8c.html#a59f3d4d2ea459665833cc3d5e9265d5e" title="Helper function to store the (unscaled) solution in the solution struct." alt="" coords="208,79,323,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="357,82,323,86,322,81,357,76"/>
+<area shape="rect" id="Node000003" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,5,147,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="199,36,147,29,147,24,200,31"/>
+<area shape="rect" id="Node000004" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,55,160,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="199,54,160,59,160,54,199,49"/>
+</map>

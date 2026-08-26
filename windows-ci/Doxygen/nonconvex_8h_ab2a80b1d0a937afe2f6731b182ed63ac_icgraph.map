@@ -1,0 +1,7 @@
+<map id="gershgorin_max" name="gershgorin_max">
+<area shape="rect" id="node1" title="Calculate the Gershgorin upper bound for the eigenvalues of a symmetric matrix." alt="" coords="823,13,949,39"/>
+<area shape="rect" id="node2" href="$iteration_8c.html#addf0e547cbd4fd4b3bda2c1adccf22c8" title="Maximize the proximal penalty." alt="" coords="660,13,775,39"/>
+<area shape="rect" id="node3" href="$iteration_8c.html#a95e8560aaf51a2c4f68de9b65b0c6a15" title=" " alt="" coords="425,13,612,39"/>
+<area shape="rect" id="node4" href="$iteration_8c.html#a786f2d2af82a141fe3825a3964659d50" title=" " alt="" coords="205,5,377,47"/>
+<area shape="rect" id="node5" href="$iteration_8c.html#a1ad7b6cb4924a8de3378ed35890b02e7" title=" " alt="" coords="5,5,157,47"/>
+</map>

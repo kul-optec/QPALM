@@ -1,0 +1,5 @@
+<map id="compute_dual_objective" name="compute_dual_objective">
+<area shape="rect" id="node1" title="Compute the (unscaled) dual objective value at the current iterate." alt="" coords="5,31,187,57"/>
+<area shape="rect" id="node2" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="235,5,360,32"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#ab83e787c2e0edb5803a860b1c894f53d" title="Inner product between two vectors, ." alt="" coords="257,56,338,83"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="QPALM/include/qpalm/scaling.h" name="QPALM/include/qpalm/scaling.h">
+<area shape="rect" id="Node000001" title="Problem data scaling during setup." alt="" coords="105,5,268,45"/>
+<area shape="rect" id="Node000002" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="74,240,145,265"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,47,154,69,138,94,126,129,118,165,112,227,107,226,113,164,121,127,134,92,149,66,167,44"/>
+<area shape="rect" id="Node000006" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="148,93,225,119"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="189,46,189,79,184,79,184,46"/>
+<area shape="rect" id="Node000008" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="286,240,429,265"/>
+<area shape="poly" id="edge14_Node000001_Node000008" title=" " alt="" coords="220,43,285,93,318,127,345,165,356,196,360,226,355,226,351,197,340,168,314,130,281,97,217,48"/>
+<area shape="rect" id="Node000003" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="5,313,160,339"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,267,94,302,89,300,102,265"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="189,387,256,412"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="126,264,149,285,174,312,196,343,213,373,208,376,191,346,170,315,146,289,122,268"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,336,189,378,187,383,104,341"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="49,387,117,412"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="85,339,85,373,80,373,80,339"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="176,121,156,142,137,168,124,198,116,227,111,226,119,196,132,165,152,138,172,117"/>
+<area shape="rect" id="Node000007" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="147,167,331,192"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="197,117,224,154,220,157,193,121"/>
+<area shape="poly" id="edge12_Node000007_Node000002" title=" " alt="" coords="219,194,144,235,142,231,217,190"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="230,194,158,267,111,307,107,303,154,263,226,190"/>
+<area shape="poly" id="edge13_Node000007_Node000004" title=" " alt="" coords="240,193,227,373,222,372,235,192"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="259,190,327,230,325,235,256,194"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="348,268,245,379,241,375,344,264"/>
+</map>

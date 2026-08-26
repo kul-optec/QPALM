@@ -1,0 +1,14 @@
+<map id="update_proximal_point_and_penalty" name="update_proximal_point_and_penalty">
+<area shape="rect" id="node1" title=" " alt="" coords="5,154,177,195"/>
+<area shape="rect" id="node2" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="259,85,378,112"/>
+<area shape="rect" id="node3" href="$iteration_8c.html#a95e8560aaf51a2c4f68de9b65b0c6a15" title=" " alt="" coords="225,136,412,163"/>
+<area shape="rect" id="node11" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="265,187,372,213"/>
+<area shape="rect" id="node12" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="263,237,374,264"/>
+<area shape="rect" id="node4" href="$iteration_8c.html#addf0e547cbd4fd4b3bda2c1adccf22c8" title="Maximize the proximal penalty." alt="" coords="487,5,601,32"/>
+<area shape="rect" id="node6" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="677,56,802,83"/>
+<area shape="rect" id="node7" href="$newton_8c.html#ae27a99e2b3249e8455b72c2e2a977dd8" title="Computes the set of active constraints and stores it in work&#45;&gt;solver&#45;&gt;active_constraints." alt="" coords="460,107,628,133"/>
+<area shape="rect" id="node8" href="$newton_8c.html#a43d518127e8561034e35ba18d0e15b31" title="Determines the entering and leaving constraints and stores them in work&#45;&gt;solver&#45;&gt;enter and work&#45;&gt;solv..." alt="" coords="465,158,623,199"/>
+<area shape="rect" id="node9" href="$iteration_8c.html#a2493eaf6f46fae7e188477e427acfece" title="Update the proximal penalty." alt="" coords="482,224,606,251"/>
+<area shape="rect" id="node10" href="$lin__alg_8c.html#a7b3d3b23f9254b8dc1bf53823ef42b42" title="Elementwise division, ." alt="" coords="495,275,593,301"/>
+<area shape="rect" id="node5" href="$nonconvex_8c.html#ab2a80b1d0a937afe2f6731b182ed63ac" title="Calculate the Gershgorin upper bound for the eigenvalues of a symmetric matrix." alt="" coords="676,5,803,32"/>
+</map>

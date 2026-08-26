@@ -1,0 +1,6 @@
+<map id="is_solved" name="is_solved">
+<area shape="rect" id="node1" title="Check whether the primal and dual residual norms are smaller than the primal and dual tolerances." alt="" coords="361,31,444,56"/>
+<area shape="rect" id="node2" href="$group__solver-grp.html#ga9bbc8b47dfd2e86a81dd77feb4077bde" title="Solve the quadratic program." alt="" coords="208,31,313,56"/>
+<area shape="rect" id="node3" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,5,147,31"/>
+<area shape="rect" id="node4" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,55,160,80"/>
+</map>

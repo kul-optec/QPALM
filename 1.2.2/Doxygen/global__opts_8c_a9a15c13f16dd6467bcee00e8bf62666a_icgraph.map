@@ -1,0 +1,18 @@
+<map id="qpalm_malloc" name="qpalm_malloc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="601,60,716,85"/>
+<area shape="rect" id="Node000002" href="$util_8c.html#a14436938f89e6b14f819c58af7d9f0fe" title="Copy settings creating a new settings structure." alt="" coords="441,136,553,161"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="620,94,526,138,524,134,617,89"/>
+<area shape="rect" id="Node000003" href="$group__solver-grp.html#ga2496e6b7b64f611e920c3c4a740d9ecd" title="Initialize QPALM solver allocating memory." alt="" coords="253,60,359,85"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="588,75,359,75,359,70,588,70"/>
+<area shape="rect" id="Node000004" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="24,32,152,57"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="625,56,591,38,553,25,498,15,442,10,330,11,228,21,147,35,146,29,227,16,329,6,442,5,499,10,554,20,593,33,628,51"/>
+<area shape="rect" id="Node000007" href="$lin__alg_8c.html#a256ef6c2562ed296f3c1bd23bc712f25" title="Copy vector a into output." alt="" coords="456,35,539,60"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="587,64,539,57,539,51,588,59"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="451,134,338,88,340,83,453,129"/>
+<area shape="rect" id="Node000005" href="$group__solver-grp.html#ga349f4343b96fb674a823ae6e03634ff7" title="Update the settings to the new settings." alt="" coords="219,136,393,161"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="427,151,393,151,393,146,427,146"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,67,152,56,152,50,239,62"/>
+<area shape="rect" id="Node000006" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="5,129,171,169"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="205,151,171,151,171,146,205,146"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="443,57,360,68,359,63,442,52"/>
+</map>

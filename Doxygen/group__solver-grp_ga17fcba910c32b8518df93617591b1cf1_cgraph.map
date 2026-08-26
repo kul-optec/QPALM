@@ -1,0 +1,160 @@
+<map id="qpalm_solve" name="qpalm_solve">
+<area shape="rect" id="Node000001" title="Solve the quadratic program." alt="" coords="5,563,111,588"/>
+<area shape="rect" id="Node000002" href="$termination_8c.html#a50775fd01103420a3cfe7452a8be3874" title="Calls the routines that compute the norm of the residuals and the tolerances." alt="" coords="184,372,360,412"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,562,96,499,123,461,157,428,178,415,181,420,160,433,127,465,100,501,67,564"/>
+<area shape="rect" id="Node000010" href="$termination_8c.html#aa1d7800c435fff9310d684b4154e7fdb" title="Check whether the subproblem is solved." alt="" coords="159,220,385,246"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="57,563,60,508,74,428,86,384,103,340,127,299,157,263,176,250,179,254,160,267,131,302,108,342,91,386,79,429,65,509,62,563"/>
+<area shape="rect" id="Node000011" href="$iteration_8c.html#a1a0ad2638fa3206a6f671619f689364f" title="Compute the (unscaled) dual objective value at the current iterate." alt="" coords="442,703,623,728"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="62,589,66,638,80,708,92,745,109,780,131,812,160,838,190,856,218,869,245,876,271,878,297,875,324,867,384,838,395,828,402,818,408,795,414,770,421,758,432,746,454,732,457,736,435,750,425,761,419,772,414,797,407,821,399,832,387,842,326,872,298,880,271,884,244,881,216,874,187,861,157,842,127,815,104,783,87,747,74,709,61,639,57,589"/>
+<area shape="rect" id="Node000013" href="$iteration_8c.html#ad071efc96075a8506c9c45448b9d48e6" title="Compute the (unscaled) primal objective value at the current iterate." alt="" coords="199,322,345,347"/>
+<area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="59,562,67,522,85,466,114,408,133,381,157,358,184,343,186,347,160,362,137,384,118,411,90,468,72,523,64,563"/>
+<area shape="rect" id="Node000014" href="$iteration_8c.html#ae21af0f956f1ccf8ee41c4cf68698279" title="Compute the residuals (in vector form)" alt="" coords="460,236,605,262"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="57,562,62,514,77,444,89,406,107,370,129,336,157,307,178,294,207,284,282,268,366,257,446,250,446,256,367,262,283,273,209,289,181,299,160,311,133,339,111,372,94,408,82,445,67,514,62,563"/>
+<area shape="rect" id="Node000017" href="$termination_8c.html#a8cf01c07469436e7c562c9f3e162fd2b" title="Check whether the problem is dual infeasible." alt="" coords="463,536,602,562"/>
+<area shape="poly" id="edge26_Node000001_Node000017" title=" " alt="" coords="76,561,113,540,158,523,241,511,325,511,403,519,468,531,467,536,402,525,324,517,241,516,159,528,115,545,79,565"/>
+<area shape="rect" id="Node000018" href="$termination_8c.html#a4df388b37067a843cbb2c6b244496d9c" title="Check whether the problem is primal infeasible." alt="" coords="456,487,609,512"/>
+<area shape="poly" id="edge31_Node000001_Node000018" title=" " alt="" coords="69,561,106,528,131,511,158,499,232,481,309,475,383,476,447,483,447,488,383,482,310,480,233,486,160,504,133,516,109,532,73,565"/>
+<area shape="rect" id="Node000019" href="$termination_8c.html#a6dbbbcff619e13f4164f7248365cfec0" title="Check whether the primal and dual residual norms are smaller than the primal and dual tolerances." alt="" coords="231,538,313,563"/>
+<area shape="poly" id="edge35_Node000001_Node000019" title=" " alt="" coords="111,567,217,554,217,560,111,572"/>
+<area shape="rect" id="Node000020" href="$lin__alg_8c.html#acf468a60c38fbc58b6de539acb6f0a3b" title="Copy vector a into preallocated vector b." alt="" coords="945,1574,1063,1599"/>
+<area shape="poly" id="edge36_Node000001_Node000020" title=" " alt="" coords="62,588,64,727,76,953,88,1074,106,1187,130,1280,144,1317,161,1345,198,1388,239,1426,285,1459,334,1488,386,1512,440,1532,551,1562,661,1580,765,1589,856,1591,930,1589,931,1595,856,1596,764,1594,660,1586,550,1567,438,1537,384,1517,332,1493,282,1464,236,1430,194,1392,156,1348,140,1319,125,1282,101,1188,83,1075,71,954,59,727,57,589"/>
+<area shape="rect" id="Node000021" href="$util_8c.html#a6ee0584322ee4cac18e04eb9d13932e8" title="Print information about the current iteration." alt="" coords="215,639,329,664"/>
+<area shape="poly" id="edge37_Node000001_Node000021" title=" " alt="" coords="87,586,160,617,208,633,207,638,158,622,84,591"/>
+<area shape="rect" id="Node000022" href="$util_8h.html#aae57226ec767e15f27d88e97df093b41" title="Start timer." alt="" coords="229,688,315,714"/>
+<area shape="poly" id="edge38_Node000001_Node000022" title=" " alt="" coords="70,587,106,630,131,654,160,673,187,685,216,692,214,698,185,690,157,678,128,658,102,634,66,590"/>
+<area shape="rect" id="Node000023" href="$util_8h.html#a6eecdaf6f3f1c4bf0ab1067a5e7e69da" title="Report time in seconds since last call to qpalm_tic." alt="" coords="227,738,317,763"/>
+<area shape="poly" id="edge39_Node000001_Node000023" title=" " alt="" coords="66,588,79,616,98,653,126,691,160,723,186,736,214,743,213,749,184,741,157,727,122,695,94,656,74,618,62,590"/>
+<area shape="rect" id="Node000024" href="$iteration_8c.html#a1ad7b6cb4924a8de3378ed35890b02e7" title=" " alt="" coords="196,788,348,828"/>
+<area shape="poly" id="edge40_Node000001_Node000024" title=" " alt="" coords="65,588,74,625,93,674,121,727,139,751,160,772,185,788,182,792,157,777,135,755,117,730,88,677,69,626,59,589"/>
+<area shape="rect" id="Node000031" href="$iteration_8c.html#a2493eaf6f46fae7e188477e427acfece" title="Update the proximal penalty." alt="" coords="942,694,1066,719"/>
+<area shape="poly" id="edge59_Node000001_Node000031" title=" " alt="" coords="58,563,69,489,89,381,119,275,137,234,157,206,246,133,334,74,422,32,466,18,510,8,555,3,599,4,644,9,690,20,735,37,781,59,827,87,874,122,890,139,905,163,931,225,953,303,970,389,993,558,1004,679,998,680,988,559,964,390,947,304,926,227,900,165,886,142,870,126,824,92,778,64,733,42,688,25,643,14,599,9,555,9,511,13,467,23,424,37,336,79,249,137,161,210,141,236,124,277,95,383,74,490,64,563"/>
+<area shape="rect" id="Node000033" href="$iteration_8c.html#a8ea42d3c9ff0d6d8dc8f144d0b03dc0d" title="Update the penalty factors." alt="" coords="475,588,590,614"/>
+<area shape="poly" id="edge102_Node000001_Node000033" title=" " alt="" coords="111,576,462,595,462,600,111,581"/>
+<area shape="rect" id="Node000035" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="189,1308,355,1334"/>
+<area shape="poly" id="edge60_Node000001_Node000035" title=" " alt="" coords="66,588,266,1295,261,1296,60,589"/>
+<area shape="rect" id="Node000003" href="$termination_8c.html#af1889ad003b14a004d4560bedde40ce9" title="Calculates the infinity norm of the dual residual and the residual of the subproblem and stores them ..." alt="" coords="441,290,624,315"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,369,384,356,408,340,432,324,452,317,454,322,435,329,411,344,387,361,353,374"/>
+<area shape="rect" id="Node000007" href="$termination_8c.html#ad746ec6ec47a1240e5e910abfb01fee3" title="Calculates the dual tolerance for the problem and current subproblem and stores them in work&#45;&gt;eps_dua..." alt="" coords="437,339,628,364"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="360,376,436,364,437,369,361,381"/>
+<area shape="rect" id="Node000008" href="$termination_8c.html#afc13c2c286796ec381cdb5c83d9f764f" title="Calculates the infinity norm of the primal residual and stores it in work&#45;&gt;info&#45;&gt;pri_res_norm." alt="" coords="438,388,627,414"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="360,392,424,395,424,400,360,398"/>
+<area shape="rect" id="Node000009" href="$termination_8c.html#ac638a8fe12bfee736c6832fa6140c92d" title="Calculates the primal tolerance and stores it in work&#45;&gt;eps_pri." alt="" coords="433,438,632,463"/>
+<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="361,409,463,432,462,437,360,414"/>
+<area shape="rect" id="Node000004" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="1137,618,1262,643"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="624,297,729,302,790,309,853,322,917,339,979,363,1037,394,1090,434,1127,475,1156,522,1178,567,1192,604,1187,606,1173,569,1151,524,1122,478,1086,438,1034,399,977,368,915,344,852,327,789,315,729,307,624,302"/>
+<area shape="rect" id="Node000005" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="723,388,829,414"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="597,313,633,324,693,351,744,379,741,384,690,356,631,329,595,318"/>
+<area shape="rect" id="Node000006" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="721,438,831,463"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="615,313,634,324,646,337,653,349,659,375,664,400,671,412,682,423,708,438,706,442,678,427,667,415,659,402,654,376,648,351,641,340,630,329,612,318"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="628,343,685,344,747,348,811,357,873,373,924,394,973,422,1019,453,1061,487,1133,553,1181,605,1177,609,1129,557,1058,491,1016,457,970,426,922,399,871,378,810,362,746,353,684,349,628,349"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="597,362,710,385,709,390,595,367"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="608,362,633,374,649,386,658,399,667,411,681,423,709,435,706,440,679,427,663,415,654,402,645,390,631,378,605,367"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="627,398,709,398,709,404,627,404"/>
+<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="597,411,707,434,706,439,595,416"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="595,435,709,412,710,417,597,440"/>
+<area shape="poly" id="edge15_Node000009_Node000006" title=" " alt="" coords="632,448,707,448,707,453,632,453"/>
+<area shape="poly" id="edge18_Node000011_Node000004" title=" " alt="" coords="593,700,679,683,799,655,851,644,920,634,1026,627,1123,626,1123,631,1026,633,920,640,852,649,800,660,681,688,595,706"/>
+<area shape="rect" id="Node000012" href="$lin__alg_8c.html#ab83e787c2e0edb5803a860b1c894f53d" title="Inner product between two vectors, ." alt="" coords="735,843,817,868"/>
+<area shape="poly" id="edge19_Node000011_Node000012" title=" " alt="" coords="550,727,605,772,642,798,681,821,723,839,721,844,679,826,639,803,602,776,547,731"/>
+<area shape="poly" id="edge23_Node000014_Node000004" title=" " alt="" coords="606,241,712,242,775,247,841,257,908,273,974,297,1035,329,1090,371,1114,398,1135,428,1166,493,1186,555,1197,604,1191,605,1181,556,1161,495,1130,431,1110,401,1086,375,1032,334,972,302,907,278,840,262,774,252,711,247,606,246"/>
+<area shape="poly" id="edge25_Node000014_Node000005" title=" " alt="" coords="595,259,633,275,670,298,704,325,756,376,753,380,700,329,667,302,631,280,593,264"/>
+<area shape="rect" id="Node000015" href="$solver__interface_8c.html#aa0574481a6dc6221dd3b9562f8c54cd5" title="Matrix&#45;transpose&#45;vector multiplication." alt="" coords="715,186,837,211"/>
+<area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="594,234,701,211,702,216,595,239"/>
+<area shape="rect" id="Node000016" href="$lin__alg_8c.html#a93df027e9826a479bf77a0770817c71a" title="Elementwise mid between vectors, ." alt="" coords="709,136,843,162"/>
+<area shape="poly" id="edge24_Node000014_Node000016" title=" " alt="" coords="554,234,609,203,679,171,702,163,703,168,681,176,612,207,556,239"/>
+<area shape="poly" id="edge27_Node000017_Node000004" title=" " alt="" coords="602,544,699,544,821,549,955,561,1089,584,1127,595,1161,610,1159,614,1125,600,1087,589,954,566,820,554,699,550,602,550"/>
+<area shape="poly" id="edge28_Node000017_Node000005" title=" " alt="" coords="601,537,630,522,641,510,648,499,653,474,659,448,666,435,678,423,708,407,711,412,682,427,671,439,664,450,659,475,653,501,645,514,634,526,604,542"/>
+<area shape="poly" id="edge29_Node000017_Node000006" title=" " alt="" coords="591,534,631,521,690,495,741,468,743,472,692,500,633,526,593,539"/>
+<area shape="poly" id="edge30_Node000017_Node000012" title=" " alt="" coords="604,555,620,563,634,574,653,599,662,624,665,648,664,673,663,723,669,749,682,777,710,809,742,834,738,838,706,813,678,780,664,751,658,723,659,673,660,649,657,625,648,602,630,578,617,567,601,560"/>
+<area shape="poly" id="edge32_Node000018_Node000004" title=" " alt="" coords="610,493,708,493,829,499,961,518,1026,533,1089,553,1136,578,1175,606,1172,610,1133,582,1087,558,1025,538,960,523,829,505,708,498,610,498"/>
+<area shape="poly" id="edge33_Node000018_Node000005" title=" " alt="" coords="602,485,631,472,645,461,654,448,663,435,679,423,709,410,711,415,681,427,667,439,658,451,649,464,633,477,604,490"/>
+<area shape="poly" id="edge34_Node000018_Node000006" title=" " alt="" coords="595,484,706,462,707,467,597,490"/>
+<area shape="poly" id="edge41_Node000024_Node000020" title=" " alt="" coords="283,827,304,879,337,951,381,1030,435,1105,492,1165,545,1210,596,1246,647,1276,752,1338,810,1379,874,1434,938,1501,987,1561,983,1564,934,1505,870,1438,807,1384,749,1342,644,1280,593,1250,542,1215,489,1169,431,1108,377,1033,332,953,299,881,278,829"/>
+<area shape="rect" id="Node000025" href="$iteration_8c.html#a786f2d2af82a141fe3825a3964659d50" title=" " alt="" coords="447,638,619,678"/>
+<area shape="poly" id="edge42_Node000024_Node000025" title=" " alt="" coords="347,792,384,772,400,753,407,732,414,710,431,689,438,684,441,688,435,692,419,713,412,733,405,755,387,777,350,796"/>
+<area shape="poly" id="edge56_Node000024_Node000033" title=" " alt="" coords="347,794,367,785,383,773,397,755,404,737,406,700,409,662,417,643,432,624,461,607,463,612,435,628,421,646,414,663,412,700,409,738,402,757,387,776,369,790,349,799"/>
+<area shape="poly" id="edge54_Node000025_Node000005" title=" " alt="" coords="614,636,630,623,647,599,654,574,655,549,652,524,650,499,651,474,660,448,678,423,692,412,708,405,710,410,695,417,682,427,664,451,657,475,655,499,658,524,660,549,659,575,652,601,634,627,617,640"/>
+<area shape="poly" id="edge55_Node000025_Node000006" title=" " alt="" coords="607,636,630,623,658,597,692,556,755,473,759,477,697,560,662,601,634,627,609,641"/>
+<area shape="poly" id="edge43_Node000025_Node000020" title=" " alt="" coords="615,676,634,689,651,711,658,734,665,756,682,776,707,791,731,798,780,797,804,796,828,799,851,809,874,829,892,861,904,906,911,959,914,1017,917,1131,923,1218,963,1414,998,1559,993,1561,958,1416,917,1219,912,1131,909,1017,906,960,899,907,887,863,870,832,849,814,827,804,804,802,780,803,731,803,705,796,678,780,660,758,653,736,647,714,630,692,612,681"/>
+<area shape="rect" id="Node000026" href="$iteration_8c.html#a95e8560aaf51a2c4f68de9b65b0c6a15" title=" " alt="" coords="683,742,869,767"/>
+<area shape="poly" id="edge44_Node000025_Node000026" title=" " alt="" coords="600,676,633,688,737,733,735,738,631,693,598,681"/>
+<area shape="poly" id="edge52_Node000026_Node000004" title=" " alt="" coords="869,760,921,760,976,756,1033,746,1087,728,1114,713,1139,693,1178,652,1182,656,1143,697,1117,717,1089,733,1034,751,977,761,921,765,869,765"/>
+<area shape="rect" id="Node000027" href="$iteration_8c.html#addf0e547cbd4fd4b3bda2c1adccf22c8" title="Maximize the proximal penalty." alt="" coords="947,795,1061,820"/>
+<area shape="poly" id="edge45_Node000026_Node000027" title=" " alt="" coords="832,765,936,789,935,795,831,770"/>
+<area shape="rect" id="Node000029" href="$newton_8c.html#ae27a99e2b3249e8455b72c2e2a977dd8" title="Computes the set of active constraints and stores it in work&#45;&gt;solver&#45;&gt;active_constraints." alt="" coords="920,894,1088,919"/>
+<area shape="poly" id="edge48_Node000026_Node000029" title=" " alt="" coords="839,765,874,784,892,809,898,834,904,858,922,881,928,885,925,889,918,884,900,860,893,835,887,812,870,788,837,770"/>
+<area shape="rect" id="Node000030" href="$newton_8c.html#a43d518127e8561034e35ba18d0e15b31" title="Determines the entering and leaving constraints and stores them in work&#45;&gt;solver&#45;&gt;enter and work&#45;&gt;solv..." alt="" coords="925,1166,1083,1206"/>
+<area shape="poly" id="edge49_Node000026_Node000030" title=" " alt="" coords="844,765,874,785,994,1152,989,1154,870,788,841,770"/>
+<area shape="poly" id="edge50_Node000026_Node000031" title=" " alt="" coords="837,739,929,719,930,725,838,744"/>
+<area shape="rect" id="Node000032" href="$lin__alg_8c.html#a7b3d3b23f9254b8dc1bf53823ef42b42" title="Elementwise division, ." alt="" coords="955,844,1053,870"/>
+<area shape="poly" id="edge53_Node000026_Node000032" title=" " alt="" coords="829,765,873,784,888,796,898,808,907,819,921,830,943,840,941,844,919,834,903,823,894,811,885,800,871,789,827,770"/>
+<area shape="poly" id="edge47_Node000027_Node000004" title=" " alt="" coords="1050,793,1086,774,1117,746,1144,714,1183,654,1187,657,1148,717,1121,749,1090,778,1053,797"/>
+<area shape="rect" id="Node000028" href="$nonconvex_8c.html#ab2a80b1d0a937afe2f6731b182ed63ac" title="Calculate the Gershgorin upper bound for the eigenvalues of a symmetric matrix." alt="" coords="1136,795,1263,820"/>
+<area shape="poly" id="edge46_Node000027_Node000028" title=" " alt="" coords="1062,805,1122,805,1122,810,1062,810"/>
+<area shape="poly" id="edge51_Node000031_Node000004" title=" " alt="" coords="1037,691,1087,672,1153,646,1155,651,1089,677,1039,696"/>
+<area shape="poly" id="edge58_Node000033_Node000006" title=" " alt="" coords="589,587,631,571,667,548,700,522,752,471,756,475,704,526,670,552,633,576,591,592"/>
+<area shape="rect" id="Node000034" href="$solver__interface_8c.html#a759f2a0d608b6cd90863e5871d6f8474" title="Update the &#160;factorization given a set of indexes where &#160;has been updated." alt="" coords="680,590,872,615"/>
+<area shape="poly" id="edge57_Node000033_Node000034" title=" " alt="" coords="590,599,666,599,666,605,590,604"/>
+<area shape="poly" id="edge100_Node000035_Node000004" title=" " alt="" coords="275,1307,315,1208,350,1132,395,1048,451,959,516,872,592,793,634,758,679,727,737,712,856,688,1122,641,1123,646,857,693,738,717,681,732,637,762,596,797,521,876,455,962,400,1050,355,1135,320,1210,280,1309"/>
+<area shape="poly" id="edge99_Node000035_Node000020" title=" " alt="" coords="304,1331,463,1399,681,1483,824,1530,946,1567,945,1572,822,1535,679,1488,461,1404,302,1336"/>
+<area shape="rect" id="Node000036" href="$linesearch_8c.html#a647cabae1574f21e412110765ea1e70d" title="Execute exact linesearch (using qsort)" alt="" coords="467,1068,599,1094"/>
+<area shape="poly" id="edge61_Node000035_Node000036" title=" " alt="" coords="285,1306,506,1101,509,1105,289,1310"/>
+<area shape="rect" id="Node000042" href="$lin__alg_8c.html#a932b289ad07aea70e64b417ef9160674" title="Mulitply vector with a constant scale factor." alt="" coords="925,2307,1083,2332"/>
+<area shape="poly" id="edge101_Node000035_Node000042" title=" " alt="" coords="276,1334,277,1399,283,1508,299,1648,329,1808,351,1892,378,1975,411,2057,450,2137,496,2211,550,2280,611,2341,681,2394,730,2417,752,2422,773,2423,818,2414,871,2393,886,2383,895,2371,903,2358,918,2344,936,2335,939,2340,922,2349,908,2361,899,2374,890,2387,873,2398,820,2419,774,2428,751,2427,729,2422,679,2398,608,2345,546,2284,492,2214,445,2139,406,2060,373,1977,346,1893,324,1809,293,1649,277,1508,271,1399,270,1334"/>
+<area shape="rect" id="Node000043" href="$newton_8c.html#af1654e5597faac8b0ade25acf1fc1bc9" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="452,1839,613,1864"/>
+<area shape="poly" id="edge73_Node000035_Node000043" title=" " alt="" coords="282,1333,521,1825,517,1828,277,1335"/>
+<area shape="poly" id="edge66_Node000036_Node000004" title=" " alt="" coords="546,1066,602,1023,639,1000,679,981,741,965,796,962,848,967,896,975,942,980,989,978,1036,963,1086,930,1102,914,1112,898,1121,865,1123,827,1133,782,1184,655,1189,657,1139,783,1129,828,1126,865,1117,900,1107,917,1090,934,1038,967,989,983,942,985,895,980,847,973,796,968,741,971,681,986,641,1005,605,1028,550,1071"/>
+<area shape="poly" id="edge69_Node000036_Node000005" title=" " alt="" coords="536,1067,578,935,605,839,629,739,637,669,641,576,652,486,662,450,678,423,692,412,708,405,710,410,695,417,682,427,667,452,657,487,647,576,642,669,635,740,610,840,583,937,541,1069"/>
+<area shape="poly" id="edge70_Node000036_Node000012" title=" " alt="" coords="538,1067,557,1031,588,983,629,931,679,886,721,865,723,870,681,890,633,934,592,986,562,1034,543,1069"/>
+<area shape="poly" id="edge64_Node000036_Node000020" title=" " alt="" coords="553,1092,681,1179,737,1207,784,1225,827,1247,850,1264,874,1287,901,1321,924,1357,960,1434,985,1505,1000,1560,995,1561,980,1507,955,1436,919,1360,896,1324,870,1291,847,1268,825,1251,781,1230,735,1212,679,1183,550,1096"/>
+<area shape="poly" id="edge68_Node000036_Node000032" title=" " alt="" coords="541,1066,595,1004,634,967,679,936,727,917,796,898,941,866,942,871,798,903,729,922,681,941,637,971,598,1008,545,1070"/>
+<area shape="rect" id="Node000037" href="$linesearch_8c.html#ac70138609ef6aa6fabca57aca8681e83" title="Helper function for qsort." alt="" coords="737,995,815,1020"/>
+<area shape="poly" id="edge62_Node000036_Node000037" title=" " alt="" coords="570,1066,679,1031,723,1018,724,1024,681,1036,572,1071"/>
+<area shape="rect" id="Node000038" href="$solver__interface_8c.html#a4824fb035d8cdb8ba46e4ac5c4049d5d" title="Matrix&#45;vector multiplication." alt="" coords="737,1447,815,1472"/>
+<area shape="poly" id="edge63_Node000036_Node000038" title=" " alt="" coords="538,1093,549,1153,573,1242,592,1291,616,1340,646,1386,682,1426,702,1439,724,1448,722,1453,699,1444,678,1430,642,1389,612,1343,587,1294,568,1244,544,1154,533,1094"/>
+<area shape="rect" id="Node000039" href="$linesearch_8c.html#a33a2554aa831be51296f2dafedd076d4" title="Select subsequence based on a set of indices, ." alt="" coords="699,1044,853,1070"/>
+<area shape="poly" id="edge65_Node000036_Node000039" title=" " alt="" coords="599,1072,686,1063,686,1069,599,1077"/>
+<area shape="rect" id="Node000040" href="$linesearch_8c.html#a21cd94f0684dd9e1bfe7236260e9e8d5" title="Helper function to copy vector a in array b (with indices)" alt="" coords="714,1094,838,1119"/>
+<area shape="poly" id="edge67_Node000036_Node000040" title=" " alt="" coords="599,1085,700,1096,700,1101,599,1091"/>
+<area shape="rect" id="Node000041" href="$linesearch_8c.html#ac4bdfc80a644d8c75a672963c7682af9" title="Inner product over index set, ." alt="" coords="722,1143,830,1168"/>
+<area shape="poly" id="edge71_Node000036_Node000041" title=" " alt="" coords="569,1091,681,1129,710,1137,708,1142,679,1134,567,1096"/>
+<area shape="poly" id="edge72_Node000036_Node000042" title=" " alt="" coords="543,1093,596,1181,636,1238,682,1293,709,1316,735,1333,786,1356,810,1368,833,1383,854,1404,874,1435,889,1469,898,1511,906,1612,904,1729,896,1854,889,1979,887,2095,890,2147,897,2194,907,2234,922,2268,937,2285,956,2299,953,2303,934,2289,918,2271,902,2236,892,2195,885,2147,882,2095,884,1978,891,1854,898,1729,901,1612,893,1512,884,1471,870,1437,850,1408,829,1387,807,1373,784,1361,733,1338,706,1321,678,1296,632,1242,591,1184,539,1096"/>
+<area shape="poly" id="edge95_Node000043_Node000004" title=" " alt="" coords="539,1838,592,1750,632,1693,678,1638,729,1591,773,1559,818,1529,870,1483,941,1416,996,1362,1042,1303,1064,1265,1086,1217,1107,1155,1118,1101,1121,1051,1120,1004,1116,905,1121,848,1133,782,1157,712,1183,654,1188,657,1162,714,1139,783,1126,848,1121,905,1125,1004,1126,1051,1123,1101,1112,1157,1090,1219,1069,1267,1047,1306,1000,1366,945,1420,874,1487,821,1533,776,1564,732,1595,682,1642,637,1696,596,1753,543,1840"/>
+<area shape="poly" id="edge97_Node000043_Node000006" title=" " alt="" coords="533,1839,573,1557,629,1106,635,1025,636,956,631,837,632,780,638,719,652,653,678,576,692,546,711,517,749,471,754,475,715,520,697,548,682,578,657,654,643,720,637,780,637,836,641,956,641,1025,635,1107,578,1558,539,1839"/>
+<area shape="poly" id="edge90_Node000043_Node000020" title=" " alt="" coords="540,1837,592,1766,632,1723,679,1686,729,1660,772,1649,816,1641,871,1628,952,1601,954,1606,873,1633,817,1647,773,1654,731,1665,681,1690,635,1727,596,1769,544,1841"/>
+<area shape="poly" id="edge93_Node000043_Node000029" title=" " alt="" coords="532,1839,541,1759,563,1630,582,1556,607,1480,638,1405,678,1336,701,1306,724,1284,772,1255,820,1227,845,1207,870,1179,913,1114,948,1045,975,981,992,932,997,934,980,983,953,1047,918,1117,874,1183,849,1211,823,1231,775,1259,728,1288,705,1309,682,1339,643,1408,612,1482,587,1557,568,1631,546,1760,537,1839"/>
+<area shape="poly" id="edge94_Node000043_Node000030" title=" " alt="" coords="533,1839,545,1772,571,1668,590,1609,614,1548,643,1489,678,1434,728,1383,805,1322,959,1212,963,1216,808,1326,732,1387,682,1437,648,1492,619,1550,595,1611,576,1670,550,1773,538,1840"/>
+<area shape="poly" id="edge88_Node000043_Node000038" title=" " alt="" coords="533,1838,543,1777,567,1683,586,1632,610,1581,641,1532,678,1490,699,1475,722,1466,724,1471,701,1480,682,1494,645,1535,615,1583,591,1634,572,1685,548,1778,538,1839"/>
+<area shape="poly" id="edge98_Node000043_Node000042" title=" " alt="" coords="536,1865,540,1940,546,1994,557,2055,575,2118,601,2180,636,2236,657,2261,682,2283,708,2301,736,2314,798,2330,860,2334,918,2331,918,2337,860,2339,797,2335,734,2319,705,2305,678,2287,654,2265,632,2239,596,2182,570,2120,552,2056,541,1995,534,1940,531,1865"/>
+<area shape="rect" id="Node000044" href="$solver__interface_8c.html#aca80eaf7b897030273f1a6820b7e6d38" title="Solve the KKT system &#160;." alt="" coords="733,2358,819,2383"/>
+<area shape="poly" id="edge74_Node000043_Node000044" title=" " alt="" coords="537,1865,540,1945,546,2004,558,2071,576,2141,601,2212,636,2278,682,2337,700,2350,721,2359,719,2364,697,2355,678,2340,632,2281,596,2214,570,2143,552,2072,541,2005,535,1945,531,1865"/>
+<area shape="rect" id="Node000046" href="$solver__interface_8c.html#a7ab6022f2624a8f13bf8f54067c9f2cd" title="Perform a factorization update for the entering constraints." alt="" coords="698,1962,854,2002"/>
+<area shape="poly" id="edge78_Node000043_Node000046" title=" " alt="" coords="551,1862,607,1904,681,1948,696,1955,694,1960,679,1953,604,1908,548,1867"/>
+<area shape="rect" id="Node000047" href="$solver__interface_8c.html#a172614d18d4dd82e001245d7ceea389f" title="Perform a factorization update for the leaving constraints." alt="" coords="701,2026,851,2066"/>
+<area shape="poly" id="edge79_Node000043_Node000047" title=" " alt="" coords="544,1863,597,1934,636,1976,682,2012,691,2018,689,2023,678,2017,632,1980,593,1937,540,1866"/>
+<area shape="rect" id="Node000048" href="$solver__interface_8c.html#ab4921dab7206bd333c9e7dc679dce0b1" title="Calculate &#160;factorization of a matrix ." alt="" coords="971,2231,1037,2256"/>
+<area shape="poly" id="edge80_Node000043_Node000048" title=" " alt="" coords="537,1865,541,1935,548,1985,560,2040,578,2097,603,2152,637,2202,682,2242,714,2259,750,2271,787,2276,825,2277,898,2270,958,2256,959,2261,899,2275,826,2283,787,2282,749,2276,712,2264,678,2246,633,2205,599,2155,573,2099,555,2042,543,1986,536,1935,531,1865"/>
+<area shape="rect" id="Node000049" href="$solver__interface_8c.html#a972c4868a7391f4b18d836f1ca0810d9" title="Calculate &#160;factorization of , with &#160;and &#160;the set of active constraints." alt="" coords="707,2206,845,2231"/>
+<area shape="poly" id="edge81_Node000043_Node000049" title=" " alt="" coords="538,1864,548,1924,573,2012,591,2061,615,2108,645,2153,682,2191,696,2201,693,2205,678,2195,641,2156,611,2111,586,2063,567,2014,543,1925,533,1865"/>
+<area shape="rect" id="Node000050" href="$solver__interface_8c.html#a6892fee611934ae5337f1be0235bfc80" title="Downdate the &#160;factorization given a set of leaving constraints." alt="" coords="697,2141,855,2181"/>
+<area shape="poly" id="edge83_Node000043_Node000050" title=" " alt="" coords="540,1864,554,1913,582,1984,624,2061,651,2096,682,2127,688,2132,685,2136,678,2131,647,2100,619,2064,577,1986,549,1915,535,1866"/>
+<area shape="rect" id="Node000051" href="$solver__interface_8c.html#a03ad73d0e41054e90232d141e73474ab" title="Solve the linear system ." alt="" coords="698,2091,854,2116"/>
+<area shape="poly" id="edge84_Node000043_Node000051" title=" " alt="" coords="541,1864,558,1906,587,1963,628,2024,653,2052,682,2076,693,2083,690,2088,678,2081,650,2056,624,2028,582,1966,553,1908,536,1866"/>
+<area shape="rect" id="Node000052" href="$solver__interface_8c.html#adee67b7c00941da3be82394e4f58c47e" title="Update the &#160;factorization given a set of entering constraints." alt="" coords="704,1700,848,1740"/>
+<area shape="poly" id="edge87_Node000043_Node000052" title=" " alt="" coords="548,1837,604,1796,679,1751,697,1742,699,1747,681,1755,607,1800,551,1841"/>
+<area shape="rect" id="Node000053" href="$lin__alg_8c.html#ade8612cfab1bef397f1ff7a36f202e73" title="Copy integer vector a into preallocated vector b." alt="" coords="705,1764,847,1790"/>
+<area shape="poly" id="edge89_Node000043_Node000053" title=" " alt="" coords="569,1836,679,1800,711,1791,712,1796,681,1805,571,1842"/>
+<area shape="rect" id="Node000054" href="$solver__interface_8c.html#a1d321f8b340db936d2f62a9abb350600" title="Form the KKT system &#160;." alt="" coords="711,1814,841,1839"/>
+<area shape="poly" id="edge91_Node000043_Node000054" title=" " alt="" coords="613,1841,698,1832,698,1837,614,1846"/>
+<area shape="rect" id="Node000055" href="$solver__interface_8c.html#ad0f4712f4b0ab25ecca938a1f4b1e0a1" title="Reform the KKT system (i.e." alt="" coords="705,1863,847,1888"/>
+<area shape="poly" id="edge92_Node000043_Node000055" title=" " alt="" coords="614,1857,692,1865,691,1870,613,1862"/>
+<area shape="rect" id="Node000056" href="$lin__alg_8c.html#a863f6634d67489350855e97c36c8c59c" title="Scaled addition of one vector to another vector, both being scaled, ." alt="" coords="695,1912,857,1938"/>
+<area shape="poly" id="edge96_Node000043_Node000056" title=" " alt="" coords="570,1862,681,1899,709,1906,708,1912,679,1904,568,1867"/>
+<area shape="poly" id="edge75_Node000044_Node000020" title=" " alt="" coords="788,2356,829,2309,851,2277,870,2243,904,2154,932,2061,954,1967,971,1876,991,1717,999,1613,1004,1613,996,1718,976,1877,959,1968,937,2062,909,2155,874,2245,856,2280,833,2312,792,2359"/>
+<area shape="poly" id="edge76_Node000044_Node000042" title=" " alt="" coords="819,2358,932,2333,933,2338,820,2364"/>
+<area shape="rect" id="Node000045" href="$lin__alg_8c.html#a67ead739705f515285526db604c5bb7d" title="Fill float vector with a scalar value." alt="" coords="945,2358,1063,2383"/>
+<area shape="poly" id="edge77_Node000044_Node000045" title=" " alt="" coords="819,2368,931,2368,931,2373,819,2373"/>
+<area shape="poly" id="edge82_Node000049_Node000048" title=" " alt="" coords="846,2223,958,2236,957,2241,845,2229"/>
+<area shape="poly" id="edge85_Node000051_Node000020" title=" " alt="" coords="853,2089,870,2077,894,2041,916,1989,936,1925,954,1854,981,1714,997,1612,1002,1613,986,1715,959,1855,941,1926,921,1991,899,2044,874,2080,856,2093"/>
+<area shape="poly" id="edge86_Node000051_Node000042" title=" " alt="" coords="855,2114,874,2127,888,2144,897,2162,901,2196,905,2231,911,2249,922,2267,940,2285,961,2298,958,2303,937,2289,918,2271,906,2251,899,2232,896,2197,891,2163,884,2147,870,2131,852,2119"/>
+</map>

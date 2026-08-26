@@ -1,0 +1,20 @@
+<map id="set_entering_leaving_constraints" name="set_entering_leaving_constraints">
+<area shape="rect" id="Node000001" title="Determines the entering and leaving constraints and stores them in work&#45;&gt;solver&#45;&gt;enter and work&#45;&gt;solv..." alt="" coords="1031,27,1189,67"/>
+<area shape="rect" id="Node000002" href="$newton_8c.html#af1654e5597faac8b0ade25acf1fc1bc9" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="809,8,970,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1017,39,970,33,970,28,1017,33"/>
+<area shape="rect" id="Node000007" href="$iteration_8c.html#a95e8560aaf51a2c4f68de9b65b0c6a15" title=" " alt="" coords="796,59,983,84"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1018,60,983,64,982,59,1017,55"/>
+<area shape="rect" id="Node000003" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="361,5,528,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="795,23,528,21,528,16,795,17"/>
+<area shape="rect" id="Node000004" href="$group__solver-grp.html#ga17fcba910c32b8518df93617591b1cf1" title="Solve the quadratic program." alt="" coords="208,35,313,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="352,36,314,42,313,36,351,30"/>
+<area shape="rect" id="Node000005" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,9,147,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="194,41,147,34,147,28,195,35"/>
+<area shape="rect" id="Node000006" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,59,160,84"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="195,59,161,63,160,58,194,54"/>
+<area shape="rect" id="Node000008" href="$iteration_8c.html#a786f2d2af82a141fe3825a3964659d50" title=" " alt="" coords="576,55,748,95"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="783,76,748,76,748,71,783,71"/>
+<area shape="rect" id="Node000009" href="$iteration_8c.html#a1ad7b6cb4924a8de3378ed35890b02e7" title=" " alt="" coords="369,55,521,95"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="562,78,521,78,521,73,562,73"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="355,64,313,58,314,53,355,59"/>
+</map>

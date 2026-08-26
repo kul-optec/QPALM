@@ -1,0 +1,11 @@
+<map id="c_strcpy" name="c_strcpy">
+<area shape="rect" id="node1" title="Custom string copy to avoid string.h library." alt="" coords="643,39,719,64"/>
+<area shape="rect" id="node2" href="$util_8c.html#ae4a3db21e55ea56c33c599e405771403" title="Print final message as a box with info." alt="" coords="441,13,595,39"/>
+<area shape="rect" id="node3" href="$util_8c.html#a14fe651105f1f38b2a3a49614f4b8ae2" title="Update solver status (value and string)." alt="" coords="461,63,575,88"/>
+<area shape="rect" id="node4" href="$group__solver-grp.html#gaaff827465b1299909f394de8771baef9" title="Initialize QPALM solver allocating memory." alt="" coords="253,9,359,35"/>
+<area shape="rect" id="node6" href="$group__solver-grp.html#ga385f399d0fb6afaaa0da5f3a114bf922" title="Update the lower and upper bounds." alt="" coords="221,63,391,88"/>
+<area shape="rect" id="node8" href="$group__solver-grp.html#ga581cf986cb484ec5721f76b025eda704" title="Update the settings to the new settings." alt="" coords="219,119,393,144"/>
+<area shape="rect" id="node5" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="24,5,152,31"/>
+<area shape="rect" id="node7" href="$classqpalm_1_1Solver.html#a6df33bfd68c5b8caaaa6f726f1a9f517" title=" " alt="" coords="5,55,171,95"/>
+<area shape="rect" id="node9" href="$classqpalm_1_1Solver.html#a895c0635d6fdd0a3026894697ea6903b" title=" " alt="" coords="5,119,171,159"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="QPALM/include/lin_alg.h" name="QPALM/include/lin_alg.h">
+<area shape="rect" id="node1" title="Linear algebra with vectors." alt="" coords="1067,5,1245,31"/>
+<area shape="rect" id="node2" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="207,152,382,177"/>
+<area shape="rect" id="node6" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="400,233,547,258"/>
+<area shape="rect" id="node7" href="$scaling_8h.html" title="Problem data scaling during setup." alt="" coords="458,79,638,104"/>
+<area shape="rect" id="node8" href="$scaling_8c.html" title="Problem data scaling during setup." alt="" coords="578,152,729,177"/>
+<area shape="rect" id="node9" href="$iteration_8c.html" title="QPALM main solver routines." alt="" coords="713,79,873,104"/>
+<area shape="rect" id="node10" href="$lin__alg_8c.html" title="Linear algebra with vectors." alt="" coords="898,79,1046,104"/>
+<area shape="rect" id="node11" href="$linesearch_8c.html" title="Routines to perform exact or backtracking linesearch." alt="" coords="1070,79,1242,104"/>
+<area shape="rect" id="node12" href="$newton_8c.html" title="Functions to calculate the semismooth Newton direction." alt="" coords="1266,79,1419,104"/>
+<area shape="rect" id="node13" href="$nonconvex_8c.html" title="Routines to deal with nonconvex QPs." alt="" coords="1444,79,1620,104"/>
+<area shape="rect" id="node14" href="$solver__interface_8c.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="1644,79,1855,104"/>
+<area shape="rect" id="node15" href="$termination_8c.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="1879,79,2060,104"/>
+<area shape="rect" id="node16" href="$util_8c.html" title="Utility functions." alt="" coords="2085,79,2211,104"/>
+<area shape="rect" id="node17" href="$validate_8c.html" title="Validation of the user provided settings and data." alt="" coords="2235,79,2394,104"/>
+<area shape="rect" id="node3" href="$qpalm_8cpp.html" title=" " alt="" coords="213,225,376,265"/>
+<area shape="rect" id="node4" href="$qpalm__fortran_8h.html" title=" " alt="" coords="5,225,189,265"/>
+<area shape="rect" id="node5" href="$qpalm__fortran_8c.html" title=" " alt="" coords="5,313,189,353"/>
+</map>

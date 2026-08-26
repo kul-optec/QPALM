@@ -1,0 +1,11 @@
+<map id="QPALM/src/validate.c" name="QPALM/src/validate.c">
+<area shape="rect" id="node1" title="Validation of the user provided settings and data." alt="" coords="104,5,263,32"/>
+<area shape="rect" id="node2" href="$validate_8h.html" title="Validation of the user provided settings and data." alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node7" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="145,80,222,107"/>
+<area shape="rect" id="node9" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="293,229,391,256"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="95,229,165,256"/>
+<area shape="rect" id="node4" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="58,304,167,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="197,379,263,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="79,379,147,405"/>
+<area shape="rect" id="node8" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="167,155,306,181"/>
+</map>

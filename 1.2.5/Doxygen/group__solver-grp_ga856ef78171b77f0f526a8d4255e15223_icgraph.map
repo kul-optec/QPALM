@@ -1,0 +1,7 @@
+<map id="qpalm_cleanup" name="qpalm_cleanup">
+<area shape="rect" id="Node000001" title="Cleanup the workspace by deallocating memory." alt="" coords="216,52,337,77"/>
+<area shape="rect" id="Node000002" href="$structqpalm_1_1alloc_1_1qpalm__workspace__cleaner.html#a0153941f8aa59d256f436151041815ef" title=" " alt="" coords="5,5,168,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,55,168,49,169,44,203,50"/>
+<area shape="rect" id="Node000003" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="23,84,151,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,80,152,89,151,83,202,75"/>
+</map>

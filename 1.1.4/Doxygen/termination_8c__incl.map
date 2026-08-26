@@ -1,0 +1,13 @@
+<map id="QPALM/src/termination.c" name="QPALM/src/termination.c">
+<area shape="rect" id="node1" title="Routines to check the termination and infeasibility criteria." alt="" coords="128,5,310,31"/>
+<area shape="rect" id="node2" href="$termination_8h.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="105,79,216,104"/>
+<area shape="rect" id="node4" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="118,299,227,324"/>
+<area shape="rect" id="node7" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="240,79,318,104"/>
+<area shape="rect" id="node9" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="370,225,468,251"/>
+<area shape="rect" id="node10" href="$util_8h.html" title="Utility functions." alt="" coords="401,152,456,177"/>
+<area shape="rect" id="node11" href="$iteration_8h.html" title="QPALM main solver routines." alt="" coords="22,152,112,177"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="156,225,226,251"/>
+<area shape="rect" id="node5" title=" " alt="" coords="256,372,323,397"/>
+<area shape="rect" id="node6" title=" " alt="" coords="138,372,206,397"/>
+<area shape="rect" id="node8" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="238,152,376,177"/>
+</map>

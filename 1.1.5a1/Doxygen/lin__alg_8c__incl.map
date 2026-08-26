@@ -1,0 +1,22 @@
+<map id="/home/runner/work/QPALM/QPALM/QPALM/src/lin_alg.c" name="/home/runner/work/QPALM/QPALM/QPALM/src/lin_alg.c">
+<area shape="rect" id="Node000001" title="Linear algebra with vectors." alt="" coords="44,5,245,45"/>
+<area shape="rect" id="Node000002" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="106,93,183,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,46,147,79,142,79,142,46"/>
+<area shape="rect" id="Node000003" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="163,240,233,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="153,118,175,166,194,226,189,227,170,168,148,120"/>
+<area shape="rect" id="Node000007" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="22,167,161,192"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="138,121,110,157,106,154,134,117"/>
+<area shape="rect" id="Node000004" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="143,313,253,339"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="201,266,201,300,195,300,195,266"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="55,387,122,412"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="220,263,241,278,261,296,272,318,272,329,267,340,246,356,213,370,136,391,135,386,211,365,243,352,263,337,267,328,267,319,257,300,238,282,217,268"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="182,341,120,381,117,377,179,336"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="164,387,232,412"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="201,339,201,373,195,373,195,339"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="110,190,171,230,168,235,107,194"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="101,191,153,264,182,301,178,304,149,267,97,194"/>
+<area shape="poly" id="edge12_Node000007_Node000005" title=" " alt="" coords="83,194,45,243,26,277,11,314,8,326,11,338,29,360,52,378,49,382,25,364,6,340,3,326,6,313,21,275,41,241,79,190"/>
+<area shape="rect" id="Node000008" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="21,313,119,339"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="92,193,76,300,71,299,87,192"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="76,338,85,373,80,374,70,340"/>
+</map>

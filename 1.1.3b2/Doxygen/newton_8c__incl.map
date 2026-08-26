@@ -1,0 +1,12 @@
+<map id="QPALM/src/newton.c" name="QPALM/src/newton.c">
+<area shape="rect" id="node1" title="Functions to calculate the semismooth Newton direction." alt="" coords="49,5,202,31"/>
+<area shape="rect" id="node2" href="$newton_8h.html" title="Functions to calculate the semismooth Newton direction." alt="" coords="5,152,88,177"/>
+<area shape="rect" id="node7" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="87,79,164,104"/>
+<area shape="rect" id="node10" title=" " alt="" coords="188,79,255,104"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="81,225,151,251"/>
+<area shape="rect" id="node4" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="7,299,116,324"/>
+<area shape="rect" id="node5" title=" " alt="" coords="163,372,229,397"/>
+<area shape="rect" id="node6" title=" " alt="" coords="27,372,95,397"/>
+<area shape="rect" id="node8" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="163,152,301,177"/>
+<area shape="rect" id="node9" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="191,299,289,324"/>
+</map>

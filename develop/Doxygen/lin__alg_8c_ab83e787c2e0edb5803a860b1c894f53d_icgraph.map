@@ -1,0 +1,23 @@
+<map id="vec_prod" name="vec_prod">
+<area shape="rect" id="Node000001" title="Inner product between two vectors, ." alt="" coords="771,104,852,129"/>
+<area shape="rect" id="Node000002" href="$iteration_8c.html#a1a0ad2638fa3206a6f671619f689364f" title="Compute the (unscaled) dual objective value at the current iterate." alt="" coords="361,5,543,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="789,96,759,68,722,44,678,30,631,21,543,15,543,10,632,16,679,25,724,40,762,64,793,92"/>
+<area shape="rect" id="Node000006" href="$linesearch_8c.html#a647cabae1574f21e412110765ea1e70d" title="Execute exact linesearch (using qsort)" alt="" coords="591,55,723,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="757,102,697,83,698,78,758,97"/>
+<area shape="rect" id="Node000008" href="$iteration_8c.html#a155f5c99c7a442c554cca914de34eba7" title="Initialize penalty factors from initial x." alt="" coords="594,104,719,129"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="757,119,720,119,720,114,757,114"/>
+<area shape="rect" id="Node000009" href="$termination_8c.html#a8cf01c07469436e7c562c9f3e162fd2b" title="Check whether the problem is dual infeasible." alt="" coords="383,129,521,155"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="762,136,723,145,617,152,522,150,522,145,617,147,722,139,761,131"/>
+<area shape="rect" id="Node000010" href="$lin__alg_8c.html#ac9c437da6c40c86a70915aa0efd8af7d" title="2&#45;norm of a vector, ." alt="" coords="598,205,715,231"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="787,140,724,188,688,208,686,203,721,184,784,136"/>
+<area shape="rect" id="Node000003" href="$group__solver-grp.html#ga17fcba910c32b8518df93617591b1cf1" title="Solve the quadratic program." alt="" coords="208,55,313,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,37,312,57,310,52,388,32"/>
+<area shape="rect" id="Node000004" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,29,147,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,61,147,54,147,48,195,55"/>
+<area shape="rect" id="Node000005" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,79,160,104"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="195,79,161,83,160,78,194,74"/>
+<area shape="rect" id="Node000007" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="369,55,535,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="577,70,536,70,536,65,577,65"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="355,70,314,70,314,65,355,65"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="405,127,293,82,295,78,407,122"/>
+</map>

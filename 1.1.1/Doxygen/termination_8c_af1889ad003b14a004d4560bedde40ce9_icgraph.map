@@ -1,0 +1,4 @@
+<map id="calculate_dual_residuals" name="calculate_dual_residuals">
+<area shape="rect" id="node1" title="Calculates the infinity norm of the dual residual and the residual of the subproblem and stores them ..." alt="" coords="229,13,412,39"/>
+<area shape="rect" id="node2" href="$termination_8c.html#a50775fd01103420a3cfe7452a8be3874" title="Calls the routines that compute the norm of the residuals and the tolerances." alt="" coords="5,5,181,47"/>
+</map>

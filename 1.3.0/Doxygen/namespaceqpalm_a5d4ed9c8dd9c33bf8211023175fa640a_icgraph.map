@@ -1,0 +1,9 @@
+<map id="qpalm::ladel_sparse_create" name="qpalm::ladel_sparse_create">
+<area shape="rect" id="Node000001" title="Create an LADEL sparse matrix of the given dimensions." alt="" coords="452,23,605,63"/>
+<area shape="rect" id="Node000002" href="$namespaceqpalm.html#a3d5e72fb72bc31ac1861fcdcaec3a9de" title="Similar to eigen_to_ladel, but creates a copy of all data, in such a way that the returned matrix is ..." alt="" coords="200,31,404,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="438,46,404,46,404,41,438,41"/>
+<area shape="rect" id="Node000003" href="$classqpalm_1_1Data.html#a1b5c05b8c1aaf0980415fcbf0f1ecac2" title="Set the sparse A matrix. Creates a copy." alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="186,33,152,29,153,24,186,28"/>
+<area shape="rect" id="Node000004" href="$classqpalm_1_1Data.html#abc2d3d30a0663dce709a7342fc366251" title="Set the sparse Q matrix. Creates a copy." alt="" coords="5,55,152,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="186,58,153,62,152,57,186,53"/>
+</map>

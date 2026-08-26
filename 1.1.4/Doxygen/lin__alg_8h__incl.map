@@ -1,0 +1,9 @@
+<map id="QPALM/include/lin_alg.h" name="QPALM/include/lin_alg.h">
+<area shape="rect" id="node1" title="Linear algebra with vectors." alt="" coords="56,5,233,31"/>
+<area shape="rect" id="node2" href="$types_8h.html" title="Internal data structures used in QPALM." alt="" coords="163,152,233,177"/>
+<area shape="rect" id="node6" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="22,79,161,104"/>
+<area shape="rect" id="node3" href="$global__opts_8h.html" title="Custom memory allocation, print and utility functions, and data types for floats and ints." alt="" coords="143,225,253,251"/>
+<area shape="rect" id="node4" title=" " alt="" coords="55,299,122,324"/>
+<area shape="rect" id="node5" title=" " alt="" coords="164,299,232,324"/>
+<area shape="rect" id="node7" href="$constants_8h.html" title="Constants used in QPALM." alt="" coords="21,225,119,251"/>
+</map>

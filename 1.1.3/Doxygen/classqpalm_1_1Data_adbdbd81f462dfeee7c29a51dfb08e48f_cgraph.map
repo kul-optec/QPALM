@@ -1,0 +1,4 @@
+<map id="qpalm::Data::set_Q" name="qpalm::Data::set_Q">
+<area shape="rect" id="node1" title="Set the sparse Q matrix. Creates a copy." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="node2" href="$namespaceqpalm.html#aec2bb818f036173e48ba2c7768ba7b95" title="Similar to eigen_to_ladel, but creates a copy of all data, in such a way that the returned matrix is ..." alt="" coords="200,5,404,31"/>
+</map>

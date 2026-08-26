@@ -1,0 +1,5 @@
+<map id="calculate_primal_tolerance" name="calculate_primal_tolerance">
+<area shape="rect" id="node1" title="Calculates the primal tolerance and stores it in work&#45;&gt;eps_pri." alt="" coords="5,31,204,57"/>
+<area shape="rect" id="node2" href="$lin__alg_8c.html#ab48ddb2d35dd1a04bd27f06cb49400cb" title="Elementwise product, ." alt="" coords="254,5,361,32"/>
+<area shape="rect" id="node3" href="$lin__alg_8c.html#ad69e3ef3b7360cd1d6262ee2f32fce83" title="Infinity norm of a vector, ." alt="" coords="252,56,363,83"/>
+</map>

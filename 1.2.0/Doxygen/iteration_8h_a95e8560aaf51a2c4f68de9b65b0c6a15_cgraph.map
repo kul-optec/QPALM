@@ -1,0 +1,19 @@
+<map id="update_or_boost_gamma" name="update_or_boost_gamma">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,136,192,161"/>
+<area shape="rect" id="Node000002" href="$iteration_8c.html#addf0e547cbd4fd4b3bda2c1adccf22c8" title="Maximize the proximal penalty." alt="" coords="267,5,381,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,134,168,93,239,48,270,33,272,38,241,52,171,97,117,138"/>
+<area shape="rect" id="Node000004" href="$lin__alg_8c.html#a0fde1aeeea954e43db160ec6e3697cd5" title="Scaled addition of one vector to another vector, ." alt="" coords="457,56,582,81"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="125,133,177,111,239,91,345,74,443,67,443,72,346,79,241,97,179,116,127,138"/>
+<area shape="rect" id="Node000005" href="$newton_8c.html#ae27a99e2b3249e8455b72c2e2a977dd8" title="Computes the set of active constraints and stores it in work&#45;&gt;solver&#45;&gt;active_constraints." alt="" coords="240,107,408,132"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="192,134,226,129,227,135,193,139"/>
+<area shape="rect" id="Node000006" href="$newton_8c.html#a43d518127e8561034e35ba18d0e15b31" title="Determines the entering and leaving constraints and stores them in work&#45;&gt;solver&#45;&gt;enter and work&#45;&gt;solv..." alt="" coords="245,157,403,197"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="193,158,231,162,231,168,192,163"/>
+<area shape="rect" id="Node000007" href="$iteration_8c.html#a2493eaf6f46fae7e188477e427acfece" title="Update the proximal penalty." alt="" coords="262,221,386,247"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="129,159,241,206,266,215,264,220,239,211,127,164"/>
+<area shape="rect" id="Node000008" href="$lin__alg_8c.html#a7b3d3b23f9254b8dc1bf53823ef42b42" title="Elementwise division, ." alt="" coords="275,271,373,296"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="114,160,167,207,203,234,241,257,262,266,260,271,239,262,200,238,164,211,111,164"/>
+<area shape="rect" id="Node000003" href="$nonconvex_8c.html#ab2a80b1d0a937afe2f6731b182ed63ac" title="Calculate the Gershgorin upper bound for the eigenvalues of a symmetric matrix." alt="" coords="456,5,583,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,15,442,15,442,21,382,21"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="375,28,457,50,456,55,373,33"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="382,219,407,206,437,180,464,150,503,92,507,95,468,153,441,184,409,211,384,224"/>
+</map>

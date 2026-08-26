@@ -1,0 +1,11 @@
+<map id="newton_set_direction" name="newton_set_direction">
+<area shape="rect" id="Node000001" title="Sets work&#45;&gt;d to the direction calculated by the semismooth Newton method." alt="" coords="576,31,737,56"/>
+<area shape="rect" id="Node000002" href="$iteration_8c.html#a9c9fafac9ce099122c5a594762e5a052" title="Update the primal iterate." alt="" coords="361,31,528,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="562,46,528,46,528,41,562,41"/>
+<area shape="rect" id="Node000003" href="$group__solver-grp.html#ga17fcba910c32b8518df93617591b1cf1" title="Solve the quadratic program." alt="" coords="208,31,313,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,46,314,46,314,41,348,41"/>
+<area shape="rect" id="Node000004" href="$qpalm__fortran_8c.html#abec01161fcee665e126347b862c404c4" title=" " alt="" coords="19,5,147,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,37,147,30,147,24,195,31"/>
+<area shape="rect" id="Node000005" href="$classqpalm_1_1Solver.html#a7d723d189a812ffa19d688b7aa38ccca" title="Solve the problem." alt="" coords="5,55,160,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="195,55,161,59,160,54,194,50"/>
+</map>

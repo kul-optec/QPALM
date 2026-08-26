@@ -1,0 +1,67 @@
+<map id="QPALM/include/qpalm/constants.h" name="QPALM/include/qpalm/constants.h">
+<area shape="rect" id="Node000001" title="Constants used in QPALM." alt="" coords="1613,5,1776,45"/>
+<area shape="rect" id="Node000002" href="$qpalm_8h.html" title="QPALM main solver API." alt="" coords="109,357,283,383"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1600,31,1428,37,1200,49,943,68,684,96,615,102,554,104,448,104,400,109,351,122,300,146,244,183,227,201,214,223,199,273,196,321,197,357,192,357,190,321,194,272,209,221,222,198,241,179,298,141,350,117,399,104,448,99,554,98,614,97,684,91,943,63,1200,44,1428,32,1599,26"/>
+<area shape="rect" id="Node000006" href="$qpalm_8c.html" title="QPALM main solver API." alt="" coords="1269,438,1416,463"/>
+<area shape="poly" id="edge42_Node000001_Node000006" title=" " alt="" coords="1790,24,1996,32,2117,41,2237,56,2347,78,2395,92,2438,109,2473,127,2499,148,2517,173,2523,200,2523,291,2520,302,2512,313,2484,332,2441,348,2384,364,2239,390,2065,410,1879,426,1698,438,1416,450,1416,445,1697,432,1879,421,2065,405,2238,385,2383,359,2439,343,2482,327,2509,309,2515,300,2517,290,2517,200,2512,175,2496,152,2470,132,2435,113,2394,97,2346,84,2236,62,2116,47,1995,37,1790,29"/>
+<area shape="rect" id="Node000007" href="$linesearch_8h.html" title="Routines to perform exact linesearch." alt="" coords="315,181,477,221"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1600,33,1287,54,1093,72,899,96,781,116,664,139,471,184,469,179,663,134,780,111,898,91,1093,66,1287,48,1599,28"/>
+<area shape="rect" id="Node000010" href="$scaling_8h.html" title="Problem data scaling during setup." alt="" coords="741,269,904,309"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1600,39,1455,60,1375,76,1295,96,1168,138,1045,187,861,272,859,267,1043,182,1166,133,1294,91,1373,71,1454,55,1599,34"/>
+<area shape="rect" id="Node000012" href="$solver__interface_8h.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="1307,93,1469,133"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="1615,52,1456,96,1454,91,1614,46"/>
+<area shape="rect" id="Node000016" href="$nonconvex_8c.html" title="Routines to deal with nonconvex QPs." alt="" coords="1949,277,2125,302"/>
+<area shape="poly" id="edge41_Node000001_Node000016" title=" " alt="" coords="1730,52,1946,219,2023,274,2019,279,1942,223,1727,56"/>
+<area shape="rect" id="Node000018" href="$termination_8c.html" title="Routines to check the termination and infeasibility criteria." alt="" coords="2251,277,2432,302"/>
+<area shape="poly" id="edge43_Node000001_Node000018" title=" " alt="" coords="1772,47,1906,91,2020,132,2132,179,2239,231,2321,274,2319,279,2237,235,2130,184,2018,137,1904,96,1770,52"/>
+<area shape="rect" id="Node000020" href="$validate_8c.html" title="Validation of the user provided settings and data." alt="" coords="1615,277,1774,302"/>
+<area shape="poly" id="edge44_Node000001_Node000020" title=" " alt="" coords="1697,59,1697,276,1692,276,1692,59"/>
+<area shape="rect" id="Node000021" href="$util_8h.html" title="Utility functions." alt="" coords="1956,181,2119,221"/>
+<area shape="poly" id="edge34_Node000001_Node000021" title=" " alt="" coords="1756,48,1852,91,1938,137,2008,179,2006,183,1935,142,1849,96,1754,53"/>
+<area shape="rect" id="Node000003" href="$qpalm_8cpp.html" title=" " alt="" coords="213,431,376,471"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="223,389,273,428,269,433,220,393"/>
+<area shape="rect" id="Node000004" href="$qpalm__fortran_8h.html" title=" " alt="" coords="5,431,189,471"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="172,393,123,433,119,428,169,389"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="298,380,303,380,858,420,1269,443,1269,448,857,425,302,385,297,385"/>
+<area shape="rect" id="Node000005" href="$qpalm__fortran_8c.html" title=" " alt="" coords="5,519,189,559"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="100,485,100,518,95,518,95,485"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="324,229,288,247,255,271,237,292,222,316,203,358,198,356,217,314,232,289,252,267,285,243,322,224"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="347,231,321,248,301,268,292,288,293,298,299,308,318,320,349,333,445,357,573,378,722,397,1031,425,1269,442,1269,448,1030,431,722,402,573,383,444,362,347,338,315,325,295,311,288,300,287,287,297,265,318,244,344,226"/>
+<area shape="rect" id="Node000008" href="$iteration_8c.html" title="QPALM main solver routines." alt="" coords="507,277,667,302"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="451,225,562,274,560,279,449,229"/>
+<area shape="rect" id="Node000009" href="$linesearch_8c.html" title="Routines to perform exact or backtracking linesearch." alt="" coords="310,277,482,302"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="399,235,399,276,393,276,393,235"/>
+<area shape="poly" id="edge12_Node000010_Node000002" title=" " alt="" coords="728,311,723,312,485,343,284,363,283,358,484,337,722,307,727,306"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="882,312,970,346,1070,380,1186,412,1288,435,1287,441,1185,417,1069,385,968,351,880,317"/>
+<area shape="rect" id="Node000011" href="$scaling_8c.html" title="Problem data scaling during setup." alt="" coords="1081,357,1231,383"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="916,310,1108,355,1107,360,915,315"/>
+<area shape="poly" id="edge16_Node000012_Node000002" title=" " alt="" coords="1293,119,1046,126,738,138,460,157,361,170,304,184,274,200,254,218,238,240,221,270,205,317,199,357,194,357,200,316,216,268,233,237,250,214,271,196,302,179,360,164,460,152,738,133,1046,121,1293,114"/>
+<area shape="poly" id="edge32_Node000012_Node000006" title=" " alt="" coords="1483,114,1770,125,1944,138,2117,156,2270,181,2334,196,2387,213,2428,233,2452,256,2459,269,2460,282,2456,297,2446,311,2426,326,2391,340,2289,365,2152,387,1994,405,1667,433,1416,448,1416,443,1667,428,1994,400,2152,382,2288,360,2390,335,2423,322,2442,308,2451,294,2454,282,2453,270,2448,259,2425,238,2385,218,2333,201,2269,186,2116,161,1944,143,1769,131,1483,119"/>
+<area shape="poly" id="edge31_Node000012_Node000008" title=" " alt="" coords="1294,138,640,279,639,274,1292,133"/>
+<area shape="rect" id="Node000013" href="$lin__alg_8h.html" title="Linear algebra with vectors." alt="" coords="1229,181,1392,221"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="1364,145,1330,183,1326,179,1360,142"/>
+<area shape="rect" id="Node000017" href="$solver__interface_8c.html" title="Interface and wrapper to matrix/factorization (ladel) functions." alt="" coords="1380,277,1591,302"/>
+<area shape="poly" id="edge33_Node000012_Node000017" title=" " alt="" coords="1407,144,1481,275,1476,278,1403,146"/>
+<area shape="poly" id="edge18_Node000013_Node000002" title=" " alt="" coords="1216,210,1092,218,952,231,822,248,770,259,730,272,716,281,706,291,696,302,680,312,605,332,500,347,284,366,284,361,500,342,604,326,678,307,692,298,702,287,712,277,728,267,768,254,821,243,951,225,1092,213,1216,205"/>
+<area shape="poly" id="edge25_Node000013_Node000006" title=" " alt="" coords="1318,235,1344,438,1339,438,1312,235"/>
+<area shape="poly" id="edge20_Node000013_Node000008" title=" " alt="" coords="1216,215,1136,224,911,245,812,255,686,272,643,279,642,274,685,267,811,250,910,240,1136,219,1215,210"/>
+<area shape="poly" id="edge22_Node000013_Node000009" title=" " alt="" coords="1216,210,896,231,696,249,495,272,451,279,450,274,494,267,695,243,895,225,1216,204"/>
+<area shape="poly" id="edge19_Node000013_Node000010" title=" " alt="" coords="1216,221,918,272,905,274,904,269,917,267,1215,215"/>
+<area shape="poly" id="edge26_Node000013_Node000011" title=" " alt="" coords="1306,236,1292,274,1269,311,1231,341,1192,360,1189,355,1228,336,1265,308,1287,272,1301,234"/>
+<area shape="rect" id="Node000014" href="$lin__alg_8c.html" title="Linear algebra with vectors." alt="" coords="929,277,1077,302"/>
+<area shape="poly" id="edge21_Node000013_Node000014" title=" " alt="" coords="1231,228,1044,279,1043,274,1229,222"/>
+<area shape="rect" id="Node000015" href="$newton_8c.html" title="Functions to calculate the semismooth Newton direction." alt="" coords="1101,277,1254,302"/>
+<area shape="poly" id="edge23_Node000013_Node000015" title=" " alt="" coords="1271,231,1197,279,1194,274,1268,227"/>
+<area shape="poly" id="edge24_Node000013_Node000016" title=" " alt="" coords="1406,208,1647,231,1938,267,1981,274,1980,279,1937,272,1647,236,1405,213"/>
+<area shape="poly" id="edge27_Node000013_Node000017" title=" " alt="" coords="1362,225,1463,274,1461,279,1360,230"/>
+<area shape="poly" id="edge28_Node000013_Node000018" title=" " alt="" coords="1406,207,2138,267,2251,277,2250,282,2137,272,1406,213"/>
+<area shape="rect" id="Node000019" href="$util_8c.html" title="Utility functions." alt="" coords="1798,277,1925,302"/>
+<area shape="poly" id="edge29_Node000013_Node000019" title=" " alt="" coords="1407,210,1584,233,1787,267,1820,274,1819,279,1786,272,1583,238,1406,216"/>
+<area shape="poly" id="edge30_Node000013_Node000020" title=" " alt="" coords="1406,221,1644,274,1643,279,1405,226"/>
+<area shape="poly" id="edge35_Node000021_Node000002" title=" " alt="" coords="2089,226,2116,244,2139,265,2149,288,2147,300,2139,311,2116,318,2064,324,1887,335,1338,352,284,370,283,365,1338,347,1886,329,2063,319,2115,313,2136,307,2142,298,2143,288,2134,268,2113,248,2086,230"/>
+<area shape="poly" id="edge38_Node000021_Node000006" title=" " alt="" coords="2101,225,2133,242,2158,262,2166,274,2171,286,2169,298,2162,311,2140,332,2109,350,2030,381,1931,404,1821,422,1707,435,1596,443,1416,451,1416,446,1596,438,1706,430,1820,417,1930,399,2029,375,2107,345,2136,327,2158,308,2164,297,2165,286,2162,276,2154,266,2130,246,2099,229"/>
+<area shape="poly" id="edge36_Node000021_Node000008" title=" " alt="" coords="1942,208,1424,227,1080,245,730,272,665,279,664,274,729,267,1079,240,1424,221,1942,202"/>
+<area shape="poly" id="edge37_Node000021_Node000016" title=" " alt="" coords="2040,235,2040,276,2035,276,2035,235"/>
+<area shape="poly" id="edge39_Node000021_Node000018" title=" " alt="" coords="2118,222,2302,274,2300,279,2116,228"/>
+<area shape="poly" id="edge40_Node000021_Node000019" title=" " alt="" coords="1988,230,1886,279,1884,274,1985,225"/>
+</map>
