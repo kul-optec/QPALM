@@ -425,8 +425,19 @@ static void qpalm_termination(QPALMWorkspace *work, solver_common* c, solver_com
     if (work->info->status_val == QPALM_SOLVED ||
         work->info->status_val == QPALM_DUAL_TERMINATED ||
         work->info->status_val == QPALM_TIME_LIMIT_REACHED ||
-        work->info->status_val == QPALM_MAX_ITER_REACHED) 
+        work->info->status_val == QPALM_MAX_ITER_REACHED ||
+        work->info->status_val == QPALM_USER_CANCELLATION)
     {
+        if (work->info->status_val == QPALM_TIME_LIMIT_REACHED ||
+            work->info->status_val == QPALM_MAX_ITER_REACHED ||
+            work->info->status_val == QPALM_USER_CANCELLATION)
+        {
+            compute_residuals(work, c);
+        }
+        if (work->settings->enable_dual_termination)
+        {
+            work->info->dual_objective = compute_dual_objective(work, c2);
+        }
         store_solution(work);
     }
     else if (work->info->status_val == QPALM_PRIMAL_INFEASIBLE)
