@@ -84,7 +84,7 @@ jobs:
       matrix:
         include:
           - {os: windows-2022, cibw-arch: AMD64, arch: amd64}
-          - {os: macos-latest, cibw-arch: arm64}
+          - {os: macos-14, cibw-arch: arm64}
       fail-fast: false
     env:
       SCCACHE_CACHE_MULTIARCH: "1"
