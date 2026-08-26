@@ -14,6 +14,7 @@ add_executable(tests
     "src/test_nonconvex_qp.cpp"
     "src/test_prim_inf_qp.cpp"
     "src/test_solver_interface.cpp"
+    "src/test_scaling.cpp"
     "src/test_casadi_general_convex_sparse.cpp"
     "src/test_basic_qp.cpp"
     "src/test_degen_hess.cpp"

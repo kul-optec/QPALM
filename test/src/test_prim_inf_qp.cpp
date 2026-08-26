@@ -26,9 +26,9 @@ void prim_inf_qp_suite_setup(void) {
     data->q = (c_float *)qpalm_calloc(N,sizeof(c_float));
     data->q[0] = 1; data->q[1] = -2; 
     data->bmin = (c_float *)qpalm_calloc(M,sizeof(c_float));
-    data->bmin[0] = -5; data->bmin[1] = -10; data->bmin[2] = 16; 
+    data->bmin[0] = -500; data->bmin[1] = -0.1; data->bmin[2] = 160;
     data->bmax = (c_float *)qpalm_calloc(M,sizeof(c_float));
-    data->bmax[0] = 5; data->bmax[1] = 10; data->bmax[2] = 20; 
+    data->bmax[0] = 500; data->bmax[1] = 0.1; data->bmax[2] = 200;
 
     c = &common;
     solver_sparse *A = ladel_sparse_alloc(M, N, ANZMAX, UNSYMMETRIC, TRUE, FALSE);
@@ -38,7 +38,7 @@ void prim_inf_qp_suite_setup(void) {
     Ax = A->x;
     Ap = A->p;
     Ai = A->i;
-    Ax[0] = 1.0; Ax[1] = 1.0; Ax[2] = 1.0; Ax[3] = 1.0; 
+    Ax[0] = 100.0; Ax[1] = 10.0; Ax[2] = 0.01; Ax[3] = 10.0;
     Ap[0] = 0; Ap[1] = 2; Ap[2] = 4;
     Ai[0] = 0; Ai[1] = 2; Ai[2] = 1; Ai[3] = 2;
 
@@ -86,6 +86,21 @@ struct TestPrimInfQP : ::testing::TestWithParam<int> {
     }
 };
 
+static void expect_valid_primal_infeasibility_certificate() {
+    const c_float *v = work->delta_y;
+    const c_float norm_v = c_max(c_absval(v[0]), c_max(c_absval(v[1]), c_absval(v[2])));
+    const c_float norm_Atv = c_max(c_absval(100 * v[0] + 10 * v[2]),
+                                   c_absval(0.01 * v[1] + 10 * v[2]));
+    c_float support = 0;
+    for (c_int i = 0; i < M; ++i) {
+        support += v[i] > 0 ? data->bmax[i] * v[i] : data->bmin[i] * v[i];
+    }
+
+    ASSERT_GT(norm_v, 0);
+    EXPECT_LE(norm_Atv, settings->eps_prim_inf * norm_v + 1e-10 * norm_v);
+    EXPECT_LE(support, -settings->eps_prim_inf * norm_v);
+}
+
 TEST_P(TestPrimInfQP, test_prim_inf_qp) {
     settings->proximal = TRUE;
     settings->scaling = 2;
@@ -95,6 +110,7 @@ TEST_P(TestPrimInfQP, test_prim_inf_qp) {
     qpalm_solve(work);
 
     mu_assert_long_eq(work->info->status_val, QPALM_PRIMAL_INFEASIBLE);
+    expect_valid_primal_infeasibility_certificate();
 }
 
 TEST_P(TestPrimInfQP, test_prim_inf_qp_unscaled) {
@@ -106,6 +122,7 @@ TEST_P(TestPrimInfQP, test_prim_inf_qp_unscaled) {
     qpalm_solve(work);
 
     mu_assert_long_eq(work->info->status_val, QPALM_PRIMAL_INFEASIBLE);
+    expect_valid_primal_infeasibility_certificate();
 }
 
 TEST_P(TestPrimInfQP, test_prim_inf_qp_noprox) {
@@ -117,6 +134,7 @@ TEST_P(TestPrimInfQP, test_prim_inf_qp_noprox) {
     qpalm_solve(work);
 
     mu_assert_long_eq(work->info->status_val, QPALM_PRIMAL_INFEASIBLE);
+    expect_valid_primal_infeasibility_certificate();
 }
 
 TEST_P(TestPrimInfQP, test_prim_inf_qp_noprox_unscaled) {
@@ -128,6 +146,7 @@ TEST_P(TestPrimInfQP, test_prim_inf_qp_noprox_unscaled) {
     qpalm_solve(work);
 
     mu_assert_long_eq(work->info->status_val, QPALM_PRIMAL_INFEASIBLE);
+    expect_valid_primal_infeasibility_certificate();
 }
 
 INSTANTIATE_TEST_SUITE_P(TestPrimInfQP, TestPrimInfQP,

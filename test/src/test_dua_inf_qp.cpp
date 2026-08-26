@@ -24,9 +24,9 @@ void dua_inf_qp_suite_setup(void) {
     data->q = (c_float *)qpalm_calloc(N,sizeof(c_float));
     data->q[0] = 1; data->q[1] = -2; 
     data->bmin = (c_float *)qpalm_calloc(M,sizeof(c_float));
-    data->bmin[0] = -5; data->bmin[1] = -10; data->bmin[2] = -20; 
+    data->bmin[0] = -500; data->bmin[1] = -0.1; data->bmin[2] = -200;
     data->bmax = (c_float *)qpalm_calloc(M,sizeof(c_float));
-    data->bmax[0] = 5; data->bmax[1] = 10; data->bmax[2] = 20; 
+    data->bmax[0] = 500; data->bmax[1] = 0.1; data->bmax[2] = 200;
     
     c = &common;
     solver_sparse *A = ladel_sparse_alloc(M, N, ANZMAX, UNSYMMETRIC, TRUE, FALSE);
@@ -37,7 +37,8 @@ void dua_inf_qp_suite_setup(void) {
     Ax = A->x;
     Ap = A->p;
     Ai = A->i;
-    Ax[0] = 1.0; Ax[1] = 1.0; Ax[2] = 1.0; Ax[3] = 1.0; Ax[4] = 1.0; Ax[5] = 1.0; 
+    Ax[0] = 100.0; Ax[1] = 0.01; Ax[2] = 10.0;
+    Ax[3] = 100.0; Ax[4] = 0.01; Ax[5] = 10.0;
     Ap[0] = 0; Ap[1] = 3; Ap[2] = 6;
     Ai[0] = 0; Ai[1] = 1; Ai[2] = 2; Ai[3] = 0; Ai[4] = 1; Ai[5] = 2;
 
@@ -87,6 +88,20 @@ struct TestDuaInfQP : ::testing::TestWithParam<int> {
     }
 };
 
+static void expect_valid_dual_infeasibility_certificate() {
+    const c_float *v = work->delta_x;
+    const c_float norm_v = c_max(c_absval(v[0]), c_absval(v[1]));
+    const c_float qv = data->q[0] * v[0] + data->q[1] * v[1];
+    const c_float norm_Av = 100 * c_absval(v[0] + v[1]);
+
+    ASSERT_GT(norm_v, 0);
+    EXPECT_LE(c_max(c_absval(data->Q->x[0] * v[0]),
+                    c_absval(data->Q->x[1] * v[1])),
+              settings->eps_dual_inf * norm_v);
+    EXPECT_LE(qv, -settings->eps_dual_inf * norm_v);
+    EXPECT_LE(norm_Av, settings->eps_dual_inf * norm_v);
+}
+
 TEST_P(TestDuaInfQP, test_dua_inf_qp) {
     settings->proximal = TRUE;
     settings->scaling = 2;
@@ -96,6 +111,7 @@ TEST_P(TestDuaInfQP, test_dua_inf_qp) {
     qpalm_solve(work);
 
     mu_assert_long_eq(work->info->status_val, QPALM_DUAL_INFEASIBLE);
+    expect_valid_dual_infeasibility_certificate();
 }
 TEST_P(TestDuaInfQP, test_dua_inf_qp_unscaled) {
     settings->proximal = TRUE;
@@ -106,6 +122,7 @@ TEST_P(TestDuaInfQP, test_dua_inf_qp_unscaled) {
     qpalm_solve(work);
 
     mu_assert_long_eq(work->info->status_val, QPALM_DUAL_INFEASIBLE);
+    expect_valid_dual_infeasibility_certificate();
 }
 TEST_P(TestDuaInfQP, test_dua_inf_qp_noprox) {
     //This will crash actually, hence the large gamma value
@@ -120,6 +137,7 @@ TEST_P(TestDuaInfQP, test_dua_inf_qp_noprox) {
     qpalm_solve(work);
 
     mu_assert_long_eq(work->info->status_val, QPALM_DUAL_INFEASIBLE);
+    expect_valid_dual_infeasibility_certificate();
 }
 TEST_P(TestDuaInfQP, test_dua_inf_qp_noprox_unscaled) {
     //This will crash actually, hence the large gamma value
@@ -134,6 +152,7 @@ TEST_P(TestDuaInfQP, test_dua_inf_qp_noprox_unscaled) {
     qpalm_solve(work);
 
     mu_assert_long_eq(work->info->status_val, QPALM_DUAL_INFEASIBLE);
+    expect_valid_dual_infeasibility_certificate();
 }
 
 INSTANTIATE_TEST_SUITE_P(TestDuaInfQP, TestDuaInfQP,

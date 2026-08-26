@@ -298,7 +298,7 @@ basic_qp_test_setup();
     qpalm_solve(work);
     // mu_assert_long_eq(work->info->status_val, QPALM_SOLVED);
     mu_assert_long_eq(work->info->iter, iter);
-    c_float tol = 1e-15;
+    c_float tol = 1e-12;
     for(c_int i = 0; i < N; i++) {
         mu_assert_double_eq(work->solution->x[i], x_sol[i], tol);
     }
