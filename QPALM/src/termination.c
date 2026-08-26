@@ -84,14 +84,24 @@ void calculate_dual_tolerances(QPALMWorkspace *work) {
     size_t n = work->data->n;
     c_float norm_DinvQx, norm_Dinvq, norm_DinvAtyh, max_norm;
     if (work->settings->scaling) {
-        vec_ew_prod(work->scaling->Dinv, work->Qx, work->temp_n, n);
+        if (work->settings->proximal) {
+            vec_add_scaled(work->Qx, work->x, work->temp_n, -1/work->gamma, n);
+            vec_ew_prod(work->scaling->Dinv, work->temp_n, work->temp_n, n);
+        } else {
+            vec_ew_prod(work->scaling->Dinv, work->Qx, work->temp_n, n);
+        }
         norm_DinvQx = vec_norm_inf(work->temp_n, n);
         vec_ew_prod(work->scaling->Dinv, work->data->q, work->temp_n, n);
         norm_Dinvq = vec_norm_inf(work->temp_n, n);
         vec_ew_prod(work->scaling->Dinv, work->Atyh, work->temp_n, n);
         norm_DinvAtyh = vec_norm_inf(work->temp_n, n);
     } else {
-        norm_DinvQx = vec_norm_inf(work->Qx, n);
+        if (work->settings->proximal) {
+            vec_add_scaled(work->Qx, work->x, work->temp_n, -1/work->gamma, n);
+            norm_DinvQx = vec_norm_inf(work->temp_n, n);
+        } else {
+            norm_DinvQx = vec_norm_inf(work->Qx, n);
+        }
         norm_Dinvq = vec_norm_inf(work->data->q, n);
         norm_DinvAtyh = vec_norm_inf(work->Atyh, n);
     }

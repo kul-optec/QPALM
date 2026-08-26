@@ -51,6 +51,9 @@ void initialize_sigma(QPALMWorkspace *work, solver_common *c) {
     size_t n = work->data->n;
     size_t m = work->data->m;
     c_float f = 0.5*vec_prod(work->x, work->Qx, n) + vec_prod(work->data->q, work->x, n);
+    if (work->settings->proximal) {
+        f -= 0.5/work->gamma*vec_prod(work->x, work->x, n);
+    }
     vec_ew_mid_vec(work->Ax, work->data->bmin, work->data->bmax, work->temp_m, m);
     vec_add_scaled(work->Ax, work->temp_m, work->temp_m, -1, m);
     c_float dist2 = vec_prod(work->temp_m, work->temp_m, m);
