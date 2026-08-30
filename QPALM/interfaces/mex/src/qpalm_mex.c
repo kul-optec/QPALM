@@ -14,6 +14,7 @@
 #define MODE_WARM_START "warm_start"
 #define MODE_UPDATE_BOUNDS "update_bounds"
 #define MODE_UPDATE_LINEAR "update_q"
+#define MODE_UPDATE_MATRICES "update_Q_A"
 #define MODE_SOLVE "solve"
 #define MODE_DELETE "delete"
 
@@ -186,7 +187,7 @@ void mexFunction(int nlhs, mxArray * plhs [], int nrhs, const mxArray * prhs [])
     char cmd[64];
 
     if (nrhs < 1 || mxGetString(prhs[0], cmd, sizeof(cmd)))
-		mexErrMsgTxt("First input should be a command string less than 64 characters long.");
+        mexErrMsgTxt("First input should be a command string less than 64 characters long.");
     
     // report the default settings
     if (strcmp(cmd, MODE_DEFAULT_SETTINGS) == 0) {
@@ -349,6 +350,21 @@ void mexFunction(int nlhs, mxArray * plhs [], int nrhs, const mxArray * prhs [])
             qpalm_update_q(qpalm_work, q);
         } else {
             mexWarnMsgTxt("Update q: Empty q has no effect.");
+        }
+
+    } else if (strcmp(cmd, MODE_UPDATE_MATRICES) == 0) {
+        
+        if (nlhs != 0 || nrhs != 3){
+            mexErrMsgTxt("Update Q and A : wrong number of inputs / outputs");
+        }
+        if(!qpalm_work){
+            mexErrMsgTxt("Work is not setup.");
+        }
+        
+        if (!mxIsEmpty(prhs[1])) {
+            qpalm_update_Q_A(qpalm_work, mxGetPr(prhs[1]), mxGetPr(prhs[2]));
+        } else {
+            mexWarnMsgTxt("Update Q and A: Empty Q has no effect.");
         }
 
     } else if (strcmp(cmd, MODE_SOLVE) == 0) { // SOLVE
